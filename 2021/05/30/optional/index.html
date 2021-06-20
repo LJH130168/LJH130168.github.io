@@ -1,0 +1,1710 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="optional, Hexo">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>optional | Hexo</title>
+    <link rel="icon" type="image/jpeg" href="/favicon.jpg">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.4.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/favicon.jpg" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Hexo</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>Index</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>Tags</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>Categories</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>Archives</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>About</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>Contact</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>Friends</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/favicon.jpg" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Hexo</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			Index
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			Tags
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			Categories
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			Archives
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			About
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			Contact
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			Friends
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">optional</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/JAVA8%E6%96%B0%E7%89%B9%E6%80%A7/">
+                                <span class="chip bg-color">JAVA8新特性</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
+                    2021-05-30
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
+                    2021-05-30
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
+                    3.1k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
+                    14 Min
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>Read Count:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="JAVA8新特性之Optional"><a href="#JAVA8新特性之Optional" class="headerlink" title="JAVA8新特性之Optional"></a>JAVA8新特性之<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/d81a5f7c9c4e">Optional</a></h1><h2 id="一、Optional"><a href="#一、Optional" class="headerlink" title="一、Optional"></a>一、Optional</h2><blockquote>
+<ol>
+<li>根据jdk8官方文档，可以知道，该根据类存在于java.util下的final类，是官方提供的工具类；</li>
+<li>Optional类是java8为了解决null值判断问题，借鉴google guava类库的Optional类而引入的一个同名Optional类，使用Optional类可以避免显示的null值判断，避免null导致的NPE（NullPointException）；</li>
+<li>学习了解Optional创建对象和常用方法的使用；</li>
+<li>使用Optional开发时要注意正确使用Optional的“姿势”，特别注意不要使用3.2节提到的错误示范，谨慎使用isPresent()和get()方法，尽量多使用map()、filter()、orElse()等方法来发挥Optional的作用；</li>
+<li>不过采用这种Optional链式编程，虽然代码优雅了。但是，逻辑性没那么明显，可读性有所降低；</li>
+</ol>
+</blockquote>
+<hr>
+<h2 id="二、Optional详解"><a href="#二、Optional详解" class="headerlink" title="二、Optional详解"></a>二、Optional详解</h2><blockquote>
+<p>// 1、创建一个包装对象值为空的Optional对象<br>Optional<string> optStr = Optional.empty();<br>// 2、创建包装对象值非空的Optional对象<br>Optional<string> optStr1 = Optional.of(“optional”);<br>// 3、创建包装对象值允许为空的Optional对象<br>Optional<string> optStr2 = Optional.ofNullable(null);</string></string></string></p>
+<p>//4、常用方法：get、isPresent、ifPresent、filter、map、flatMap、orElse、orElseGet、orElseThrow</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th><strong>序号</strong></th>
+<th><strong>方法</strong></th>
+<th><strong>方法说明</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>1</strong></td>
+<td><code>private Optional()</code></td>
+<td>无参构造，构造一个空Optional</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td><code>private Optional(T value)</code></td>
+<td>根据传入的非空value构建Optional</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td><code>public static&lt;T&gt; Optional&lt;T&gt; empty()</code></td>
+<td>返回一个空的Optional，该实例的value为空</td>
+</tr>
+<tr>
+<td><strong>4</strong></td>
+<td><code>public static &lt;T&gt; Optional&lt;T&gt; of(T value)</code></td>
+<td>根据传入的非空value构建Optional，与Optional(T value)方法作用相同</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td><code>public static &lt;T&gt; Optional&lt;T&gt; ofNullable(T value)</code></td>
+<td>与of(T value)方法不同的是，ofNullable(T value)允许你传入一个空的value，当传入的是空值时其创建一个空Optional，当传入的value非空时，与of()作用相同</td>
+</tr>
+<tr>
+<td><strong>6</strong></td>
+<td><code>public T get()</code></td>
+<td>返回Optional的值，如果容器为空，则抛出NoSuchElementException异常</td>
+</tr>
+<tr>
+<td><strong>7</strong></td>
+<td><code>public boolean isPresent()</code></td>
+<td>判断当家Optional是否已设置了值</td>
+</tr>
+<tr>
+<td><strong>8</strong></td>
+<td><code>public void ifPresent(Consumer&lt;? super T&gt; consumer)</code></td>
+<td>判断当家Optional是否已设置了值，如果有值，则调用Consumer函数式接口进行处理</td>
+</tr>
+<tr>
+<td><strong>9</strong></td>
+<td><code>public Optional&lt;T&gt; filter(Predicate&lt;? super T&gt; predicate)</code></td>
+<td>如果设置了值，且满足Predicate的判断条件，则返回该Optional，否则返回一个空的Optional</td>
+</tr>
+<tr>
+<td><strong>10</strong></td>
+<td><code>public&lt;U&gt; Optional&lt;U&gt; map(Function&lt;? super T, ? extends U&gt; mapper)</code></td>
+<td>如果Optional设置了value，则调用Function对值进行处理，并返回包含处理后值的Optional，否则返回空Optional</td>
+</tr>
+<tr>
+<td><strong>11</strong></td>
+<td><code>public&lt;U&gt; Optional&lt;U&gt; flatMap(Function&lt;? super T, Optional&lt;U&gt;&gt; mapper)</code></td>
+<td>与map()方法类型，不同的是它的mapper结果已经是一个Optional，不需要再对结果进行包装</td>
+</tr>
+<tr>
+<td><strong>12</strong></td>
+<td><code>public T orElse(T other)</code></td>
+<td>如果Optional值不为空，则返回该值，否则返回other</td>
+</tr>
+<tr>
+<td><strong>13</strong></td>
+<td><code>public T orElseGet(Supplier&lt;? extends T&gt; other)</code></td>
+<td>如果Optional值不为空，则返回该值，否则根据other另外生成一个</td>
+</tr>
+<tr>
+<td><strong>14</strong></td>
+<td><code>public &lt;X extends Throwable&gt; T orElseThrow(Supplier&lt;? extends X&gt; exceptionSupplier)throws X</code></td>
+<td>如果Optional值不为空，则返回该值，否则通过supplier抛出一个异常</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="三、Optional源码"><a href="#三、Optional源码" class="headerlink" title="三、Optional源码"></a>三、Optional源码</h2><blockquote>
+<p>Optional类源码，重写了Object类中的equals、hashcode、toString方法</p>
+</blockquote>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">package java.util;
+
+import java.util.function.Consumer;
+import java.util.function.Function;
+import java.util.function.Predicate;
+import java.util.function.Supplier;
+
+public final class Optional&lt;T&gt; {
+
+    private static final Optional&lt;?&gt; EMPTY = new Optional&lt;&gt;();
+
+    private final T value;
+
+    private Optional() {
+        this.value = null;
+    }
+
+    public static&lt;T&gt; Optional&lt;T&gt; empty() {
+        @SuppressWarnings("unchecked")
+        Optional&lt;T&gt; t = (Optional&lt;T&gt;) EMPTY;
+        return t;
+    }
+
+    private Optional(T value) {
+        this.value = Objects.requireNonNull(value);
+    }
+
+    public static &lt;T&gt; Optional&lt;T&gt; of(T value) {
+        return new Optional&lt;&gt;(value);
+    }
+
+    public static &lt;T&gt; Optional&lt;T&gt; ofNullable(T value) {
+        return value == null ? empty() : of(value);
+    }
+
+    //get()方法主要用于返回包装对象的实际值，但是如果包装对象值为null，会抛出NoSuchElementException异常
+    public T get() {
+        if (value == null) {
+            throw new NoSuchElementException("No value present");
+        }
+        return value;
+    }
+
+    //isPresent()方法用于判断包装对象的值是否非空
+    public boolean isPresent() {
+        return value != null;
+    }
+
+    //ifPresent()方法接受一个Consumer对象（消费函数），如果包装对象的值非空，运行Consumer对象的accept()方法
+    public void ifPresent(Consumer&lt;? super T&gt; consumer) {
+        if (value != null)
+            consumer.accept(value);
+    }
+
+    //filter()方法接受参数为Predicate对象，用于对Optional对象进行过滤，如果符合Predicate的条件，返回Optional对象本身，否则返回一个空的Optional对象
+    public Optional&lt;T&gt; filter(Predicate&lt;? super T&gt; predicate) {
+        Objects.requireNonNull(predicate);
+        if (!isPresent())
+            return this;
+        else
+            return predicate.test(value) ? this : empty();
+    }
+
+    //map()方法的参数为Function（函数式接口）对象，map()方法将Optional中的包装对象用Function函数进行运算，并包装成新的Optional对象（包装对象的类型可能改变）
+    public&lt;U&gt; Optional&lt;U&gt; map(Function&lt;? super T, ? extends U&gt; mapper) {
+        Objects.requireNonNull(mapper);
+        if (!isPresent())
+            return empty();
+        else {
+            return Optional.ofNullable(mapper.apply(value));
+        }
+    }
+
+    //跟map()方法不同的是，入参Function函数的返回值类型为Optional&lt;U&gt;类型，而不是U类型，这样flatMap()能将一个二维的Optional对象映射成一个一维的对象
+    public&lt;U&gt; Optional&lt;U&gt; flatMap(Function&lt;? super T, Optional&lt;U&gt;&gt; mapper) {
+        Objects.requireNonNull(mapper);
+        if (!isPresent())
+            return empty();
+        else {
+            return Objects.requireNonNull(mapper.apply(value));
+        }
+    }
+
+    //orElse()方法功能比较简单，即如果包装对象值非空，返回包装对象值，否则返回入参other的值（默认值）
+    public T orElse(T other) {
+        return value != null ? value : other;
+    }
+
+    //orElseGet()方法与orElse()方法类似，区别在于orElseGet()方法的入参为一个Supplier对象，用Supplier对象的get()方法的返回值作为默认值
+    public T orElseGet(Supplier&lt;? extends T&gt; other) {
+        return value != null ? value : other.get();
+    }
+
+    //orElseThrow()方法其实与orElseGet()方法非常相似了，入参都是Supplier对象，只不过orElseThrow()的Supplier对象必须返回一个Throwable异常，并在orElseThrow()中将异常抛出。orElseThrow()方法适用于包装对象值为空时需要抛出特定异常的场景
+    public &lt;X extends Throwable&gt; T orElseThrow(Supplier&lt;? extends X&gt; exceptionSupplier) throws X {
+        if (value != null) {
+            return value;
+        } else {
+            throw exceptionSupplier.get();
+        }
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof Optional)) {
+            return false;
+        }
+        Optional&lt;?&gt; other = (Optional&lt;?&gt;) obj;
+        return Objects.equals(value, other.value);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(value);
+    }
+
+    @Override
+    public String toString() {
+        return value != null
+            ? String.format("Optional[%s]", value)
+            : "Optional.empty";
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<hr>
+<h2 id="四、Optional方法常用实列"><a href="#四、Optional方法常用实列" class="headerlink" title="四、Optional方法常用实列"></a>四、Optional方法常用实列</h2><h3 id="1、Optional-T-value-empty-of-T-value-ofNullable-T-value"><a href="#1、Optional-T-value-empty-of-T-value-ofNullable-T-value" class="headerlink" title="1、Optional(T value),empty(),of(T value),ofNullable(T value)"></a>1、Optional(T value),empty(),of(T value),ofNullable(T value)</h3><blockquote>
+<p>Optional(T value),empty(),of(T value),ofNullable(T value)<br>这四个函数之间具有相关性，因此放在一组进行记忆。<br>先说明一下，Optional(T value)，即构造函数，它是private权限的，不能由外部调用的。其余三个函数是public权限，供我们所调用。<br>那么，Optional的本质，就是内部储存了一个真实的值，在构造的时候，就直接判断其值是否为空</p>
+</blockquote>
+<img src="/.com//image-20210530194617357.png" alt="image-20210530194617357" style="zoom:80%;">
+
+
+
+<h3 id="2、orElse-T-other-，orElseGet-Supplier-lt-extends-T-gt-other-和orElseThrow-Supplier-lt-extends-X-gt-exceptionSupplier"><a href="#2、orElse-T-other-，orElseGet-Supplier-lt-extends-T-gt-other-和orElseThrow-Supplier-lt-extends-X-gt-exceptionSupplier" class="headerlink" title="2、orElse(T other)，orElseGet(Supplier<? extends T> other)和orElseThrow(Supplier<? extends X> exceptionSupplier)"></a>2、orElse(T other)，orElseGet(Supplier&lt;? extends T&gt; other)和orElseThrow(Supplier&lt;? extends X&gt; exceptionSupplier)</h3><blockquote>
+<p>orElse(T other)，orElseGet(Supplier&lt;? extends T&gt; other)和orElseThrow(Supplier&lt;? extends X&gt; exceptionSupplier)<br>这三个函数放一组进行记忆，都是在构造函数传入的value值为null时，进行调用的。orElse和orElseGet的用法如下所示，相当于value值为null时，给予一个默认值:</p>
+</blockquote>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@Test
+public void test() {
+    User user = null;
+    user = Optional.ofNullable(user).orElse(createUser());
+    user = Optional.ofNullable(user).orElseGet(() -&gt; createUser());
+    
+}
+public User createUser(){
+    User user = new User();
+    user.setName("zhangsan");
+    return user;
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<blockquote>
+<p>这两个函数的区别：当user值不为null时，orElse函数依然会执行createUser()方法，而orElseGet函数并不会执行createUser()方法，大家可自行测试。<br>至于orElseThrow，就是value值为null时,直接抛一个异常出去，用法如下所示</p>
+</blockquote>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">User user = null;
+Optional.ofNullable(user).orElseThrow(()-&gt;new Exception("用户不存在"));			<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+
+
+<h3 id="3、map-Function-lt-super-T-extends-U-gt-mapper-和flatMap-Function-lt-super-T-Optional-gt-mapper"><a href="#3、map-Function-lt-super-T-extends-U-gt-mapper-和flatMap-Function-lt-super-T-Optional-gt-mapper" class="headerlink" title="3、map(Function<? super T, ? extends U> mapper)和flatMap(Function<? super T, Optional> mapper)"></a>3、map(Function&lt;? super T, ? extends U&gt; mapper)和flatMap(Function&lt;? super T, Optional<u>&gt; mapper)</u></h3><blockquote>
+<p>map(Function&lt;? super T, ? extends U&gt; mapper)和flatMap(Function&lt;? super T, Optional<u>&gt; mapper)<br>这两个函数放在一组记忆，这两个函数做的是转换值的操作。</u></p>
+<p>这两个函数，在函数体上没什么区别。唯一区别的就是入参，map函数所接受的入参类型为<code>Function&lt;? super T, ? extends U&gt;</code>，而flapMap的入参类型为<code>Function&lt;? super T, Optional&lt;U&gt;&gt;</code></p>
+</blockquote>
+<blockquote>
+<p>用map时，实体类User这样写：</p>
+<p>获取name写法：String city = Optional.ofNullable(user).map(u-&gt; u.getName()).get();</p>
+</blockquote>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">public class User {
+    private String name;
+    public String getName() {
+        return name;
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<blockquote>
+<p>用flatMap时，实体类User这样写：</p>
+<p>获取name写法：String city = Optional.ofNullable(user).flatMap(u-&gt; u.getName()).get();</p>
+</blockquote>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">public class User {
+    private String name;
+    public Optional&lt;String&gt; getName() {
+        return Optional.ofNullable(name);
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h3 id="4、isPresent-和ifPresent-Consumer-lt-super-T-gt-consumer"><a href="#4、isPresent-和ifPresent-Consumer-lt-super-T-gt-consumer" class="headerlink" title="4、isPresent()和ifPresent(Consumer<? super T> consumer)"></a>4、isPresent()<code>和</code>ifPresent(Consumer&lt;? super T&gt; consumer)</h3><blockquote>
+<p>isPresent()和ifPresent(Consumer&lt;? super T&gt; consumer)<br>这两个函数放在一起记忆，isPresent即判断value值是否为空，而ifPresent就是在value值不为空时，做一些操作。</p>
+</blockquote>
+<blockquote>
+<p>isPresent()千外不要下面这样写：</p>
+</blockquote>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">if (user != null){
+   // TODO: do something
+}
+写为：
+Optional&lt;User&gt; user = Optional.ofNullable(user);
+if (user.isPresent()){
+   user.get().setUsername("小明")
+}else{
+    throw new NullPointException();
+}
+因为这样写，代码结构依然丑陋。
+正确写法：
+Optional.ofNullable(user).ifPresent(u-&gt;{u.setUsername("小明")});<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<blockquote>
+<p>fPresent(Consumer&lt;? super T&gt; consumer)</p>
+</blockquote>
+<pre class="line-numbers language-none"><code class="language-none">public static void printName(Student student)
+    {
+        Optional.ofNullable(student).ifPresent(u -&gt;  System.out.println("The student name is : " + u.getName()));
+    }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h3 id="5、filter-Predicate-lt-super-T-gt-predicate"><a href="#5、filter-Predicate-lt-super-T-gt-predicate" class="headerlink" title="5、filter(Predicate<? super T> predicate)"></a>5、filter(Predicate&lt;? super T&gt; predicate)</h3><blockquote>
+<p>filter 方法接受一个 Predicate 来对 Optional 中包含的值进行过滤，如果包含的值满足条件，那么还是返回这个 Optional；否则返回 Optional.empty。</p>
+<p>如上下所示，如果user的name的长度是小于6的，则返回。如果是大于6的，则返回一个EMPTY对象</p>
+</blockquote>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">Optional&lt;User&gt; user = Optional.ofNullable(user).filter(u -&gt; u.getName().length()&lt;6);<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<hr>
+<h2 id="五、Optional扩展"><a href="#五、Optional扩展" class="headerlink" title="五、Optional扩展"></a>五、Optional扩展</h2><h3 id="1、使用Optional避免空指针"><a href="#1、使用Optional避免空指针" class="headerlink" title="1、使用Optional避免空指针"></a>1、使用Optional避免空指针</h3><blockquote>
+<p>在我们日常开发过程中不可避免地会遇到空指针问题，在以前，出现空指针问题，我们通常需要进行调试等方式才能最终定位到具体位置，尤其是在分布式系统服务之间的调用，问题更难定位。在使用Optional后，我们可以将接受到的参数对象进行包装，比如，订单服务要调用商品服务的一个接口，并将商品信息通过参数传入，这时候，传入的商品参数可能直接传入的就是null，这时，商品方法可以使用Optional.of(T)对传入的对象进行包装，如果T为空，则会直接抛出空指针异常，我们看到异常信息就能立即知道发生空指针的原因是参数T为空；或者，当传入的参数为空时，我们可以使用Optional.orElse()或Optional.orElseGet()方法生成一个默认的实例，再进行后续的操作。</p>
+<p>　　下面再看个具体例子：在User类中有个Address类，在Address类中有个Street类,Street类中有streetName属性，现在的需求是：根据传入的User实例，获取对应的streetName，如果User为null或Address为null或Street为null，返回“nothing found”，否则返回对应的streetName。</p>
+</blockquote>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">Optional写法：
+——实体类：
+1 @Data
+2 public class User {
+3     private String name;
+4     private Integer age;
+5     private Optional&lt;Address&gt; address = Optional.empty();
+6 }
+1 @Data
+2 public class Address {
+3     private Optional&lt;Street&gt; street = Optional.empty();
+4 }
+1 @Data
+2 public class Street {
+3     private String streetName;
+4     private Integer streetNo;
+5 }
+——获取streetName
+1 public String getUserSteetName(User user) {
+2 
+3     Optional&lt;User&gt; userOptional = Optional.ofNullable(user);
+4     final String streetName = userOptional.orElse(new User()).getAddress().orElse(new Address()).getStreet().orElse(new Street()).getStreetName();
+5     return StringUtils.isEmpty(streetName) ? "nothing found" : streetName;
+6 }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h3 id="2、取实体类中属性为对象的属性"><a href="#2、取实体类中属性为对象的属性" class="headerlink" title="2、取实体类中属性为对象的属性"></a>2、取实体类中属性为对象的属性</h3><blockquote>
+<p>之前写法</p>
+</blockquote>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">public String getCity(User user)  throws Exception{
+        if(user!=null){
+            if(user.getAddress()!=null){
+                Address address = user.getAddress();
+                if(address.getCity()!=null){
+                    return address.getCity();
+                }
+            }
+        }
+        throw new Excpetion("取值错误"); 
+    }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<blockquote>
+<p>Optional写法：</p>
+</blockquote>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">public String getCity(User user) throws Exception{
+    return Optional.ofNullable(user)
+                   .map(u-&gt; u.getAddress())
+                   .map(a-&gt;a.getCity())
+                   .orElseThrow(()-&gt;new Exception("取指错误"));
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h3 id="3、获取返回存在某属性的对象，不存在创建属性返回对象"><a href="#3、获取返回存在某属性的对象，不存在创建属性返回对象" class="headerlink" title="3、获取返回存在某属性的对象，不存在创建属性返回对象"></a>3、获取返回存在某属性的对象，不存在创建属性返回对象</h3><blockquote>
+<p>之前写法</p>
+</blockquote>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">public User getUser(User user) throws Exception{
+    if(user!=null){
+        String name = user.getName();
+        if("zhangsan".equals(name)){
+            return user;
+        }
+    }else{
+        user = new User();
+        user.setName("zhangsan");
+        return user;
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<blockquote>
+<p>Optional写法：</p>
+</blockquote>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">public User getUser(User user) {
+    return Optional.ofNullable(user)
+                   .filter(u-&gt;"zhangsan".equals(u.getName()))
+                   .orElseGet(()-&gt; {
+                        User user1 = new User();
+                        user1.setName("zhangsan");
+                        return user1;
+                   });
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h3 id="4、项目中实列"><a href="#4、项目中实列" class="headerlink" title="4、项目中实列"></a>4、项目中实列</h3><blockquote>
+<p>之前写法</p>
+</blockquote>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">public String test0(AlarmAllParmeter alarmAllParmeter) {
+      String errorResult = "";
+      if (null != alarmAllParmeter) {
+          Integer alarmId = alarmAllParmeter.getAlarmEventInputId();
+          if (null != alarmId) {
+              AlarmEventInput alarmEventInput = alarmEventInputService.get(alarmId);
+              if (null != alarmEventInput) {
+                  String alarmName = alarmEventInput.getAlarmName();
+                  int alarmType = alarmEventInput.getAlarmType();
+                  return String.valueOf(alarmType) + "-" + alarmName;
+              } else {
+                  return errorResult;
+              }
+          } else {
+              return errorResult;
+          }
+      } else {
+          return errorResult;
+      }
+  }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<blockquote>
+<p>Option的错误写法：</p>
+</blockquote>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">public String test1(AlarmAllParmeter alarmAllParmeter){
+    String errorResult = "";
+    Optional&lt;AlarmAllParmeter&gt; op = Optional.ofNullable(alarmAllParmeter);
+    if(op.isPresent()){
+        Integer alarmId = op.get().getAlarmEventInputId();
+        Optional&lt;Integer&gt; op1 = Optional.ofNullable(alarmId);
+        if(op1.isPresent()){
+            AlarmEventInput alarmEventInput = alarmEventInputService.get(op1.get());
+            Optional&lt;AlarmEventInput&gt; op2 = Optional.ofNullable(alarmEventInput);
+            if (op2.isPresent()) {
+                String alarmName = alarmEventInput.getAlarmName();
+                int alarmType = alarmEventInput.getAlarmType();
+                return String.valueOf(alarmType) + "-" + alarmName;
+            } else {
+                return errorResult;
+            }
+        }
+        else {
+            return errorResult;
+        }
+    }
+    else {
+        return errorResult;
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<blockquote>
+<p>Optional正确写法：</p>
+</blockquote>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">public String test2(AlarmAllParmeter alarmAllParmeter){
+    return Optional.ofNullable(alarmAllParmeter)
+                   .map(a -&gt; a.getAlarmEventInputId())
+                   .map(a -&gt; alarmEventInputService.get(a))
+                   .map(a -&gt; String.valueOf(a.getAlarmType())+"-"+a.getAlarmName())
+                   .orElse("");
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        Author:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">John Doe</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        Link:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://example.com/2021/05/30/optional/">http://example.com/2021/05/30/optional/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        Reprint policy:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    All articles in this blog are used except for special statements
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    reprint policy. If reproduced, please indicate source
+                    <a href="/about" target="_blank">John Doe</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/JAVA8%E6%96%B0%E7%89%B9%E6%80%A7/">
+                                    <span class="chip bg-color">JAVA8新特性</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+            <div class="card">
+                <a href="/2021/05/31/stream/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="stream">
+                        
+                        <span class="card-title">stream</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-05-31
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            John Doe
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/JAVA8%E6%96%B0%E7%89%B9%E6%80%A7/">
+                        <span class="chip bg-color">JAVA8新特性</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/04/25/uploadanddown/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="uploadAndDown">
+                        
+                        <span class="card-title">uploadAndDown</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-25
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            John Doe
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="350909"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2021</span>
+            
+            <span id="year">2021</span>
+            <a href="/about" target="_blank">John Doe</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
+                        class="white-color">60k</span>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;Total visits:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;Total visitors:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/LJH130168" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:2275435906@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2275435906" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2275435906" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
+            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>

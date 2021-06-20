@@ -1,0 +1,1716 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="stream, Hexo">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>stream | Hexo</title>
+    <link rel="icon" type="image/jpeg" href="/favicon.jpg">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.4.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/favicon.jpg" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Hexo</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>Index</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>Tags</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>Categories</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>Archives</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>About</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>Contact</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>Friends</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/favicon.jpg" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Hexo</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			Index
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			Tags
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			Categories
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			Archives
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			About
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			Contact
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			Friends
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">stream</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/JAVA8%E6%96%B0%E7%89%B9%E6%80%A7/">
+                                <span class="chip bg-color">JAVA8新特性</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
+                    2021-05-31
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
+                    2021-06-02
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
+                    3.7k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
+                    17 Min
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>Read Count:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="JAVA8新特性之Stream"><a href="#JAVA8新特性之Stream" class="headerlink" title="JAVA8新特性之Stream"></a>JAVA8新特性之<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/2b40fd0765c3">Stream</a></h1><h2 id="一、Stream"><a href="#一、Stream" class="headerlink" title="一、Stream"></a>一、<a target="_blank" rel="noopener" href="https://www.cnblogs.com/wuhenzhidu/p/10740091.html">Stream</a></h2><blockquote>
+<ul>
+<li><p>Stream让开发者能够以一种声明的方式处理数据源（集合、数组等）</p>
+</li>
+<li><p>Stream专注于对数据源进行各种高效的<em>聚合操作和大批量数据操作</em></p>
+</li>
+<li><p>Stream API 处理的数据源看着一种Stream（流），Stream在Pipeline（管道）中传输和运算（筛选、排序、聚合）后得到最终的处理结果</p>
+</li>
+<li><p>Stream API的使用离不开lambda表达式，可以提高编码效率和代码可读性</p>
+</li>
+<li><p>Stream API提供串行和并行两种操作，并行操作能发挥多核处理优势，使用fork/join的方式进行并行操作以提高运行速度。并行操作无需编写多线程代码即可写出高效的并发程序，且可避免多线程代码出错的问题</p>
+</li>
+<li><p>在新版的JPA中，也已经加入了Stram</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@Query("select u from User u")
+Stream&lt;User&gt; findAllByCustomQueryAndStream();<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li>
+</ul>
+</blockquote>
+<h3 id="lt-1-gt-、了解几个核心概念"><a href="#lt-1-gt-、了解几个核心概念" class="headerlink" title="<1>、了解几个核心概念"></a>&lt;1&gt;、了解几个核心概念</h3><p><strong>元素</strong> Stream是一个来自数据源的元素队列，Stream本身并不存储元素。</p>
+<p><strong>数据源</strong>（即Stream的来源）包含集合、数组、I/O channel、generator（发生器）等。</p>
+<p><strong>聚合操作</strong> 类似SQL中的filter、map、find、match、sorted等操作</p>
+<p><strong>管道运算</strong> Stream在Pipeline中运算后返回Stream对象本身，这样多个操作串联成一个Pipeline，并形成fluent风格的代码。这种方式可以优化操作，如延迟执行(laziness)和短路( short-circuiting)。</p>
+<p><strong>内部迭代</strong> 不同于java8以前对集合的遍历方式（外部迭代），Stream API采用访问者模式（Visitor）实现了内部迭代。</p>
+<p><strong>并行运算</strong> Stream API支持串行（stream() ）或并行（parallelStream() ）的两种操作方式。</p>
+<hr>
+<h3 id="lt-2-gt-、核心"><a href="#lt-2-gt-、核心" class="headerlink" title="<2>、核心"></a>&lt;2&gt;、核心</h3><blockquote>
+<ol>
+<li>创建Stream：从一个数据源（集合、数组）中获取流</li>
+<li>中间操作：一个操作的中间链，对数据源的数据进行操作</li>
+<li>终止操作：一个终止操作，执行中间操作链，并产生结果（操作完需要关闭）</li>
+</ol>
+</blockquote>
+<ol>
+<li><p>创建Stream</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">#集合创建流
+List list = new arraryList();
+list.add(a);
+list.add(b);
+list.add(c);
+Stream&lt;list&gt; stream = list.stream();
+#数组创建流
+String[] arrary = new String(){a,b,c}
+Stram&lt;String&gt; stream = Stream.of(arrary);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li><p>中间操作</p>
+<ul>
+<li>filter：接收Lambda，从流中排除某些操作；</li>
+<li>limit：截断流，使其元素不超过给定对象</li>
+<li>skip(n)：跳过元素，返回一个扔掉了前n个元素的流，若流中元素不足n个，则返回一个空流，与limit(n)互补</li>
+<li>distinct：筛选，通过流所生成元素的hashCode()和equals()去除重复元素。</li>
+<li>map–接收Lambda，将元素转换成其他形式或提取信息。接收一个函数作为参数，该函数会被应用到每个元素上，并将其映射成一个新的元素。</li>
+<li>flatMap–接收一个函数作为参数，将流中的每个值都换成另一个流，然后把所有流连接成一个流</li>
+<li>sorted()–自然排序(Comparable)</li>
+<li>sorted(Comparator com)–定制排序（Comparator）</li>
+</ul>
+</li>
+<li><p>终止操作–查找与匹配</p>
+<ul>
+<li>allMatch–检查是否匹配所有元素</li>
+<li>anyMatch–检查是否至少匹配一个元素</li>
+<li>noneMatch–检查是否没有匹配所有元素</li>
+<li>findFirst–返回第一个元素</li>
+<li>findAny–返回当前流中的任意元素</li>
+<li>count–返回流中元素的总个数</li>
+<li>max–返回流中最大值</li>
+<li>min–返回流中最小值</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="lt-3-gt-、串行流和并行流"><a href="#lt-3-gt-、串行流和并行流" class="headerlink" title="<3>、串行流和并行流"></a>&lt;3&gt;、串行流和并行流</h3><blockquote>
+<p>stream()——串行流</p>
+<p>parallelStream()——并行流，使用parallelStream()生成并行流后，对集合元素的遍历是无序的</p>
+</blockquote>
+<ol>
+<li><p>看源码</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">default Stream&lt;E&gt; stream() {
+    return StreamSupport.stream(spliterator(), false);
+}
+   
+default Stream&lt;E&gt; parallelStream() {
+    return StreamSupport.stream(spliterator(), true);
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li><p>看列子</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">public static void main(String[] args)
+{  
+    List&lt;Integer&gt; numbers = Arrays.asList(-1, -2, 0, 4, 5);
+  
+    long count = numbers.parallelStream().filter(i -&gt; i&gt;0).count();
+    
+    System.out.println("Positive count: " + count);
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+</ol>
+<hr>
+<hr>
+<h2 id="二、Stream源码"><a href="#二、Stream源码" class="headerlink" title="二、Stream源码"></a>二、Stream源码</h2><pre class="line-numbers language-java" data-language="java"><code class="language-java">package java.util.stream;
+
+import java.nio.charset.Charset;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Comparator;
+import java.util.Iterator;
+import java.util.Objects;
+import java.util.Optional;
+import java.util.Spliterator;
+import java.util.Spliterators;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.function.BiConsumer;
+import java.util.function.BiFunction;
+import java.util.function.BinaryOperator;
+import java.util.function.Consumer;
+import java.util.function.Function;
+import java.util.function.IntFunction;
+import java.util.function.Predicate;
+import java.util.function.Supplier;
+import java.util.function.ToDoubleFunction;
+import java.util.function.ToIntFunction;
+import java.util.function.ToLongFunction;
+import java.util.function.UnaryOperator;
+
+public interface Stream&lt;T&gt; extends BaseStream&lt;T, Stream&lt;T&gt;&gt; {
+
+	//filter()方法的参数为Predicate（函数式接口）对象,用它进行过滤
+    Stream&lt;T&gt; filter(Predicate&lt;? super T&gt; predicate);
+
+	//map()方法的参数为Function（函数式接口）对象，map()方法将流中的所有元素用Function对象进行运算，生成新的流对象（流的元素类型可能改变）
+    &lt;R&gt; Stream&lt;R&gt; map(Function&lt;? super T, ? extends R&gt; mapper);
+
+    //summaryStatistics()方法进行数值统计。其实summaryStatistics()方法并不是Stream接口的方法，而是Stream API采用mapToInt()、mapToLong()、mapToDouble()三个方法分别生成IntStream 、LongStream 、DoubleStream 三个接口类型的对象，这个方法的参数分别为3个函数式接口ToIntFunction、ToLongFunction、ToDoubleFunction，使用时可以用lambda表达式计算返回对应的int、long、double类型即可。IntStream 、LongStream 、DoubleStream 三个接口类型都有一个summaryStatistics()方法，方法对应的类型分别是：IntSummaryStatistics、LongSummaryStatistics 、DoubleSummaryStatistics ，都有诸如统计数量、最大值、最小值、求和、平均值等方法（方法名和返回类型可能不同），利用这些方法我们可以方便的进行数值统计，列如：
+    //    public static void main(String[] args)
+    //    List&lt;Integer&gt; numbers = Arrays.asList(-1, -2, 0, 4, 5);
+    //    IntSummaryStatistics stats = numbers.stream().mapToInt((x) -&gt; x).summaryStatistics();
+    //    System.out.println("Max : " + stats.getMax());
+    //    System.out.println("Min : " + stats.getMin());
+    //    System.out.println("Sum : " + stats.getSum());
+    //    System.out.println("Average : " + stats.getAverage());
+    //    System.out.println("Count : " + stats.getCount());}
+    IntStream mapToInt(ToIntFunction&lt;? super T&gt; mapper);
+    LongStream mapToLong(ToLongFunction&lt;? super T&gt; mapper);
+    DoubleStream mapToDouble(ToDoubleFunction&lt;? super T&gt; mapper);
+
+	//跟map()方法不同的是，Function函数的返回值类型是Stream&lt;? extends R&gt;类型，而不是R类型，即Function函数返回一个Stream流，这样flatMap()能够将一个二维的集合映射成一个一维的集合，比map()方法拥有更高的映射深度（此处可能有一点绕，可结合例子理解）
+    //有一个字符串数组:List&lt;String&gt; list = Arrays.asList("1 2", "3 4", "5 6");
+    //其有三个元素，每个元素有两个数组并用空格隔开，如果每个元素以空格分割成2个元素，并遍历打印这6个元素，
+	//用flatMap()方法如下：
+	//list.stream().flatMap(item -&gt; Arrays.stream(item.split(" "))).forEach(System.out::println);
+    //而用map()方法：
+	//list.stream().map(item -&gt; Arrays.stream(item.split(" "))).forEach(n -&gt;n.forEach(System.out::println));
+    //可见，用map()方法，返回了一个“流中流”，需要在每个Stream元素遍历时，再加一层forEach进行遍历。
+    &lt;R&gt; Stream&lt;R&gt; flatMap(Function&lt;? super T, ? extends Stream&lt;? extends R&gt;&gt; mapper);
+
+    IntStream flatMapToInt(Function&lt;? super T, ? extends IntStream&gt; mapper);
+    LongStream flatMapToLong(Function&lt;? super T, ? extends LongStream&gt; mapper);
+    DoubleStream flatMapToDouble(Function&lt;? super T, ? extends DoubleStream&gt; mapper);
+
+	//去重,筛选，通过流所生成元素的hashCode()和equals()去除重复元素。
+    Stream&lt;T&gt; distinct();
+	
+    //sorted()--自然排序(Comparable)
+    Stream&lt;T&gt; sorted();
+
+	//sorted(Comparator com)--定制排序（Comparator）,匿名类部类，列如：
+    //final Stream&lt;Person&gt; sorted = personList.stream().sorted((p1, p2) -&gt; {
+    //    if (p1.getAge().equals(p2.getAge())) {
+    //        return p1.getName().compareTo(p2.getName());
+    //    } else {
+    //        return p1.getAge().compareTo(p2.getAge());
+    //    }
+    //});
+    //sorted.forEach(System.out::println);
+    Stream&lt;T&gt; sorted(Comparator&lt;? super T&gt; comparator);
+
+	//生成一个包含原Stream的所有元素的新Stream，并指定消费函数。peek()方法提供Consumer（消费）函数，但执行peek()方法时不会执行Consumer函数，而是等到流真正被消费时（终端操作时才进行消费）才会执行，这种操作为中间操作
+    Stream&lt;T&gt; peek(Consumer&lt;? super T&gt; action);
+
+	//截断流，使其元素不超过给定对象
+    Stream&lt;T&gt; limit(long maxSize);
+
+  	//跳过元素，返回一个扔掉了前n个元素的流，若流中元素不足n个，则返回一个空流，与limit(n)互补
+    Stream&lt;T&gt; skip(long n);
+
+	//forEach()方法的参数为一个Consumer（消费函数，一个函数式接口）对象，forEach()方法用来迭代流中的每一个数据
+    void forEach(Consumer&lt;? super T&gt; action);
+
+
+    void forEachOrdered(Consumer&lt;? super T&gt; action);
+
+
+    Object[] toArray();
+
+
+    &lt;A&gt; A[] toArray(IntFunction&lt;A[]&gt; generator);
+
+	// reduce操作又称为折叠操作，用于将流中的所有值合成一个。。reduce()方法参数为BinaryOperator类型的累加器（它接受两个类型相同的参数，返回值类型跟参数类型相同），返回一个Optional对象。实际上，Stream API中的mapToInt()方法返回的IntStream接口有类似的 average()、count()、sum()等方法就是做reduce操作，类似的还有mapToLong()、mapToDouble() 方法。当然，我们也可以用reduce()方法来自定义reduce操作。例如我们用reduce()方法来进行整数数组求和操作：
+    //    public static void main(String[] args) {
+    //    List&lt;Integer&gt; numbers = Arrays.asList(-1, -2, 0, -1, 4, 5, 1);
+    //    Integer total = numbers.stream().reduce((t, n) -&gt; t + n).get();
+    //    System.out.println("Total: " + total);}
+    T reduce(T identity, BinaryOperator&lt;T&gt; accumulator);
+
+
+    Optional&lt;T&gt; reduce(BinaryOperator&lt;T&gt; accumulator);
+
+
+    &lt;U&gt; U reduce(U identity,
+                 BiFunction&lt;U, ? super T, U&gt; accumulator,
+                 BinaryOperator&lt;U&gt; combiner);
+
+	//collect()方法的参数为一个java.util.stream.Collector类型对象，可以用java.util.stream.Collectors工具类提供的静态方法来生成，Collectors类实现很多的归约操作，如Collectors.toList()、Collectors.toSet()、Collectors.joining()（joining适用于字符串流）等。看一个简单示例：
+    //用map()方法生成新的流，再用collect()方法返回原数组的绝对值数组。
+    //    public static void main(String[] args) {  
+    //    List&lt;Integer&gt; numbers = Arrays.asList(-1, -2, 0, 4, 5);
+    //    List&lt;Integer&gt; abss = numbers.stream().map( n -&gt; Math.abs(n)).collect(Collectors.toList());
+    //    System.out.println("Abs list: " + abss);}
+    &lt;R&gt; R collect(Supplier&lt;R&gt; supplier,
+                  BiConsumer&lt;R, ? super T&gt; accumulator,
+                  BiConsumer&lt;R, R&gt; combiner);
+
+   
+    &lt;R, A&gt; R collect(Collector&lt;? super T, A, R&gt; collector);
+
+  	//返回流中最小值,列如年龄最小的人信息：
+    //Optional&lt;Person&gt; minAge = personList.stream().min((p1, p2) -&gt; p1.getAge().compareTo(p2.getAge()));
+    Optional&lt;T&gt; min(Comparator&lt;? super T&gt; comparator);
+
+ 	//返回流中最大值,列如年龄最大的人信息：
+    //Optional&lt;Person&gt; maxAge = personList.stream().max((p1, p2) -&gt; p1.getAge().compareTo(p2.getAge()));
+    Optional&lt;T&gt; max(Comparator&lt;? super T&gt; comparator);
+
+	//返回流中元素的总个数,列如：
+    //List&lt;Integer&gt; numbers = Arrays.asList(-1, -2, 0, 4, 5);  
+    //long count = numbers.parallelStream().filter(i -&gt; i&gt;0).count();
+    long count();
+
+	//检查是否至少匹配一个元素,列如：
+    boolean anyMatch(Predicate&lt;? super T&gt; predicate);
+	
+    //检查是否匹配所有元素,列如是否都是成年人：
+    //boolean adult = personList.stream().allMatch(p -&gt; p.getAge() &gt;= 18);
+    boolean allMatch(Predicate&lt;? super T&gt; predicate);
+
+ 	//检查是否没有匹配所有元素,列如：
+    boolean noneMatch(Predicate&lt;? super T&gt; predicate);
+
+  	//返回第一个元素,列如：
+    Optional&lt;T&gt; findFirst();
+
+	//返回当前流中的任意元素,列如：
+    Optional&lt;T&gt; findAny();
+
+
+    public static&lt;T&gt; Builder&lt;T&gt; builder() {
+        return new Streams.StreamBuilderImpl&lt;&gt;();
+    }
+
+
+    public static&lt;T&gt; Stream&lt;T&gt; empty() {
+        return StreamSupport.stream(Spliterators.&lt;T&gt;emptySpliterator(), false);
+    }
+
+
+    public static&lt;T&gt; Stream&lt;T&gt; of(T t) {
+        return StreamSupport.stream(new Streams.StreamBuilderImpl&lt;&gt;(t), false);
+    }
+
+
+    @SafeVarargs
+    @SuppressWarnings("varargs") // Creating a stream from an array is safe
+    public static&lt;T&gt; Stream&lt;T&gt; of(T... values) {
+        return Arrays.stream(values);
+    }
+
+
+    public static&lt;T&gt; Stream&lt;T&gt; iterate(final T seed, final UnaryOperator&lt;T&gt; f) {
+        Objects.requireNonNull(f);
+        final Iterator&lt;T&gt; iterator = new Iterator&lt;T&gt;() {
+            @SuppressWarnings("unchecked")
+            T t = (T) Streams.NONE;
+
+            @Override
+            public boolean hasNext() {
+                return true;
+            }
+
+            @Override
+            public T next() {
+                return t = (t == Streams.NONE) ? seed : f.apply(t);
+            }
+        };
+        return StreamSupport.stream(Spliterators.spliteratorUnknownSize(
+                iterator,
+                Spliterator.ORDERED | Spliterator.IMMUTABLE), false);
+    }
+
+
+    public static&lt;T&gt; Stream&lt;T&gt; generate(Supplier&lt;T&gt; s) {
+        Objects.requireNonNull(s);
+        return StreamSupport.stream(
+                new StreamSpliterators.InfiniteSupplyingSpliterator.OfRef&lt;&gt;(Long.MAX_VALUE, s), false);
+    }
+
+
+    public static &lt;T&gt; Stream&lt;T&gt; concat(Stream&lt;? extends T&gt; a, Stream&lt;? extends T&gt; b) {
+        Objects.requireNonNull(a);
+        Objects.requireNonNull(b);
+
+        @SuppressWarnings("unchecked")
+        Spliterator&lt;T&gt; split = new Streams.ConcatSpliterator.OfRef&lt;&gt;(
+                (Spliterator&lt;T&gt;) a.spliterator(), (Spliterator&lt;T&gt;) b.spliterator());
+        Stream&lt;T&gt; stream = StreamSupport.stream(split, a.isParallel() || b.isParallel());
+        return stream.onClose(Streams.composedClose(a, b));
+    }
+
+
+    public interface Builder&lt;T&gt; extends Consumer&lt;T&gt; {
+        @Override
+        void accept(T t);
+
+        default Builder&lt;T&gt; add(T t) {
+            accept(t);
+            return this;
+        }
+
+        Stream&lt;T&gt; build();
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<hr>
+<h2 id="三、Stream常见操作"><a href="#三、Stream常见操作" class="headerlink" title="三、Stream常见操作"></a>三、Stream常见操作</h2><pre class="line-numbers language-java" data-language="java"><code class="language-java">//常见的中间操作方法（filter、limit、skip、distinct、map、flatMap、sorted、peek）
+import lombok.Data;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+public class TestStreamAPI {
+
+    public static void main(String[] args) {
+        List&lt;Person&gt; personList = new ArrayList&lt;&gt;();
+        personList.add(new Person("欧阳雪",18,"中国",'F'));
+        personList.add(new Person("Tom",24,"美国",'M'));
+        personList.add(new Person("Harley",22,"英国",'F'));
+        personList.add(new Person("向天笑",20,"中国",'M'));
+        personList.add(new Person("李康",22,"中国",'M'));
+        personList.add(new Person("小梅",20,"中国",'F'));
+        personList.add(new Person("何雪",21,"中国",'F'));
+        personList.add(new Person("李康",22,"中国",'M'));
+
+        // 1）找到年龄大于18岁的人并输出；
+        personList.stream().filter((p) -&gt; p.getAge() &gt; 18).forEach(System.out::println);
+
+        System.out.println("-------------------------------------------");
+
+        // 2）找出所有中国人的数量
+        long chinaPersonNum = personList.stream().filter((p) -&gt; p.getCountry().equals("中国")).count();
+        System.out.println("中国人有：" + chinaPersonNum);
+
+        // limit
+        personList.stream().filter((p) -&gt; p.getSex() == 'F').limit(2).forEach(System.out::println);
+        System.out.println();
+        // skip
+        personList.stream().filter((p) -&gt; p.getSex() == 'F').skip(1).forEach(System.out::println);
+
+        // distinct
+        personList.stream().filter((p) -&gt; p.getSex() == 'M').distinct().forEach(System.out::println);
+
+        // map
+        personList.stream().map((p) -&gt; {
+            PersonCountry personName = new PersonCountry();
+            personName.setCountry(p.getCountry());
+            return personName;
+        }).distinct().forEach(System.out::println);
+
+        // map2
+        List&lt;String&gt; list = Arrays.asList("aaa","bbb","ccc","ddd","ddd");
+
+        final Stream&lt;Stream&lt;Character&gt;&gt; streamStream
+                = list.stream().map(TestStreamAPI::getCharacterByString);
+//        streamStream.forEach(System.out::println);
+        streamStream.forEach(sm -&gt; sm.forEach(System.out::print));
+
+        // flatMap
+        final Stream&lt;Character&gt; characterStream = list.stream().flatMap(TestStreamAPI::getCharacterByString);
+        characterStream.forEach(System.out::print);
+
+        // sort
+        final Stream&lt;Person&gt; sorted = personList.stream().sorted((p1, p2) -&gt; {
+
+            if (p1.getAge().equals(p2.getAge())) {
+                return p1.getName().compareTo(p2.getName());
+            } else {
+                return p1.getAge().compareTo(p2.getAge());
+            }
+        });
+        sorted.forEach(System.out::println);
+
+        // allMatch
+        final Stream&lt;Person&gt; stream = personList.stream();
+        final boolean adult = stream.allMatch(p -&gt; p.getAge() &gt;= 18);
+        System.out.println("是否都是成年人：" + adult);
+
+        final boolean chinaese = personList.stream().allMatch(p -&gt; p.getCountry().equals("中国"));
+        System.out.println("是否都是中国人：" + chinaese);
+
+        // max min
+        final Optional&lt;Person&gt; maxAge = personList.stream().max((p1, p2) -&gt; p1.getAge().compareTo(p2.getAge()));
+        System.out.println("年龄最大的人信息：" + maxAge.get());
+
+        final Optional&lt;Person&gt; minAge = personList.stream().min((p1, p2) -&gt; p1.getAge().compareTo(p2.getAge()));
+        System.out.println("年龄最小的人信息：" + minAge.get());
+
+        // reduce
+        List&lt;Integer&gt; integerList = new ArrayList&lt;&gt;(100);
+        for(int i = 1;i &lt;= 100;i++) {
+            integerList.add(i);
+        }
+        final Integer reduce = integerList.stream().reduce(0, (x, y) -&gt; x + y);
+        System.out.println("结果为：" + reduce);
+
+        final Optional&lt;Integer&gt; totalAge = personList.stream().map(Person::getAge).reduce(Integer::sum);
+        System.out.println("年龄总和：" + totalAge);
+
+        // collect
+        final List&lt;String&gt; collect = personList.stream().map(p -&gt; p.getCountry()).distinct().collect(Collectors.toList());
+        System.out.println(collect);
+
+        final Double collect1 = personList.stream().collect(Collectors.averagingInt(p -&gt; p.getAge()));
+        System.out.println("平均年龄为：" + collect1);
+
+        final Optional&lt;Integer&gt; maxAge2 = personList.stream().map(Person::getAge).collect(Collectors.maxBy(Integer::compareTo));
+        System.out.println(maxAge2.get());
+
+        try(final Stream&lt;Integer&gt; integerStream = personList.stream().map(Person::getAge)) {
+            final Optional&lt;Integer&gt; minAge2 = integerStream.collect(Collectors.minBy(Integer::compareTo));
+            System.out.println(minAge2.get());
+        }
+    }
+
+    public static Stream&lt;Character&gt; getCharacterByString(String str) {
+
+        List&lt;Character&gt; characterList = new ArrayList&lt;&gt;();
+
+        for (Character character : str.toCharArray()) {
+            characterList.add(character);
+        }
+
+        return characterList.stream();
+    }
+}
+
+@Data
+class PersonCountry {
+    private String country;
+}
+
+@Data
+class Person {
+    private String name;
+    private Integer age;
+    private String country;
+    private char sex;
+
+    public Person(String name, Integer age, String country, char sex) {
+        this.name = name;
+        this.age = age;
+        this.country = country;
+        this.sex = sex;
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        Author:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">John Doe</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        Link:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://example.com/2021/05/31/stream/">http://example.com/2021/05/31/stream/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        Reprint policy:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    All articles in this blog are used except for special statements
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    reprint policy. If reproduced, please indicate source
+                    <a href="/about" target="_blank">John Doe</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/JAVA8%E6%96%B0%E7%89%B9%E6%80%A7/">
+                                    <span class="chip bg-color">JAVA8新特性</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+            <div class="card">
+                <a href="/2021/06/15/lambda/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="lambda">
+                        
+                        <span class="card-title">lambda</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-06-15
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            John Doe
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/JAVA8%E6%96%B0%E7%89%B9%E6%80%A7/">
+                        <span class="chip bg-color">JAVA8新特性</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/05/30/optional/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="optional">
+                        
+                        <span class="card-title">optional</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-30
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            John Doe
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/JAVA8%E6%96%B0%E7%89%B9%E6%80%A7/">
+                        <span class="chip bg-color">JAVA8新特性</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="350909"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2021</span>
+            
+            <span id="year">2021</span>
+            <a href="/about" target="_blank">John Doe</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
+                        class="white-color">60k</span>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;Total visits:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;Total visitors:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/LJH130168" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:2275435906@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2275435906" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2275435906" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
+            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
