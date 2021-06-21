@@ -29,9 +29,9 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0">
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="IQ小王子" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="IQ小王子" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -514,7 +514,7 @@
 <h5 id="二、关于生成几种常见样式的二维码？"><a href="#二、关于生成几种常见样式的二维码？" class="headerlink" title="二、关于生成几种常见样式的二维码？"></a>二、关于生成几种常见样式的二维码？</h5><p>市面上生成二维码的技术：</p>
 <p>1、google：zxing（主流的，但只能生成黑白相间（普通和logo）的二维码）</p>
 <p>2、github：qrcode（基于zxing，可生成绚丽多彩的二维码，如下：）</p>
-<img src="/.io//1.png" style="zoom:0%;">
+<img src="/2021/06/21/ru-he-sheng-cheng-er-wei-ma/1.png" style="zoom:0%;">
 
 <hr>
 <h5 id="三、实现：QrCodeController、ZxingUtil、QrCodeUtil、index-html"><a href="#三、实现：QrCodeController、ZxingUtil、QrCodeUtil、index-html" class="headerlink" title="三、实现：QrCodeController、ZxingUtil、QrCodeUtil、index.html"></a>三、实现：QrCodeController、ZxingUtil、QrCodeUtil、index.html</h5><pre class="line-numbers language-xml" data-language="xml"><code class="language-xml">   //构建生成二维码项目所需依赖
@@ -858,7 +858,7 @@ public class QrCodeController {
 
 <hr>
 <h5 id="四、说明"><a href="#四、说明" class="headerlink" title="四、说明"></a>四、说明</h5><p>按给定的跳转链接（字段）和背景图片，生成的指定样式二维码，微信扫码即可实现链接的跳转（获取字段）</p>
-<img src="/.io//2.png" style="zoom:0%;">
+<img src="/2021/06/21/ru-he-sheng-cheng-er-wei-ma/2.png" style="zoom:0%;">
 
 <p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV19A411H7NM?p=1">视频教学</a></p>
 

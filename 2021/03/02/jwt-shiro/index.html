@@ -29,9 +29,9 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0">
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="IQ小王子" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="IQ小王子" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -495,15 +495,15 @@
 SecuirtyManager:管理所有用户
 Realm:连接数据<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
-<img src="/.io//image-20210302201338573.png" alt="image-20210302201338573" style="zoom:80%;">
+<img src="/2021/03/02/jwt-shiro/image-20210302201338573.png" alt="image-20210302201338573" style="zoom:80%;">
 
-<img src="/.io//image-20210302202742842.png" alt="image-20210302202742842" style="zoom:80%;">
+<img src="/2021/03/02/jwt-shiro/image-20210302202742842.png" alt="image-20210302202742842" style="zoom:80%;">
 
-<img src="/.io//format,f_auto" alt="img" style="zoom:80%;">
+<img src="/2021/03/02/jwt-shiro/format,f_auto" alt="img" style="zoom:80%;">
 
-<img src="/.io//image-20210302203002766.png" alt="image-20210302203002766" style="zoom:80%;">
+<img src="/2021/03/02/jwt-shiro/image-20210302203002766.png" alt="image-20210302203002766" style="zoom:80%;">
 
-<img src="/.io//format,f_auto1" alt="img" style="zoom:80%;">
+<img src="/2021/03/02/jwt-shiro/format,f_auto1" alt="img" style="zoom:80%;">
 
 <hr>
 <h6 id="1、构建项目"><a href="#1、构建项目" class="headerlink" title="1、构建项目"></a>1、构建项目</h6><blockquote>
@@ -511,10 +511,10 @@ Realm:连接数据<span aria-hidden="true" class="line-numbers-rows"><span></spa
 <p>2、配置文件</p>
 <p>3、hello word</p>
 </blockquote>
-<img src="/.io//image-20210302212538914.png" alt="image-20210302212538914" style="zoom:80%;">
+<img src="/2021/03/02/jwt-shiro/image-20210302212538914.png" alt="image-20210302212538914" style="zoom:80%;">
 
 <hr>
-<h6 id="2、Shiro的Subject分析"><a href="#2、Shiro的Subject分析" class="headerlink" title="2、Shiro的Subject分析"></a>2、Shiro的Subject分析</h6><img src="/.io//image-20210302235713594.png" alt="image-20210302235713594" style="zoom:80%;">
+<h6 id="2、Shiro的Subject分析"><a href="#2、Shiro的Subject分析" class="headerlink" title="2、Shiro的Subject分析"></a>2、Shiro的Subject分析</h6><img src="/2021/03/02/jwt-shiro/image-20210302235713594.png" alt="image-20210302235713594" style="zoom:80%;">
 
 <pre class="line-numbers language-java" data-language="java"><code class="language-java">public class Quickstart {
     private static final transient Logger log = LoggerFactory.getLogger(Quickstart.class);
@@ -703,7 +703,7 @@ public class UserRealm extends AuthorizingRealm {
 <p>ShiroFilterFactoryBean里面添加内置过滤器，即登录认证之后才能够访问对应路径下的页面</p>
 <p>如下：路径”/user/add”和”/user/update”作为键，”authc”作为值，authc则表示用户需要登录认证之后才能访问这两个页面</p>
 </blockquote>
-<img src="/.io//image-20210302233644427.png" alt="image-20210302233644427" style="zoom:80%;">
+<img src="/2021/03/02/jwt-shiro/image-20210302233644427.png" alt="image-20210302233644427" style="zoom:80%;">
 
 <hr>
 <h6 id="5、Shiro实现用户认证"><a href="#5、Shiro实现用户认证" class="headerlink" title="5、Shiro实现用户认证"></a>5、Shiro实现用户认证</h6><blockquote>
@@ -711,19 +711,19 @@ public class UserRealm extends AuthorizingRealm {
 <p>2、认证是交给自定义reaml类UserRealm完成的，通过继承AuthorizingRealm实现的doGetAuthenticationInfo(AuthenticationToken authenticationToken)方法，其中authenticationToken即为登录时保存的用户数据（用户名和密码）</p>
 <p>3、密码的校验是交给shrio框架完成的</p>
 </blockquote>
-<img src="/.io//image-20210303004459026.png" alt="image-20210303004459026" style="zoom:80%;">
+<img src="/2021/03/02/jwt-shiro/image-20210303004459026.png" alt="image-20210303004459026" style="zoom:80%;">
 
-<img src="/.io//image-20210303004709818.png" alt="image-20210303004709818" style="zoom:80%;">
+<img src="/2021/03/02/jwt-shiro/image-20210303004709818.png" alt="image-20210303004709818" style="zoom:80%;">
 
 <hr>
-<h6 id="6、Shrio整合Mybatis"><a href="#6、Shrio整合Mybatis" class="headerlink" title="6、Shrio整合Mybatis"></a>6、Shrio整合Mybatis</h6><img src="/.io//image-20210303011758473.png" alt="image-20210303011758473" style="zoom:80%;">
+<h6 id="6、Shrio整合Mybatis"><a href="#6、Shrio整合Mybatis" class="headerlink" title="6、Shrio整合Mybatis"></a>6、Shrio整合Mybatis</h6><img src="/2021/03/02/jwt-shiro/image-20210303011758473.png" alt="image-20210303011758473" style="zoom:80%;">
 
 <blockquote>
 <p>shrio里面提供对用户登录密码加密()</p>
 <p>1、md5加密__把密码直接加密；_</p>
 <p>2、md5盐值加密_除了密码还额加一些属性</p>
 </blockquote>
-<img src="/.io//image-20210303021354038.png" alt="image-20210303021354038" style="zoom:80%;">
+<img src="/2021/03/02/jwt-shiro/image-20210303021354038.png" alt="image-20210303021354038" style="zoom:80%;">
 
 <hr>
 <h6 id="7、Shiro请求授权实现"><a href="#7、Shiro请求授权实现" class="headerlink" title="7、Shiro请求授权实现"></a>7、Shiro请求授权实现</h6><blockquote>
@@ -731,9 +731,9 @@ public class UserRealm extends AuthorizingRealm {
 <p>因此每个用户登录成功后根据自己持有的资源（数据库字段）就能够实现不同用户访问不同的页面了（路径）</p>
 <p>因此在数据库里面就要事先确定好某用户具备某资源能访问某页面，授权里面的登录对象需要在认证的时候就得保存，供授权时使用</p>
 </blockquote>
-<img src="/.io//image-20210303025518058.png" alt="image-20210303025518058" style="zoom:80%;">
+<img src="/2021/03/02/jwt-shiro/image-20210303025518058.png" alt="image-20210303025518058" style="zoom:80%;">
 
-<img src="/.io//image-20210303034151095.png" alt="image-20210303034151095" style="zoom:80%;">
+<img src="/2021/03/02/jwt-shiro/image-20210303034151095.png" alt="image-20210303034151095" style="zoom:80%;">
 
 <hr>
 <h6 id="8、Shiro整合Thymeleaf"><a href="#8、Shiro整合Thymeleaf" class="headerlink" title="8、Shiro整合Thymeleaf"></a>8、Shiro整合Thymeleaf</h6><pre class="line-numbers language-xml" data-language="xml"><code class="language-xml"><span class="token comment">&lt;!--Shiro整合Thymeleaf --&gt;</span>
@@ -749,9 +749,9 @@ public ShiroDialect getShiroDialect(){
     return new ShiroDialect();
 }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<img src="/.io//image-20210303041625342.png" alt="image-20210303041625342" style="zoom:80%;">
+<img src="/2021/03/02/jwt-shiro/image-20210303041625342.png" alt="image-20210303041625342" style="zoom:80%;">
 
-<img src="/.io//image-20210303041758116.png" alt="image-20210303041758116" style="zoom:80%;">
+<img src="/2021/03/02/jwt-shiro/image-20210303041758116.png" alt="image-20210303041758116" style="zoom:80%;">
 
 <hr>
 <p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1NE411i7S8?from=search&amp;seid=5679324005303288660">视频</a></p>

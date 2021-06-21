@@ -29,9 +29,9 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0">
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="IQ小王子" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="IQ小王子" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -513,7 +513,7 @@
 <li><p>MyCat可以自动实现<em>写数据时操作主数据库，读数据时操作从数据库</em>，这样能有效地减轻数据库压力，也能减轻IO压力；</p>
 </li>
 <li><p>MyCat实现读写分离，当主出现故障后，会自动切换到另一个主上，从而提供高可用的数据库服务，前提数据库要部署多主多从的模式；</p>
-<img src="/.io//image-20210323213507488.png" alt="image-20210323213507488" style="zoom:80%;"></li>
+<img src="/2021/03/23/mycat-zhi-du-xie-fen-chi-yu-fen-ku-fen-biao/image-20210323213507488.png" alt="image-20210323213507488" style="zoom:80%;"></li>
 <li><p>未用MyCat之间需要我们的java程序手动去确定是读是写，然后去对应上主库和从库，这个过程中如果出现了我是读数据，而操作到了主库，这样就会降低主库的效率；如果出现了我是写数据，而操作到了从库，会引起主从关系脱离，从而导致主从库数据不一致问题；</p>
 </li>
 <li><p>使用MyCat后，MyCat会分析sql语句，判断是读还是写操作，然后对应到主从库上，不会造成主从数据不一致问题；</p>
@@ -539,7 +539,7 @@
 <li>如果垂直拆分的这5个服务器中，有的表数据量很大，那么就要考虑水平拆分，这样一来对应的就是5x20，也就是100个服务器了，对应了100个数据源，这么多数据源都对应了不同的URL，如果就像之前开发那样去连接数据源，就需要写一百个。为了解决这个问题，MyCat就出现了，它是一个很好的数据库中间件，帮助我们拦截这些数据源，MyCat会根据我们要操作的数据库表来分析我们需要的表在那个库中，是读是写，然后进行连接；</li>
 <li><em>通常我们使用垂直拆分以后都是需要程序员分组独立开发，对应到不同的模块，因此基本上不会跨模板访问数据库表；开发一个模块的程序员不会知道另一个模块的账号和密码，其它模块的程序员也不会允许我们这么做，因此实际工作中出现跨模块访问都是使用对方提供的接口来进行访问的</em></li>
 </ol>
-<img src="/.io//MyCat之读写分离与分库分表.png" alt="MyCat之读写分离与分库分表" style="zoom:80%;">
+<img src="/2021/03/23/mycat-zhi-du-xie-fen-chi-yu-fen-ku-fen-biao/MyCat之读写分离与分库分表.png" alt="MyCat之读写分离与分库分表" style="zoom:80%;">
 
 <hr>
 <h2 id="三、安装MyCat"><a href="#三、安装MyCat" class="headerlink" title="三、安装MyCat"></a>三、安装MyCat</h2><h3 id="1、在Linux上搭建MyCat"><a href="#1、在Linux上搭建MyCat" class="headerlink" title="1、在Linux上搭建MyCat"></a>1、在Linux上搭建MyCat</h3><blockquote>
@@ -554,16 +554,16 @@ wget http://www.ohse.de/uwe/releases/lrzsz-0.12.20.tar.gz
 <pre class="line-numbers language-sh" data-language="sh"><code class="language-sh">tar -zxvf Mycat-server-1.6.7.4-release-20200105164103-linux.tar.gz -C /usr/local/<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>3、解压后进入 usr/local 会多出来个MyCat文件</p>
-<img src="/.io//image-20210324211225584.png" alt="image-20210324211225584" style="zoom:80%;">
+<img src="/2021/03/23/mycat-zhi-du-xie-fen-chi-yu-fen-ku-fen-biao/image-20210324211225584.png" alt="image-20210324211225584" style="zoom:80%;">
 
 <p>4、了解以下各文件的作用：</p>
 <ul>
 <li><p>bin：可执行文件的命令目录，bin下面的MyCat文件是启动命令，后面跟start为启动，跟stop为关闭</p>
-<img src="/.io//image-20210324211502078.png" alt="image-20210324211502078" style="zoom:80%;"></li>
+<img src="/2021/03/23/mycat-zhi-du-xie-fen-chi-yu-fen-ku-fen-biao/image-20210324211502078.png" alt="image-20210324211502078" style="zoom:80%;"></li>
 <li><p>conf：配置文件目录，重点关注里面的schema.xml和server.xml,需要用到，把这两个文件次下载到window系统上。命令：sz schema.xml 和 sz server.xml,前提要安装sz下载命令，<a target="_blank" rel="noopener" href="https://blog.51cto.com/rescue/1975119">参考文档</a>;</p>
 <p>rz:上传命令，sz:下载命令，<a target="_blank" rel="noopener" href="https://blog.csdn.net/ruben95001/article/details/55804142">rz和sz软链接的创建参考文档</a></p>
 <p>rule.xml:是一些拆分规则</p>
-<img src="/.io//image-20210324211922141.png" alt="image-20210324211922141" style="zoom:80%;"></li>
+<img src="/2021/03/23/mycat-zhi-du-xie-fen-chi-yu-fen-ku-fen-biao/image-20210324211922141.png" alt="image-20210324211922141" style="zoom:80%;"></li>
 <li><p>logs：存放一些日志信息，MyCat不会报错，一切报错查看logs里面的日志文件</p>
 </li>
 </ul>

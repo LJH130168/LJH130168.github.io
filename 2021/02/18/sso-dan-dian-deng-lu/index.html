@@ -29,9 +29,9 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0">
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="IQ小王子" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="IQ小王子" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -492,23 +492,23 @@
             <div id="articleContent">
                 <hr>
 <h5 id="一、什么是单点登录？"><a href="#一、什么是单点登录？" class="headerlink" title="一、什么是单点登录？"></a>一、什么是单点登录？</h5><p>单点登录简称SSO（Single Sign On） ，列如登录京东官网，点开几个栏目，发现主域名一样(jd.com)，而子域名是不一样的(miaosha.jd.com);在任何一个栏目进行登录再去点开其它的栏目发现也登录了，这就是单点登录。</p>
-<img src="/.io//image-20210218110519430.png" alt="image-20210218110519430" style="zoom:80%;">
+<img src="/2021/02/18/sso-dan-dian-deng-lu/image-20210218110519430.png" alt="image-20210218110519430" style="zoom:80%;">
 
-<img src="/.io//image-20210218110622847.png" alt="image-20210218110622847" style="zoom:80%;">
+<img src="/2021/02/18/sso-dan-dian-deng-lu/image-20210218110622847.png" alt="image-20210218110622847" style="zoom:80%;">
 
-<img src="/.io//image-20210218110739959.png" alt="image-20210218110739959" style="zoom:80%;">
+<img src="/2021/02/18/sso-dan-dian-deng-lu/image-20210218110739959.png" alt="image-20210218110739959" style="zoom:80%;">
 
 <hr>
-<h5 id="二、通过cookie实现SSO"><a href="#二、通过cookie实现SSO" class="headerlink" title="二、通过cookie实现SSO"></a>二、通过cookie实现SSO</h5><img src="/.io//image-20210218111815244.png" alt="image-20210218111815244" style="zoom:80%;">
+<h5 id="二、通过cookie实现SSO"><a href="#二、通过cookie实现SSO" class="headerlink" title="二、通过cookie实现SSO"></a>二、通过cookie实现SSO</h5><img src="/2021/02/18/sso-dan-dian-deng-lu/image-20210218111815244.png" alt="image-20210218111815244" style="zoom:80%;">
 
 <pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">#上面这个需求中，告诉这代码商店有四个子系统，无论在那个系统登录都会跳转到登录系统，完成登陆后向发起登录的子系统写入一个cookie（用来在客户端存取数据的工具），保存用于认证用户是否登录的信息（token），其它的子系统要能访问到这个cookie，在其它子系统向服务器发送请求的时候，携带这个cookie完成登录。前提是：cookie的域要是所有子系统相同的域，这样所有的子系统才能访问得到这个cookie。<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <hr>
-<h5 id="三、编码来实现SSO"><a href="#三、编码来实现SSO" class="headerlink" title="三、编码来实现SSO"></a>三、编码来实现SSO</h5><h6 id="1、基于Gradle实现"><a href="#1、基于Gradle实现" class="headerlink" title="1、基于Gradle实现"></a>1、基于Gradle实现</h6><img src="/.io//image-20210218193558203.png" alt="image-20210218193558203" style="zoom:80%;">
+<h5 id="三、编码来实现SSO"><a href="#三、编码来实现SSO" class="headerlink" title="三、编码来实现SSO"></a>三、编码来实现SSO</h5><h6 id="1、基于Gradle实现"><a href="#1、基于Gradle实现" class="headerlink" title="1、基于Gradle实现"></a>1、基于Gradle实现</h6><img src="/2021/02/18/sso-dan-dian-deng-lu/image-20210218193558203.png" alt="image-20210218193558203" style="zoom:80%;">
 
-<img src="/.io//image-20210218113400543.png" alt="image-20210218113400543" style="zoom:80%;">
+<img src="/2021/02/18/sso-dan-dian-deng-lu/image-20210218113400543.png" alt="image-20210218113400543" style="zoom:80%;">
 
-<h6 id="2、创建sso-use-cookie父模块和sso-main、sso-cart、sso-vip、sso-login四个子模块"><a href="#2、创建sso-use-cookie父模块和sso-main、sso-cart、sso-vip、sso-login四个子模块" class="headerlink" title="2、创建sso-use-cookie父模块和sso-main、sso-cart、sso-vip、sso-login四个子模块"></a>2、创建sso-use-cookie父模块和sso-main、sso-cart、sso-vip、sso-login四个子模块</h6><img src="/.io//image-20210218114648916.png" alt="image-20210218114648916" style="zoom:80%;">
+<h6 id="2、创建sso-use-cookie父模块和sso-main、sso-cart、sso-vip、sso-login四个子模块"><a href="#2、创建sso-use-cookie父模块和sso-main、sso-cart、sso-vip、sso-login四个子模块" class="headerlink" title="2、创建sso-use-cookie父模块和sso-main、sso-cart、sso-vip、sso-login四个子模块"></a>2、创建sso-use-cookie父模块和sso-main、sso-cart、sso-vip、sso-login四个子模块</h6><img src="/2021/02/18/sso-dan-dian-deng-lu/image-20210218114648916.png" alt="image-20210218114648916" style="zoom:80%;">
 
 <h6 id="3、sso-use-cookie"><a href="#3、sso-use-cookie" class="headerlink" title="3、sso-use-cookie"></a>3、sso-use-cookie</h6><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">#在sso-use-cookie父模块下指定Gradle依赖下载地址
 1、指定buildscript优先使用本地本地仓库，再使用maven的中央仓库
@@ -539,11 +539,11 @@ subprojects {
     }
 }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<img src="/.io//image-20210218160204759.png" alt="image-20210218160204759" style="zoom:80%;">
+<img src="/2021/02/18/sso-dan-dian-deng-lu/image-20210218160204759.png" alt="image-20210218160204759" style="zoom:80%;">
 
-<img src="/.io//image-20210218160940046.png" style="zoom:80%;">
+<img src="/2021/02/18/sso-dan-dian-deng-lu/image-20210218160940046.png" style="zoom:80%;">
 
-<img src="/.io//image-20210218162533553.png" alt="image-20210218162533553" style="zoom:80%;">
+<img src="/2021/02/18/sso-dan-dian-deng-lu/image-20210218162533553.png" alt="image-20210218162533553" style="zoom:80%;">
 
 <h6 id="4、sso-login、sso-main、sso-vip、sso-cart"><a href="#4、sso-login、sso-main、sso-vip、sso-cart" class="headerlink" title="4、sso-login、sso-main、sso-vip、sso-cart"></a>4、sso-login、sso-main、sso-vip、sso-cart</h6><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">#步骤
 1、配置sso-login配置文件application.yml和写启动类LoginApp
@@ -555,15 +555,15 @@ subprojects {
 6、启动类LoginApp，访问ViewController中的方法，跳转到登录页面；
 7、同理编写sso-main、sso-vip、sso-cart子模块<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<img src="/.io//image-20210218214812190.png" alt="image-20210218214812190" style="zoom:80%;">
+<img src="/2021/02/18/sso-dan-dian-deng-lu/image-20210218214812190.png" alt="image-20210218214812190" style="zoom:80%;">
 
-<img src="/.io//image-20210218214850335.png" alt="image-20210218214850335" style="zoom:80%;">
+<img src="/2021/02/18/sso-dan-dian-deng-lu/image-20210218214850335.png" alt="image-20210218214850335" style="zoom:80%;">
 
-<img src="/.io//image-20210218221828129.png" alt="image-20210218221828129" style="zoom:80%;">
+<img src="/2021/02/18/sso-dan-dian-deng-lu/image-20210218221828129.png" alt="image-20210218221828129" style="zoom:80%;">
 
-<img src="/.io//image-20210218221902760.png" alt="image-20210218221902760" style="zoom:80%;">
+<img src="/2021/02/18/sso-dan-dian-deng-lu/image-20210218221902760.png" alt="image-20210218221902760" style="zoom:80%;">
 
-<img src="/.io//image-20210218221919961.png" alt="image-20210218221919961" style="zoom:80%;">
+<img src="/2021/02/18/sso-dan-dian-deng-lu/image-20210218221919961.png" alt="image-20210218221919961" style="zoom:80%;">
 
 <h6 id="5、登录"><a href="#5、登录" class="headerlink" title="5、登录"></a>5、登录</h6><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">#步骤：
 1、根据需求把几个系统的IP地址（域名）进行映射；
@@ -575,17 +575,17 @@ subprojects {
     127.0.0.1		vip.lujiahong.com
     127.0.0.1		cart.lujiahong.com<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<img src="/.io//image-20210218225459844.png" style="zoom:80%;">
+<img src="/2021/02/18/sso-dan-dian-deng-lu/image-20210218225459844.png" style="zoom:80%;">
 
 <pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">2、域名映射好后，去ping域名，都可访问成功<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<img src="/.io//image-20210218225052056.png" style="zoom:80%;">
+<img src="/2021/02/18/sso-dan-dian-deng-lu/image-20210218225052056.png" style="zoom:80%;">
 
 <pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">3、配置好域名后在sso-mian、sso-vip、sso-cart系统里面添加登录按钮，实现跳转到登录系统；由于登录成功后要跳转到发起登录的页面，因此登录的时候要带上发起登录页面的域名（IP地址），因此登录跳转连接上要携带这个参数；<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<img src="/.io//image-20210219001252243.png" alt="image-20210219001252243" style="zoom:80%;">
+<img src="/2021/02/18/sso-dan-dian-deng-lu/image-20210219001252243.png" alt="image-20210219001252243" style="zoom:80%;">
 
-<img src="/.io//image-20210218231609854.png" alt="image-20210218231609854" style="zoom:80%;">
+<img src="/2021/02/18/sso-dan-dian-deng-lu/image-20210218231609854.png" alt="image-20210218231609854" style="zoom:80%;">
 
 <pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">4、编写登录页面的业务逻辑（除登录系统登录成功跳转到主页面，其它系统登录成功，跳转到发起登录系统界面），写个工具LoginCache来保存用户信息；<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
@@ -684,17 +684,17 @@ public class LoginCache {
 <h6 id="6、控制登录成功后不许跳转到登录系统页面了"><a href="#6、控制登录成功后不许跳转到登录系统页面了" class="headerlink" title="6、控制登录成功后不许跳转到登录系统页面了"></a>6、控制登录成功后不许跳转到登录系统页面了</h6><blockquote>
 <p>通过cookie来实现，一旦登录了，不管在哪个子系统点登录按钮都不会跳转到登录界面了（前提：1、cookie对象不为空；2、各子系统主域名相同）</p>
 </blockquote>
-<img src="/.io//image-20210219010143348.png" alt="image-20210219010143348" style="zoom:80%;">
+<img src="/2021/02/18/sso-dan-dian-deng-lu/image-20210219010143348.png" alt="image-20210219010143348" style="zoom:80%;">
 
-<img src="/.io//image-20210219010221996.png" alt="image-20210219010221996" style="zoom:80%;">
+<img src="/2021/02/18/sso-dan-dian-deng-lu/image-20210219010221996.png" alt="image-20210219010221996" style="zoom:80%;">
 
-<img src="/.io//image-20210219013010692.png" alt="image-20210219013010692" style="zoom:80%;">
+<img src="/2021/02/18/sso-dan-dian-deng-lu/image-20210219013010692.png" alt="image-20210219013010692" style="zoom:80%;">
 
 <h6 id="7、登录成功后不在展示登录按钮"><a href="#7、登录成功后不在展示登录按钮" class="headerlink" title="7、登录成功后不在展示登录按钮"></a>7、登录成功后不在展示登录按钮</h6><blockquote>
 <p>RestTemplate远程调用，按token获取用户信息；</p>
 <p>thymeleaf来实现按钮的展示与否</p>
 </blockquote>
-<img src="/.io//image-20210219023507940.png" alt="image-20210219023507940" style="zoom:80%;">
+<img src="/2021/02/18/sso-dan-dian-deng-lu/image-20210219023507940.png" alt="image-20210219023507940" style="zoom:80%;">
 
 <pre class="line-numbers language-html" data-language="html"><code class="language-html">#主页thymeleaf的书写
 <span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
@@ -723,9 +723,9 @@ required = false,value = "TOKEN") Cookie cookie？
 <h6 id="8、退出登录"><a href="#8、退出登录" class="headerlink" title="8、退出登录"></a>8、退出登录</h6><blockquote>
 <p>在主页面（sso-main）、vip页面（sso-vip）、购买页面（cart-vip）编写接口，页面上给定跳转链接</p>
 </blockquote>
-<img src="/.io//image-20210219120112490.png" alt="image-20210219120112490" style="zoom:80%;">
+<img src="/2021/02/18/sso-dan-dian-deng-lu/image-20210219120112490.png" alt="image-20210219120112490" style="zoom:80%;">
 
-<img src="/.io//image-20210219120618674.png" alt="image-20210219120618674" style="zoom:80%;">
+<img src="/2021/02/18/sso-dan-dian-deng-lu/image-20210219120618674.png" alt="image-20210219120618674" style="zoom:80%;">
 
 <hr>
 <h5 id="四、测试"><a href="#四、测试" class="headerlink" title="四、测试"></a>四、测试</h5><blockquote>

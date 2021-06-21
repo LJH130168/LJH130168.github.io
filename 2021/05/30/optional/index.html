@@ -29,9 +29,9 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0">
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="IQ小王子" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="IQ小王子" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -722,7 +722,7 @@ public final class Optional&lt;T&gt; {
 <h2 id="四、Optional方法常用实列"><a href="#四、Optional方法常用实列" class="headerlink" title="四、Optional方法常用实列"></a>四、Optional方法常用实列</h2><h3 id="1、Optional-T-value-empty-of-T-value-ofNullable-T-value"><a href="#1、Optional-T-value-empty-of-T-value-ofNullable-T-value" class="headerlink" title="1、Optional(T value),empty(),of(T value),ofNullable(T value)"></a>1、Optional(T value),empty(),of(T value),ofNullable(T value)</h3><blockquote>
 <p>Optional(T value),empty(),of(T value),ofNullable(T value)<br>这四个函数之间具有相关性，因此放在一组进行记忆。<br>先说明一下，Optional(T value)，即构造函数，它是private权限的，不能由外部调用的。其余三个函数是public权限，供我们所调用。<br>那么，Optional的本质，就是内部储存了一个真实的值，在构造的时候，就直接判断其值是否为空</p>
 </blockquote>
-<img src="/.io//image-20210530194617357.png" alt="image-20210530194617357" style="zoom:80%;">
+<img src="/2021/05/30/optional/image-20210530194617357.png" alt="image-20210530194617357" style="zoom:80%;">
 
 
 

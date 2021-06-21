@@ -29,9 +29,9 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0">
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="IQ小王子" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="IQ小王子" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -491,7 +491,7 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <hr>
-<img src="/.io//01/29/mian-shi-bi-wen-hashmap/1.png" class="">
+<img src="/2021/01/29/mian-shi-bi-wen-hashmap/01/29/mian-shi-bi-wen-hashmap/1.png" class="">
 
 <hr>
 <h5 id="一、HashMap底层原理存储原理详解"><a href="#一、HashMap底层原理存储原理详解" class="headerlink" title="一、HashMap底层原理存储原理详解"></a>一、HashMap底层原理存储原理详解</h5><pre class="line-numbers language-basic" data-language="basic"><code class="language-basic">1、键不可重复、值可以重复；底层哈希表；线程不安全；运行key值为null，value也可以为null。
@@ -518,7 +518,7 @@
 JDK1.8之后：数组+链表+红黑树
 1、数组：每个元素存储key、value、hash、next,key和value对应键和值，hash对应key通过hash算法计算得到的hash值，next用来指向数组中有相同下标的元素（分析：假如数组下标为4的位置现在已经有值了，现在又来存一个值，它的key通过hash算法计算出来的下标也为4，那么这个值会替换之前那个值，用next指向所替换的那个值，这时就形成了一个链表结构.如下图；当然查询时候也通过key计算出hash值，hash值取模得到下标，找到位置比较hash值是否相同，相同则返回值，不相同则去判断next为不为null，不为null说明为链表结构、然后再依次去判断每个节点和所查询的节点的hash值是否相同，如果存在返回值，不存在返回null。因此hash是查询作用，next是指向作用）。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
-<img src="/.io//8.png" style="zoom:45.0%;">
+<img src="/2021/01/29/mian-shi-bi-wen-hashmap/8.png" style="zoom:45.0%;">
 
 <pre class="line-numbers language-apl" data-language="apl"><code class="language-apl">2、链表：单向链表和双向链表。
 单向链表（在Java中用Node表示，通过next指向下一个节点。假如现在有三个节点，那么他们的指向关系为：
@@ -531,7 +531,7 @@ n.next.next = new Node("王五")；
 <hr>
 <h5 id="五、HashMap在JDK8新增的红黑树详解"><a href="#五、HashMap在JDK8新增的红黑树详解" class="headerlink" title="五、HashMap在JDK8新增的红黑树详解"></a>五、HashMap在JDK8新增的红黑树详解</h5><pre class="line-numbers language-html" data-language="html"><code class="language-html">JDK8内部数据结构为数组+(链表 或 红黑树)，通过key的hash值计算数据所在数组下标，多个key的hash相同或hash计算的数组下标相同，但是key值不同时，检查节点是否为树节点，是树节点则往树节点添加，如果是普通节点则往链表尾追加Entry，当链表长度大于8时，则将链表转为红黑树。<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<img src="/.io//2.png" style="zoom:33%;">
+<img src="/2021/01/29/mian-shi-bi-wen-hashmap/2.png" style="zoom:33%;">
 
 <p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/814432ed04e8">参考1</a></p>
 <p><a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/inventory/3692">参考2</a></p>
@@ -665,18 +665,18 @@ n.next.next = new Node("王五")；
 <p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/4d1cad21853b">参考1</a></p>
 <p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/1e9cf0ac07f4">参考2</a></p>
 <hr>
-<h5 id="九、集合关系图"><a href="#九、集合关系图" class="headerlink" title="九、集合关系图"></a>九、集合关系图</h5><img src="/.io//7.png" style="zoom:0%;">
+<h5 id="九、集合关系图"><a href="#九、集合关系图" class="headerlink" title="九、集合关系图"></a>九、集合关系图</h5><img src="/2021/01/29/mian-shi-bi-wen-hashmap/7.png" style="zoom:0%;">
 
-<img src="/.io//3.png" style="zoom:0%;">
+<img src="/2021/01/29/mian-shi-bi-wen-hashmap/3.png" style="zoom:0%;">
 
 <p>1、List（ArrayList、Vector 和 LinkedList。）</p>
-<img src="/.io//4.png" style="zoom:0%;">
+<img src="/2021/01/29/mian-shi-bi-wen-hashmap/4.png" style="zoom:0%;">
 
 <p>2、Set（HashSet、LinkHashSet、TreeSet）</p>
-<img src="/.io//5.png" style="zoom:0%;">
+<img src="/2021/01/29/mian-shi-bi-wen-hashmap/5.png" style="zoom:0%;">
 
 <p>3、Map（HashMap、LinkHashMap、HashTable、TreeMap）</p>
-<img src="/.io//6.png" style="zoom:0%;">
+<img src="/2021/01/29/mian-shi-bi-wen-hashmap/6.png" style="zoom:0%;">
 
 <hr>
 <p><a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1fGHjntHoFlbC6uXfj8bq2A">百度云视频资源</a></p>

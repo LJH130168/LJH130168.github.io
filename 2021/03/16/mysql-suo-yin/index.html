@@ -29,9 +29,9 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0">
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="IQ小王子" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="IQ小王子" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -525,15 +525,15 @@
 <p>步骤：</p>
 <ul>
 <li><p>随意点击一个表，右键点击设计表，点击导航栏上的索引，跳出如下界面</p>
-<img src="/.io//image-20210316232148304.png" alt="image-20210316232148304" style="zoom:80%;"></li>
+<img src="/2021/03/16/mysql-suo-yin/image-20210316232148304.png" alt="image-20210316232148304" style="zoom:80%;"></li>
 <li><p>起个索引名，栏位即选择创建索引的字段，索引类型选择默认的Normal，索引方法选择BTREE</p>
-<img src="/.io//image-20210316232421750.png" alt="image-20210316232421750" style="zoom:80%;"></li>
+<img src="/2021/03/16/mysql-suo-yin/image-20210316232421750.png" alt="image-20210316232421750" style="zoom:80%;"></li>
 </ul>
 <h4 id="3、删除索引语法"><a href="#3、删除索引语法" class="headerlink" title="3、删除索引语法"></a>3、删除索引语法</h4><blockquote>
 <p>方法一：DROP INDEX 索引名 on 表名</p>
 <p>方法二：ALTER TABLE 表名 DROP INDEX 索引名</p>
 <p>方法三：用工具</p>
-<img src="/.io//image-20210316233054373.png" alt="image-20210316233054373" style="zoom:80%;">
+<img src="/2021/03/16/mysql-suo-yin/image-20210316233054373.png" alt="image-20210316233054373" style="zoom:80%;">
 </blockquote>
 <hr>
 <h3 id="3、索引的使用"><a href="#3、索引的使用" class="headerlink" title="3、索引的使用"></a>3、索引的使用</h3><blockquote>
@@ -546,9 +546,9 @@
 <li><p>index——没有使用到索引，表示索引全文检索，即扫描所有索引后返回结果查询；</p>
 </li>
 <li><p>ref——使用到索引，表示精准获取某个数据，它会直接到索引中去获取数据；</p>
-<img src="/.io//image-20210316235952498.png" alt="image-20210316235952498" style="zoom:80%;"></li>
+<img src="/2021/03/16/mysql-suo-yin/image-20210316235952498.png" alt="image-20210316235952498" style="zoom:80%;"></li>
 <li><p>range——使用到索引，表示某个范围类使用索引（即where后面使用了运算符，且查询列是索引列，则type就会为range），只扫描了部分索引</p>
-<img src="/.io//image-20210316235825737.png" alt="image-20210316235825737" style="zoom:80%;"></li>
+<img src="/2021/03/16/mysql-suo-yin/image-20210316235825737.png" alt="image-20210316235825737" style="zoom:80%;"></li>
 </ul>
 <p>综上注意：</p>
 <ol>
@@ -574,17 +574,17 @@
 <h3 id="2、红黑树"><a href="#2、红黑树" class="headerlink" title="2、红黑树"></a>2、红黑树</h3><blockquote>
 <p><a target="_blank" rel="noopener" href="http://39.100.208.184/">推介一个好用的数据结构可视化网站</a></p>
 </blockquote>
-<img src="/.io//image-20210317220735880.png" alt="image-20210317220735880" style="zoom:80%;">
+<img src="/2021/03/16/mysql-suo-yin/image-20210317220735880.png" alt="image-20210317220735880" style="zoom:80%;">
 
 <blockquote>
 <p>二叉树结构</p>
 </blockquote>
-<img src="/.io//image-20210317222232931.png" alt="image-20210317222232931" style="zoom:80%;">
+<img src="/2021/03/16/mysql-suo-yin/image-20210317222232931.png" alt="image-20210317222232931" style="zoom:80%;">
 
 <blockquote>
 <p>红黑树结构（平衡二叉树）</p>
 </blockquote>
-<img src="/.io//image-20210317222717734.png" alt="image-20210317222717734" style="zoom:80%;">
+<img src="/2021/03/16/mysql-suo-yin/image-20210317222717734.png" alt="image-20210317222717734" style="zoom:80%;">
 
 
 
@@ -605,7 +605,7 @@
 <li><p>所有的索引元素不重复；</p>
 </li>
 <li><p>节点中的数据索引从左到右递增排列；</p>
-<img src="/.io//image-20210317224052476.png" alt="image-20210317224052476" style="zoom:80%;"></li>
+<img src="/2021/03/16/mysql-suo-yin/image-20210317224052476.png" alt="image-20210317224052476" style="zoom:80%;"></li>
 </ol>
 <blockquote>
 <p>B+tree的结构</p>
@@ -617,10 +617,10 @@
 <li><p>叶子节点包含所有索引字段；</p>
 </li>
 <li><p>叶子节点用指针连接，提高区间访问性能；</p>
-<img src="/.io//image-20210317224521088.png" alt="image-20210317224521088" style="zoom:80%;"></li>
+<img src="/2021/03/16/mysql-suo-yin/image-20210317224521088.png" alt="image-20210317224521088" style="zoom:80%;"></li>
 </ol>
 <hr>
-<h3 id="4、索引如何支撑千万级别的快速查询"><a href="#4、索引如何支撑千万级别的快速查询" class="headerlink" title="4、索引如何支撑千万级别的快速查询"></a>4、索引如何支撑千万级别的快速查询</h3><img src="/.io//image-20210317230708499.png" alt="image-20210317230708499" style="zoom:80%;">
+<h3 id="4、索引如何支撑千万级别的快速查询"><a href="#4、索引如何支撑千万级别的快速查询" class="headerlink" title="4、索引如何支撑千万级别的快速查询"></a>4、索引如何支撑千万级别的快速查询</h3><img src="/2021/03/16/mysql-suo-yin/image-20210317230708499.png" alt="image-20210317230708499" style="zoom:80%;">
 
 <hr>
 <h3 id="5、myisam存储引擎索引"><a href="#5、myisam存储引擎索引" class="headerlink" title="5、myisam存储引擎索引"></a>5、myisam存储引擎索引</h3><p>myisam索引是非聚集索引：</p>
@@ -628,7 +628,7 @@
 <li><p>myisam的索引文件和数据文件是分离的？</p>
 <ol>
 <li><p>首先明白存储引擎是来形容表的，而不是数据库；</p>
-<img src="/.io//image-20210317232424469.png" alt="image-20210317232424469" style="zoom:80%;"></li>
+<img src="/2021/03/16/mysql-suo-yin/image-20210317232424469.png" alt="image-20210317232424469" style="zoom:80%;"></li>
 <li><p>表里面的数据存储是在磁盘上面的；</p>
 </li>
 <li><p>myisam存储在磁盘上对应三个文件（”xxx.frm”,”xxx.MYD”,”xxx.MYI”）</p>
@@ -641,7 +641,7 @@
 </ol>
 </li>
 <li><p>一张图搞清myisam索引结构；</p>
-<img src="/.io//image-20210317233936965.png" alt="image-20210317233936965" style="zoom:80%;">
+<img src="/2021/03/16/mysql-suo-yin/image-20210317233936965.png" alt="image-20210317233936965" style="zoom:80%;">
 
 <p>图片分析：</p>
 <ol>
@@ -657,12 +657,12 @@
 </li>
 </ul>
 <hr>
-<h3 id="6、innodb存储引擎索引"><a href="#6、innodb存储引擎索引" class="headerlink" title="6、innodb存储引擎索引"></a>6、innodb存储引擎索引</h3><img src="/.io//image-20210322202902520.png" alt="image-20210322202902520" style="zoom:80%;">
+<h3 id="6、innodb存储引擎索引"><a href="#6、innodb存储引擎索引" class="headerlink" title="6、innodb存储引擎索引"></a>6、innodb存储引擎索引</h3><img src="/2021/03/16/mysql-suo-yin/image-20210322202902520.png" alt="image-20210322202902520" style="zoom:80%;">
 
 <p>innodb索引是聚集索引：</p>
 <ul>
 <li><p>表数据文件本身就是按B+tree组织的一个结构文件；</p>
-<img src="/.io//image-20210322203755079.png" alt="image-20210322203755079" style="zoom:80%;">
+<img src="/2021/03/16/mysql-suo-yin/image-20210322203755079.png" alt="image-20210322203755079" style="zoom:80%;">
 
 <ol>
 <li>innodb存储在磁盘上对应二个文件（”xxx.frm”,”xxx.ibd”）</li>
@@ -693,36 +693,36 @@
 <p>#搞清联合索引？</p>
 <p>实际上开发的时候采用的都是联合索引比较多，联合索引就是把几个字段放在一起来作为索引，增大查询效率；</p>
 </blockquote>
-<img src="/.io//image-20210322214902264.png" alt="image-20210322214902264" style="zoom:80%;">
+<img src="/2021/03/16/mysql-suo-yin/image-20210322214902264.png" alt="image-20210322214902264" style="zoom:80%;">
 
 <blockquote>
 <p>案列分析</p>
 <p>1、创建一个表，指定三个字段，构成联合索引</p>
-<img src="/.io//image-20210322215320124.png" alt="image-20210322215320124" style="zoom:80%;">
+<img src="/2021/03/16/mysql-suo-yin/image-20210322215320124.png" alt="image-20210322215320124" style="zoom:80%;">
 
 <p>2、权值匹配</p>
-<img src="/.io//image-20210322215444142.png" alt="image-20210322215444142" style="zoom:80%;">
+<img src="/2021/03/16/mysql-suo-yin/image-20210322215444142.png" alt="image-20210322215444142" style="zoom:80%;">
 
 <p>3、最左前缀法则</p>
-<img src="/.io//image-20210322215924354.png" alt="image-20210322215924354" style="zoom:80%;">
+<img src="/2021/03/16/mysql-suo-yin/image-20210322215924354.png" alt="image-20210322215924354" style="zoom:80%;">
 
 <p>4、不在索引列上做任何操作（计算、函数、（自动or手动）类型转换），会导致索引失效而转向全表扫描</p>
-<img src="/.io//image-20210322220620352.png" alt="image-20210322220620352" style="zoom:80%;">
+<img src="/2021/03/16/mysql-suo-yin/image-20210322220620352.png" alt="image-20210322220620352" style="zoom:80%;">
 
 <p>5、不能使用索引中范围右边的列</p>
-<img src="/.io//image-20210322220829716.png" alt="image-20210322220829716" style="zoom:80%;">
+<img src="/2021/03/16/mysql-suo-yin/image-20210322220829716.png" alt="image-20210322220829716" style="zoom:80%;">
 
 <p>6、尽量使用覆盖索引</p>
-<img src="/.io//image-20210322221010558.png" alt="image-20210322221010558" style="zoom:80%;">
+<img src="/2021/03/16/mysql-suo-yin/image-20210322221010558.png" alt="image-20210322221010558" style="zoom:80%;">
 
 <p>7、不使用！=、&lt;&gt;</p>
-<img src="/.io//image-20210322221113827.png" alt="image-20210322221113827" style="zoom:80%;">
+<img src="/2021/03/16/mysql-suo-yin/image-20210322221113827.png" alt="image-20210322221113827" style="zoom:80%;">
 
 <p>8、不使用 is null、is not null</p>
-<img src="/.io//image-20210322221220792.png" alt="image-20210322221220792" style="zoom:80%;">
+<img src="/2021/03/16/mysql-suo-yin/image-20210322221220792.png" alt="image-20210322221220792" style="zoom:80%;">
 
 <p>9、通配符%不应放在开头</p>
-<img src="/.io//image-20210322221437586.png" alt="image-20210322221437586" style="zoom:80%;">
+<img src="/2021/03/16/mysql-suo-yin/image-20210322221437586.png" alt="image-20210322221437586" style="zoom:80%;">
 </blockquote>
 <h3 id=""><a href="#" class="headerlink" title=""></a></h3><hr>
 
