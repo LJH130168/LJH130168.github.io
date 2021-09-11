@@ -6,7 +6,7 @@
   <link href="https://ljh130168.github.io/atom.xml" rel="self"/>
   
   <link href="https://ljh130168.github.io/"/>
-  <updated>2021-07-05T12:18:24.870Z</updated>
+  <updated>2021-09-11T14:57:04.681Z</updated>
   <id>https://ljh130168.github.io/</id>
   
   <author>
@@ -17,15 +17,146 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>线程池</title>
+    <link href="https://ljh130168.github.io/2021/09/11/xian-cheng-chi/"/>
+    <id>https://ljh130168.github.io/2021/09/11/xian-cheng-chi/</id>
+    <published>2021-09-11T13:22:09.000Z</published>
+    <updated>2021-09-11T14:57:04.681Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;​   </summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>threadLocal</title>
+    <link href="https://ljh130168.github.io/2021/09/08/threadlocal/"/>
+    <id>https://ljh130168.github.io/2021/09/08/threadlocal/</id>
+    <published>2021-09-08T12:15:46.000Z</published>
+    <updated>2021-09-11T12:27:17.150Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、初识ThreadLocal&quot;&gt;&lt;a href=&quot;#一、初识ThreadLocal&quot; class=&quot;headerlink&quot; title=&quot;一、初识ThreadLocal&quot;&gt;&lt;/a&gt;一、初识ThreadLocal&lt;/h2&gt;&lt;h3</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>jvm</title>
+    <link href="https://ljh130168.github.io/2021/08/18/jvm/"/>
+    <id>https://ljh130168.github.io/2021/08/18/jvm/</id>
+    <published>2021-08-18T11:44:16.000Z</published>
+    <updated>2021-08-18T15:55:50.563Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;JVM&quot;&gt;&lt;a href=&quot;#JVM&quot; class=&quot;headerlink&quot; title=&quot;JVM&quot;&gt;&lt;/a&gt;JVM&lt;/h2&gt;&lt;hr&gt;
+&lt;h3 id=&quot;一、理论&quot;&gt;&lt;a href=&quot;#一、理论&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="jvm" scheme="https://ljh130168.github.io/tags/jvm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://ljh130168.github.io/2021/07/23/you-guan-zhi-fu-gong-neng-de-shi-xian/"/>
+    <id>https://ljh130168.github.io/2021/07/23/you-guan-zhi-fu-gong-neng-de-shi-xian/</id>
+    <published>2021-07-23T12:26:58.588Z</published>
+    <updated>2021-02-17T13:28:55.651Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;支付宝在线支付接入&quot;&gt;&lt;a href=&quot;#支付宝在线支付接入&quot; class=&quot;headerlink&quot; title=&quot;支付宝在线支付接入&quot;&gt;&lt;/a&gt;支付宝在线支付接入&lt;/h1&gt;&lt;h5 id=&quot;一、支付宝在线支付简介&quot;&gt;&lt;a href=&quot;#一、支付宝在线支付简介&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://ljh130168.github.io/2021/07/23/jian-quan-de-shi-xian/"/>
+    <id>https://ljh130168.github.io/2021/07/23/jian-quan-de-shi-xian/</id>
+    <published>2021-07-23T12:26:58.519Z</published>
+    <updated>2021-01-26T17:16:35.812Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;鉴权的实现方式有哪些？&quot;&gt;&lt;a href=&quot;#鉴权的实现方式有哪些？&quot; class=&quot;headerlink&quot; title=&quot;鉴权的实现方式有哪些？&quot;&gt;&lt;/a&gt;鉴权的实现方式有哪些？&lt;/h1&gt;&lt;h5 id=&quot;方式一：&quot;&gt;&lt;a href=&quot;#方式一：&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://ljh130168.github.io/2021/07/23/zuo-deng-lu-yong-shi-me-zhu-yi-shi-me/"/>
+    <id>https://ljh130168.github.io/2021/07/23/zuo-deng-lu-yong-shi-me-zhu-yi-shi-me/</id>
+    <published>2021-07-23T12:26:58.511Z</published>
+    <updated>2021-01-28T07:53:32.789Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;实现登录验证有哪些方式？&quot;&gt;&lt;a href=&quot;#实现登录验证有哪些方式？&quot; class=&quot;headerlink&quot; title=&quot;实现登录验证有哪些方式？&quot;&gt;&lt;/a&gt;实现登录验证有哪些方式？&lt;/h1&gt;&lt;h5</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>redis之基础</title>
     <link href="https://ljh130168.github.io/2021/07/05/redis-zhi-ji-chu/"/>
     <id>https://ljh130168.github.io/2021/07/05/redis-zhi-ji-chu/</id>
     <published>2021-07-05T12:18:24.000Z</published>
-    <updated>2021-07-05T12:18:24.870Z</updated>
+    <updated>2021-07-05T12:29:48.135Z</updated>
     
     
     
     
+    
+    <category term="redis" scheme="https://ljh130168.github.io/tags/redis/"/>
     
   </entry>
   
@@ -34,7 +165,7 @@
     <link href="https://ljh130168.github.io/2021/06/22/lan-jie-qi-guo-lu-qi-jian-ting-qi/"/>
     <id>https://ljh130168.github.io/2021/06/22/lan-jie-qi-guo-lu-qi-jian-ting-qi/</id>
     <published>2021-06-22T13:41:03.000Z</published>
-    <updated>2021-06-23T15:55:05.604Z</updated>
+    <updated>2021-07-28T14:51:17.358Z</updated>
     
     
       
@@ -324,147 +455,6 @@
     
     
     <category term="mysql" scheme="https://ljh130168.github.io/tags/mysql/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>vue二次学习</title>
-    <link href="https://ljh130168.github.io/2021/03/15/vue-er-ci-xue-xi/"/>
-    <id>https://ljh130168.github.io/2021/03/15/vue-er-ci-xue-xi/</id>
-    <published>2021-03-15T14:01:52.000Z</published>
-    <updated>2021-06-22T16:04:57.548Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;hr&gt;
-&lt;h1 id=&quot;Vue二次学习&quot;&gt;&lt;a href=&quot;#Vue二次学习&quot; class=&quot;headerlink&quot; title=&quot;Vue二次学习&quot;&gt;&lt;/a&gt;Vue&lt;a</summary>
-        
-      
-    
-    
-    
-    
-    <category term="vue" scheme="https://ljh130168.github.io/tags/vue/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ELK</title>
-    <link href="https://ljh130168.github.io/2021/03/09/elk/"/>
-    <id>https://ljh130168.github.io/2021/03/09/elk/</id>
-    <published>2021-03-09T12:59:11.000Z</published>
-    <updated>2021-06-22T16:01:53.356Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Elasticsearch、Logstash-和-Kibana&quot;&gt;&lt;a href=&quot;#Elasticsearch、Logstash-和-Kibana&quot; class=&quot;headerlink&quot; title=&quot;Elasticsearch、Logstash 和</summary>
-        
-      
-    
-    
-    
-    
-    <category term="elk" scheme="https://ljh130168.github.io/tags/elk/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>es</title>
-    <link href="https://ljh130168.github.io/2021/03/09/es/"/>
-    <id>https://ljh130168.github.io/2021/03/09/es/</id>
-    <published>2021-03-09T12:26:17.000Z</published>
-    <updated>2021-06-22T16:01:59.355Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;你了解ElasticSearch吗&quot;&gt;&lt;a href=&quot;#你了解ElasticSearch吗&quot; class=&quot;headerlink&quot; title=&quot;你了解ElasticSearch吗&quot;&gt;&lt;/a&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    
-    <category term="es" scheme="https://ljh130168.github.io/tags/es/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>微信小程序开发</title>
-    <link href="https://ljh130168.github.io/2021/03/06/wei-xin-xiao-cheng-xu-kai-fa/"/>
-    <id>https://ljh130168.github.io/2021/03/06/wei-xin-xiao-cheng-xu-kai-fa/</id>
-    <published>2021-03-05T17:15:48.000Z</published>
-    <updated>2021-06-22T16:01:31.852Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    
-    <category term="工具" scheme="https://ljh130168.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>依赖和配置文件</title>
-    <link href="https://ljh130168.github.io/2021/03/05/yi-lai-he-pei-zhi-wen-jian/"/>
-    <id>https://ljh130168.github.io/2021/03/05/yi-lai-he-pei-zhi-wen-jian/</id>
-    <published>2021-03-05T04:41:04.000Z</published>
-    <updated>2021-06-22T16:01:40.270Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;hr&gt;
-&lt;h1 id=&quot;SpringBoot常用依赖和配置文件&quot;&gt;&lt;a href=&quot;#SpringBoot常用依赖和配置文件&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    
-    <category term="工具" scheme="https://ljh130168.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>vue</title>
-    <link href="https://ljh130168.github.io/2021/03/04/vue/"/>
-    <id>https://ljh130168.github.io/2021/03/04/vue/</id>
-    <published>2021-03-04T10:43:22.000Z</published>
-    <updated>2021-06-22T16:04:52.844Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;hr&gt;
-&lt;h5 id=&quot;一、初识VUE&quot;&gt;&lt;a href=&quot;#一、初识VUE&quot; class=&quot;headerlink&quot; title=&quot;一、初识VUE&quot;&gt;&lt;/a&gt;一、初识&lt;a</summary>
-        
-      
-    
-    
-    
-    
-    <category term="vue" scheme="https://ljh130168.github.io/tags/vue/"/>
     
   </entry>
   
