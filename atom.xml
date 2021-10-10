@@ -6,7 +6,7 @@
   <link href="https://ljh130168.github.io/atom.xml" rel="self"/>
   
   <link href="https://ljh130168.github.io/"/>
-  <updated>2021-09-11T15:18:43.299Z</updated>
+  <updated>2021-10-10T15:41:17.887Z</updated>
   <id>https://ljh130168.github.io/</id>
   
   <author>
@@ -17,11 +17,34 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>timer task</title>
+    <link href="https://ljh130168.github.io/2021/10/10/timer-task/"/>
+    <id>https://ljh130168.github.io/2021/10/10/timer-task/</id>
+    <published>2021-10-10T08:07:18.000Z</published>
+    <updated>2021-10-10T15:41:17.887Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、常见定时任务&quot;&gt;&lt;a href=&quot;#一、常见定时任务&quot; class=&quot;headerlink&quot; title=&quot;一、常见定时任务&quot;&gt;&lt;/a&gt;一、常见定时任务&lt;/h2&gt;&lt;h3 id=&quot;1、创建方式&quot;&gt;&lt;a href=&quot;#1、创建方式&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="timerTask" scheme="https://ljh130168.github.io/tags/timerTask/"/>
+    
+  </entry>
+  
+  <entry>
     <title>线程池</title>
     <link href="https://ljh130168.github.io/2021/09/11/xian-cheng-chi/"/>
     <id>https://ljh130168.github.io/2021/09/11/xian-cheng-chi/</id>
     <published>2021-09-11T13:22:09.000Z</published>
-    <updated>2021-09-11T15:18:43.299Z</updated>
+    <updated>2021-09-14T13:30:05.541Z</updated>
     
     
       
@@ -435,30 +458,6 @@
     
     
     <category term="es" scheme="https://ljh130168.github.io/tags/es/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>mysql索引</title>
-    <link href="https://ljh130168.github.io/2021/03/16/mysql-suo-yin/"/>
-    <id>https://ljh130168.github.io/2021/03/16/mysql-suo-yin/</id>
-    <published>2021-03-16T14:39:33.000Z</published>
-    <updated>2021-06-22T16:04:00.930Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;你真会玩索引？&quot;&gt;&lt;a href=&quot;#你真会玩索引？&quot; class=&quot;headerlink&quot; title=&quot;你真会玩索引？&quot;&gt;&lt;/a&gt;你真会玩索引？&lt;/h1&gt;&lt;hr&gt;
-&lt;h2 id=&quot;一、mysql索引的创建&quot;&gt;&lt;a href=&quot;#一、mysql索引的创建&quot;</summary>
-        
-      
-    
-    
-    
-    
-    <category term="mysql" scheme="https://ljh130168.github.io/tags/mysql/"/>
     
   </entry>
   

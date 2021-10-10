@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="ssm, forever code">
+    <meta name="keywords" content="timer task, forever code">
     <meta name="description" content="I wish to gain all the expectations,and all the losses will be harmiess">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>ssm | IQ小王子</title>
+    <title>timer task | IQ小王子</title>
     <link rel="icon" type="image/jpeg" href="/favicon.jpg">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -313,12 +313,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">ssm</h1>
+                    <h1 class="description center-align post-title">timer task</h1>
                 </div>
             </div>
         </div>
@@ -434,8 +434,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/spring/">
-                                <span class="chip bg-color">spring</span>
+                            <a href="/tags/timerTask/">
+                                <span class="chip bg-color">timerTask</span>
                             </a>
                         
                     </div>
@@ -450,28 +450,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-03-04
+                    2021-10-10
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-06-23
+                    2021-10-10
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    7
+                    770
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    3 分
                 </div>
                 
 
@@ -494,9 +494,115 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <hr>
-<hr>
-<p><a target="_blank" rel="noopener" href="https://huke88.com/course/51016.html?pageType=1&amp;key=ssm&amp;identify=1614794092">你真的了解SSM吗？</a></p>
+                <h2 id="一、常见定时任务"><a href="#一、常见定时任务" class="headerlink" title="一、常见定时任务"></a>一、常见定时任务</h2><h3 id="1、创建方式"><a href="#1、创建方式" class="headerlink" title="1、创建方式"></a>1、创建方式</h3><blockquote>
+<ol>
+<li>使用线程创建</li>
+<li>使用TimerTask创建</li>
+<li>使用线程池创建</li>
+<li>使用Quartz创建</li>
+<li>使用springboot的@Scheduled注解</li>
+</ol>
+</blockquote>
+<h3 id="2、线程创建"><a href="#2、线程创建" class="headerlink" title="2、线程创建"></a>2、线程创建</h3><pre class="line-numbers language-java" data-language="java"><code class="language-java">public class CreatByThread {
+    private static int count = 0;
+    private static void timerTask(){
+        Runnable runnable = new Runnable() {
+            @SneakyThrows
+            @Override
+            public void run() {
+                while (true){
+                    Thread.sleep(1000);
+                    count++;
+                    System.err.println(count);
+                }
+            }
+        };
+        Thread thread = new Thread(runnable);
+        thread.start();
+    }
+    public static void main(String[] args) {
+        timerTask();//原生写法
+        new Thread(()-&gt;{//lambda表达式
+            while (true){
+                try {
+                    Thread.sleep(1000);
+                    count++;
+                    System.out.println(count);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }).start();
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="3、TimerTask创建"><a href="#3、TimerTask创建" class="headerlink" title="3、TimerTask创建"></a>3、TimerTask创建</h3><img src="/2021/10/10/timer-task/image-20211010233009749.png" alt="image-20211010233009749" style="zoom:80%;">
+
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/xieyuooo/article/details/8607220/"><strong>原文转载</strong></a></p>
+<pre class="line-numbers language-http" data-language="http"><code class="language-http">https://blog.csdn.net/xieyuooo/article/details/8607220/<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<blockquote>
+<ol>
+<li><p>首先要明白：Timer是一个调度器，TimerTask只是一个实现了run方法的一个类（需要自己来实现）</p>
+</li>
+<li><p>Timer和TimerTask的组合是一个单线程，如果创建多线程会使用：Executor.newScheduledThreadPool</p>
+</li>
+<li><p>常见的Timer类中的方法：</p>
+<ul>
+<li><p>```java<br>#调度一个task，经过dealy(ms)后开始调度，仅仅调度一次</p>
+<pre><code>public void schedule(TimerTask task,long delay)
+</code></pre>
+<pre class="line-numbers language-none"><code class="language-none">
+- ```java
+  #调度一个task，在指定的时间点time上调度一次
+      public void schedule(timertask task,Date t)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li><p>```java<br>#调度一个task，在dealy(ms)后开始调度，每次调度完后，最少等待period(ms)后才开始调度</p>
+<pre><code>public void schedule(TimerTask task,long delay,long period)
+</code></pre>
+<pre class="line-numbers language-none"><code class="language-none">
+- ```java
+  #和上一个方法类似，唯一区别就是传入的第二个参数为第一次调度的时间
+  	public void schedule(TimerTask task,Date firstTime,long period)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li><p>```java<br>#调度一个task，在delay(ms)后开始调度，然后经过period(ms)再次调度，似乎和第三个方法类似，但不然，区别：<br>#1、schedule在计算下一次执行时间的时候，是通过当前时间（在任务执行前得到）+时间片；<br>#2、scheduleAtFixedRate方法是通过当前需要执行的时间（也就是现在需要执行的时间）+时间片；<br>#3、schedule是运行时的实际时间，而scheduleAtFixedRate是理论时间。例如：schedule的时间片是5s，那么理论会在5、10、15、20这些时间片被调度，但如果由于某些cpu征用导致未调度，假如等到8s才被调度一次，那么schedule方法计算出来的下一次调度时间应该是13s,而不是10s，这样有可能下次越到20s后而被少调度一次或多次；而scheduleAtFixedRate就是每次理论计算出下一次需要调度的时间用以排序，若第8s被调度了，那么计算出应该是第10s，所以它距离当前时间是2s，那么在调度队列排序中，会优先调度；<br>#4、scheduleAtFixedRate可以减少漏调度的情况；</p>
+<pre><code>public void scheduleAtFixedRate(TimerTask timer,long delay,long period)
+</code></pre>
+<pre class="line-numbers language-none"><code class="language-none">
+- ```java
+  #方法和上一个方法类似，唯一的区别是第一次调度的时间设置为Date，而不是当前时间的一个时间片
+  	public void scheduleAtFixedRate(TimerTask timer,Date firstTime,long period)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></li>
+</ul>
+</li>
+</ol>
+</blockquote>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">public class CreatByTimerTask {
+    private static int count = 0;
+    private static void timerTask(){
+        TimerTask timerTask = new TimerTask() {
+            @SneakyThrows
+            @Override
+            public void run() {
+                Thread.sleep(1000);
+                count++;
+                System.err.println(count);
+            }
+        };
+        Timer timer = new Timer();
+        timer.schedule(timerTask,0,1000);//每秒调度一次
+    }
+    public static void main(String[] args) {
+        timerTask();//原生写法
+        new Timer().schedule(new TimerTask() {
+            @SneakyThrows
+            @Override
+            public void run() {
+                Thread.sleep(1000);
+                count++;
+                System.out.println(count);
+            }
+        },0,1000);
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
 
                 
             </div>
@@ -523,7 +629,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://ljh130168.github.io/2021/03/04/ssm/">https://ljh130168.github.io/2021/03/04/ssm/</a>
+                    <a href="https://ljh130168.github.io/2021/10/10/timer-task/">https://ljh130168.github.io/2021/10/10/timer-task/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -561,8 +667,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/spring/">
-                                    <span class="chip bg-color">spring</span>
+                                <a href="/tags/timerTask/">
+                                    <span class="chip bg-color">timerTask</span>
                                 </a>
                             
                         </div>
@@ -734,17 +840,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021/03/04/springboot/">
+                <a href="/2021/10/10/timer-task/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="SpringBoot">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="timer task">
                         
-                        <span class="card-title">SpringBoot</span>
+                        <span class="card-title">timer task</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -754,9 +861,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-03-04
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-10-10
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -765,11 +872,12 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/spring/">
-                        <span class="chip bg-color">spring</span>
+                    <a href="/tags/timerTask/">
+                        <span class="chip bg-color">timerTask</span>
                     </a>
                     
                 </div>
@@ -783,13 +891,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/03/03/svn-he-git/">
+                <a href="/2021/09/11/xian-cheng-chi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="SVN和GIT">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="线程池">
                         
-                        <span class="card-title">SVN和GIT</span>
+                        <span class="card-title">线程池</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -800,7 +908,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-03
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-11
                             </span>
                         <span class="publish-author">
                             
@@ -813,8 +921,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/git/">
-                        <span class="chip bg-color">git</span>
+                    <a href="/tags/Thread/">
+                        <span class="chip bg-color">Thread</span>
                     </a>
                     
                 </div>
