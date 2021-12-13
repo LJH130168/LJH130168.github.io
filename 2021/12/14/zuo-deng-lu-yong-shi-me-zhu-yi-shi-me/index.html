@@ -446,7 +446,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-07-23
+                    2021-12-14
                 </div>
                 
 
@@ -491,7 +491,7 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h1 id="实现登录验证有哪些方式？"><a href="#实现登录验证有哪些方式？" class="headerlink" title="实现登录验证有哪些方式？"></a>实现登录验证有哪些方式？</h1><h5 id="方式一：基于WebFilter过滤器和Session存取登录信息"><a href="#方式一：基于WebFilter过滤器和Session存取登录信息" class="headerlink" title="方式一：基于WebFilter过滤器和Session存取登录信息"></a>方式一：基于WebFilter过滤器和Session存取登录信息</h5><p>流程：1、登录成功后，把用户信息存入Session；2、下次同一个会话获取Session里面的值，如果为空，表明为未登录，不能访问主页面，否则可以；3、通过过滤器来实现登录页面的跳转；4、配置拦截请求URL可以通过注解和XML配置。</p>
-<p><img src="/2021/07/23/zuo-deng-lu-yong-shi-me-zhu-yi-shi-me/Users\Administrator\Desktop\新建文件夹\登录\QQ截图20210126203237.png"></p>
+<p><img src="/2021/12/14/zuo-deng-lu-yong-shi-me-zhu-yi-shi-me/Users\Administrator\Desktop\新建文件夹\登录\QQ截图20210126203237.png"></p>
 <p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1UZ4y1T7Zz?from=search&amp;seid=15762006014215146726">参考视频</a></p>
 <hr>
 <h5 id="方式二：登录、注册、短信验证"><a href="#方式二：登录、注册、短信验证" class="headerlink" title="方式二：登录、注册、短信验证"></a>方式二：登录、注册、短信验证</h5><p>过程：1、发送一个电话号码到后端；2、后端随机生成一个验证码放入Redis中；3、调用短信接口（用的阿里云的，可免费用三个月）发送到用户手机；4、逻辑参考发送短信工具类SendSMSUtil；5、发送手机验证码和校验验证码参考控制层SmsCtroller。</p>
@@ -512,7 +512,7 @@
 <p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1yV41187Y3?from=search&amp;seid=15762006014215146726">参考视频</a></p>
 <hr>
 <h5 id="方式三：登录、注册、邮箱验证"><a href="#方式三：登录、注册、邮箱验证" class="headerlink" title="方式三：登录、注册、邮箱验证"></a>方式三：登录、注册、邮箱验证</h5><p>过程：1、相比于短信验证不要钱；2、在QQ邮箱设置配置（设置-&gt;账户-&gt;开启服务-&gt;点击生成授权码-&gt;yml里面写上授权码）；3、源码实现单人、多人邮件发送，以及邮件带附件</p>
-<p><img src="/2021/07/23/zuo-deng-lu-yong-shi-me-zhu-yi-shi-me/Users\Administrator\Desktop\新建文件夹\登录\QQ截图20210126222053.png"></p>
+<p><img src="/2021/12/14/zuo-deng-lu-yong-shi-me-zhu-yi-shi-me/Users\Administrator\Desktop\新建文件夹\登录\QQ截图20210126222053.png"></p>
 <pre class="line-numbers language-java" data-language="java"><code class="language-java">&lt;!--邮箱依赖--&gt;
   &lt;dependency&gt;
       &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
@@ -603,7 +603,7 @@ String s = strings[new Random().nextInt(strings.length)];
 	}
 }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="/2021/07/23/zuo-deng-lu-yong-shi-me-zhu-yi-shi-me/Users\Administrator\Desktop\新建文件夹\登录\QQ截图20210127005403.png" alt="通过此代码生成的图形验证码结果"></p>
+<p><img src="/2021/12/14/zuo-deng-lu-yong-shi-me-zhu-yi-shi-me/Users\Administrator\Desktop\新建文件夹\登录\QQ截图20210127005403.png" alt="通过此代码生成的图形验证码结果"></p>
 <p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV17y4y1v7fo?from=search&amp;seid=6845943369233368571">参考视频</a></p>
 <p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/66eaUgyge_soLvDDYktJtA">滑动验证码教程</a></p>
 
@@ -632,7 +632,7 @@ String s = strings[new Random().nextInt(strings.length)];
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://ljh130168.github.io/2021/07/23/zuo-deng-lu-yong-shi-me-zhu-yi-shi-me/">https://ljh130168.github.io/2021/07/23/zuo-deng-lu-yong-shi-me-zhu-yi-shi-me/</a>
+                    <a href="https://ljh130168.github.io/2021/12/14/zuo-deng-lu-yong-shi-me-zhu-yi-shi-me/">https://ljh130168.github.io/2021/12/14/zuo-deng-lu-yong-shi-me-zhu-yi-shi-me/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -843,13 +843,13 @@ String s = strings[new Random().nextInt(strings.length)];
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/07/23/jian-quan-de-shi-xian/">
+                <a href="/2021/12/14/ru-he-sheng-cheng-er-wei-ma/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="如何生成二维码？">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">如何生成二维码？</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -860,7 +860,7 @@ String s = strings[new Random().nextInt(strings.length)];
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-07-23
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-12-14
                         </span>
                         <span class="publish-author">
                             
@@ -869,6 +869,14 @@ String s = strings[new Random().nextInt(strings.length)];
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%B7%A5%E5%85%B7/">
+                        <span class="chip bg-color">工具</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -880,13 +888,13 @@ String s = strings[new Random().nextInt(strings.length)];
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/07/05/redis-zhi-ji-chu/">
+                <a href="/2021/12/14/shi-yong-hexo-da-jian-yi-ge-shu-yu-zi-ji-de-bo-ke-ji-yu-windows/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="redis之基础">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="使用Hexo搭建一个属于自己的博客">
                         
-                        <span class="card-title">redis之基础</span>
+                        <span class="card-title">使用Hexo搭建一个属于自己的博客</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -897,7 +905,7 @@ String s = strings[new Random().nextInt(strings.length)];
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-05
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-14
                             </span>
                         <span class="publish-author">
                             
@@ -910,8 +918,8 @@ String s = strings[new Random().nextInt(strings.length)];
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/redis/">
-                        <span class="chip bg-color">redis</span>
+                    <a href="/tags/hexo/">
+                        <span class="chip bg-color">hexo</span>
                     </a>
                     
                 </div>
@@ -1116,7 +1124,7 @@ String s = strings[new Random().nextInt(strings.length)];
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">71.9k</span>
+                        class="white-color">72.8k</span>
             
             
             

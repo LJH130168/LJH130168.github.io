@@ -457,21 +457,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-10-10
+                    2021-10-12
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    770
+                    1.4k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    6 分
                 </div>
                 
 
@@ -494,7 +494,10 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="一、常见定时任务"><a href="#一、常见定时任务" class="headerlink" title="一、常见定时任务"></a>一、常见定时任务</h2><h3 id="1、创建方式"><a href="#1、创建方式" class="headerlink" title="1、创建方式"></a>1、创建方式</h3><blockquote>
+                <h2 id="一、常见定时任务"><a href="#一、常见定时任务" class="headerlink" title="一、常见定时任务"></a>一、常见定时任务</h2><p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/9GRxBCpeDss-llecrwo-lw"><strong>原文转载</strong></a></p>
+<pre class="line-numbers language-http" data-language="http"><code class="language-http">https://mp.weixin.qq.com/s/9GRxBCpeDss-llecrwo-lw<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="1、创建方式"><a href="#1、创建方式" class="headerlink" title="1、创建方式"></a>1、创建方式</h3><blockquote>
 <ol>
 <li>使用线程创建</li>
 <li>使用TimerTask创建</li>
@@ -603,6 +606,121 @@
     }
 }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
+<h3 id="4、使用线程池创建"><a href="#4、使用线程池创建" class="headerlink" title="4、使用线程池创建"></a>4、使用线程池创建</h3><pre class="line-numbers language-java" data-language="java"><code class="language-java">public class CreatByThreadPool {
+    private static int count = 0;
+    private static void timerTask(){
+        Runnable runnable = new Runnable() {
+            @Override
+            public void run() {
+                count++;
+                System.err.println(count);
+            }
+        };
+        ScheduledExecutorService service = Executors.newSingleThreadScheduledExecutor();
+        //第二个参数为首次执行的延迟时间，第三个参数为定时执行的间隔时间
+        service.scheduleAtFixedRate(runnable,1,1, TimeUnit.SECONDS);
+    }
+    public static void main(String[] args) {
+        timerTask();
+        Executors.newSingleThreadScheduledExecutor().scheduleAtFixedRate(()-&gt;{
+            count++;
+            System.out.println(count);
+        },1,1,TimeUnit.SECONDS);
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="5、使用Quartz创建"><a href="#5、使用Quartz创建" class="headerlink" title="5、使用Quartz创建"></a>5、使用Quartz创建</h3><ol>
+<li><p>maven依赖</p>
+<pre class="line-numbers language-xml" data-language="xml"><code class="language-xml"><span class="token comment">&lt;!--Quartz--&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">&gt;</span></span>org.quartz-scheduler<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">&gt;</span></span>quartz<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>version</span><span class="token punctuation">&gt;</span></span>2.2.1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>version</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">&gt;</span></span>org.quartz-scheduler<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">&gt;</span></span>quartz-jobs<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>version</span><span class="token punctuation">&gt;</span></span>2.2.1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>version</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li><p>实现了Quratz框架接口的类</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@Service
+public class QuartzServiceImpl implements Job {
+    @Override
+    public void execute(JobExecutionContext jobExecutionContext) throws JobExecutionException {
+        System.err.println("this is a quartz method , now time:"+new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()));
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li><p>启动类</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">public class creatByQuartz {
+    private static void timerTask() throws SchedulerException {
+        //1、创建scheduler的工厂
+        StdSchedulerFactory factory = new StdSchedulerFactory();
+        //2、从工厂中获取调度器实列
+        Scheduler scheduler = factory.getScheduler();
+        //3、创建JobDetail
+        JobDetail job = JobBuilder.newJob(QuartzServiceImpl.class)
+                //job描述
+                .withDescription("this is a quartz job")
+                //job的name和group
+                .withIdentity("quartzJob", "quartzGroup")
+                .build();
+        //任务运行的时间，simpleSchedule类型触发器有效，3秒后启动任务
+        long time = System.currentTimeMillis()+3*1000L;
+        Date statTime = new Date(time);
+        //4、创建Trigger（使用SimpleScheduleBuilder或者CronScheduleBuilder）
+        CronTrigger trigger = TriggerBuilder.newTrigger()
+                .withDescription("this is trigger")
+                .withIdentity("quartzTrigger", "quartzTriggerGroup")
+//                .withSchedule(SimpleScheduleBuilder.simpleSchedule())
+                .withSchedule(CronScheduleBuilder.cronSchedule("0/2 * * * * ?"))//两秒执行一次，采用cron表达式
+                .startAt(statTime)//默认当前时间启动
+                .build();
+        //5、注册任务和定时器
+        scheduler.scheduleJob(job,trigger);
+        //6、启动调度器
+        scheduler.start();
+    }
+    public static void main(String[] args) throws SchedulerException {
+        timerTask();
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+</ol>
+<h4 id="1、Quartz相关builder"><a href="#1、Quartz相关builder" class="headerlink" title="1、Quartz相关builder"></a>1、Quartz相关builder</h4><pre class="line-numbers language-none"><code class="language-none">https://blog.csdn.net/yjltx1234csdn/article/details/105846493
+https://www.cnblogs.com/sunset-red/p/13794009.html<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h3 id="6、springboot的-Scheduled注解"><a href="#6、springboot的-Scheduled注解" class="headerlink" title="6、springboot的@Scheduled注解"></a>6、springboot的@Scheduled注解</h3><ol>
+<li><p>在启动类上添加注解：@EnableScheduling</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@Slf4j
+@SpringBootApplication(exclude = DataSourceAutoConfiguration.class)//排除连接数据库
+@EnableAspectJAutoProxy(proxyTargetClass = true)
+@EnableScheduling //开启定时任务
+public class IdempotencyApplication {
+    public static void main(String[] args) throws UnknownHostException {
+        ConfigurableApplicationContext applicationContext = SpringApplication.run(IdempotencyApplication.class, args);
+        ConfigurableEnvironment env = applicationContext.getEnvironment();
+        String ip = Inet6Address.getLocalHost().getHostAddress();
+        String port = env.getProperty("server.port");
+        String path = env.getProperty("server.servlet.context-path");
+        log.info("----------------------------------\r\n{}","http://".concat(ip).concat(":").concat(port+path));
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li><p>用注解：@Scheduled标识定时任务方法</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@Configuration
+@Component
+public class CreatByScheduled {
+//    @Scheduled(cron = "0/5 * * * * ?")//采用cron表达式执行一次定时任务
+    @Scheduled(fixedRate = 5000)//指定时间5s执行一次定时任务
+    public static void timerTask(){
+        System.err.println("this is a timerTask:"+ LocalDate.now());
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li><p>项目启动后，定时任务执行</p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/hu_dongyang/article/details/114270232">cron表达式说明</a></p>
+<pre class="line-numbers language-http" data-language="http"><code class="language-http">https://blog.csdn.net/hu_dongyang/article/details/114270232<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+<li><p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/c7492aeb35a1">springboot使用@Scheduled</a></p>
+<pre class="line-numbers language-http" data-language="http"><code class="language-http">https://www.jianshu.com/p/c7492aeb35a1<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+</ol>
 
                 
             </div>
@@ -840,18 +958,17 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/10/10/timer-task/">
+                <a href="/2021/10/31/neo4j/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="timer task">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="neo4j">
                         
-                        <span class="card-title">timer task</span>
+                        <span class="card-title">neo4j</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -861,9 +978,9 @@
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-10-10
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-10-31
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -872,12 +989,11 @@
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/timerTask/">
-                        <span class="chip bg-color">timerTask</span>
+                    <a href="/tags/nosql/">
+                        <span class="chip bg-color">nosql</span>
                     </a>
                     
                 </div>
@@ -1127,7 +1243,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">71.9k</span>
+                        class="white-color">72.8k</span>
             
             
             

@@ -6,7 +6,7 @@
   <link href="https://ljh130168.github.io/atom.xml" rel="self"/>
   
   <link href="https://ljh130168.github.io/"/>
-  <updated>2021-10-10T15:41:17.887Z</updated>
+  <updated>2021-01-26T17:16:35.812Z</updated>
   <id>https://ljh130168.github.io/</id>
   
   <author>
@@ -17,18 +17,173 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title></title>
+    <link href="https://ljh130168.github.io/2021/12/14/jian-quan-de-shi-xian/"/>
+    <id>https://ljh130168.github.io/2021/12/14/jian-quan-de-shi-xian/</id>
+    <published>2021-12-13T16:53:44.429Z</published>
+    <updated>2021-01-26T17:16:35.812Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;鉴权的实现方式有哪些？&quot;&gt;&lt;a href=&quot;#鉴权的实现方式有哪些？&quot; class=&quot;headerlink&quot; title=&quot;鉴权的实现方式有哪些？&quot;&gt;&lt;/a&gt;鉴权的实现方式有哪些？&lt;/h1&gt;&lt;h5 id=&quot;方式一：&quot;&gt;&lt;a href=&quot;#方式一：&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://ljh130168.github.io/2021/12/14/you-guan-zhi-fu-gong-neng-de-shi-xian/"/>
+    <id>https://ljh130168.github.io/2021/12/14/you-guan-zhi-fu-gong-neng-de-shi-xian/</id>
+    <published>2021-12-13T16:53:44.419Z</published>
+    <updated>2021-02-17T13:28:55.651Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;支付宝在线支付接入&quot;&gt;&lt;a href=&quot;#支付宝在线支付接入&quot; class=&quot;headerlink&quot; title=&quot;支付宝在线支付接入&quot;&gt;&lt;/a&gt;支付宝在线支付接入&lt;/h1&gt;&lt;h5 id=&quot;一、支付宝在线支付简介&quot;&gt;&lt;a href=&quot;#一、支付宝在线支付简介&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>如何生成二维码？</title>
+    <link href="https://ljh130168.github.io/2021/12/14/ru-he-sheng-cheng-er-wei-ma/"/>
+    <id>https://ljh130168.github.io/2021/12/14/ru-he-sheng-cheng-er-wei-ma/</id>
+    <published>2021-12-13T16:53:44.301Z</published>
+    <updated>2021-06-22T16:00:45.962Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;hr&gt;
+&lt;h5 id=&quot;一、关于扫一扫二维码登录？关于支付端的二维码？关于扫二维码添加好友？&quot;&gt;&lt;a href=&quot;#一、关于扫一扫二维码登录？关于支付端的二维码？关于扫二维码添加好友？&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="工具" scheme="https://ljh130168.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://ljh130168.github.io/2021/12/14/zuo-deng-lu-yong-shi-me-zhu-yi-shi-me/"/>
+    <id>https://ljh130168.github.io/2021/12/14/zuo-deng-lu-yong-shi-me-zhu-yi-shi-me/</id>
+    <published>2021-12-13T16:53:44.297Z</published>
+    <updated>2021-01-28T07:53:32.789Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;实现登录验证有哪些方式？&quot;&gt;&lt;a href=&quot;#实现登录验证有哪些方式？&quot; class=&quot;headerlink&quot; title=&quot;实现登录验证有哪些方式？&quot;&gt;&lt;/a&gt;实现登录验证有哪些方式？&lt;/h1&gt;&lt;h5</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>使用Hexo搭建一个属于自己的博客</title>
+    <link href="https://ljh130168.github.io/2021/12/14/shi-yong-hexo-da-jian-yi-ge-shu-yu-zi-ji-de-bo-ke-ji-yu-windows/"/>
+    <id>https://ljh130168.github.io/2021/12/14/shi-yong-hexo-da-jian-yi-ge-shu-yu-zi-ji-de-bo-ke-ji-yu-windows/</id>
+    <published>2021-12-13T16:53:44.288Z</published>
+    <updated>2021-12-13T12:54:53.659Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;hr&gt;
+&lt;h5 id=&quot;一、博客的创建&quot;&gt;&lt;a href=&quot;#一、博客的创建&quot; class=&quot;headerlink&quot; title=&quot;一、博客的创建&quot;&gt;&lt;/a&gt;一、博客的创建&lt;/h5&gt;&lt;pre class=&quot;line-numbers language-text&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="hexo" scheme="https://ljh130168.github.io/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://ljh130168.github.io/2021/12/14/hello-world/"/>
+    <id>https://ljh130168.github.io/2021/12/14/hello-world/</id>
+    <published>2021-12-13T16:53:43.969Z</published>
+    <updated>2021-01-27T09:45:39.485Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>neo4j</title>
+    <link href="https://ljh130168.github.io/2021/10/31/neo4j/"/>
+    <id>https://ljh130168.github.io/2021/10/31/neo4j/</id>
+    <published>2021-10-31T11:26:43.000Z</published>
+    <updated>2021-12-13T16:59:06.917Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、入门neo4j&quot;&gt;&lt;a href=&quot;#一、入门neo4j&quot; class=&quot;headerlink&quot; title=&quot;一、入门neo4j&quot;&gt;&lt;/a&gt;一、入门neo4j&lt;/h2&gt;&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="nosql" scheme="https://ljh130168.github.io/tags/nosql/"/>
+    
+  </entry>
+  
+  <entry>
     <title>timer task</title>
     <link href="https://ljh130168.github.io/2021/10/10/timer-task/"/>
     <id>https://ljh130168.github.io/2021/10/10/timer-task/</id>
     <published>2021-10-10T08:07:18.000Z</published>
-    <updated>2021-10-10T15:41:17.887Z</updated>
+    <updated>2021-10-12T13:34:05.465Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;一、常见定时任务&quot;&gt;&lt;a href=&quot;#一、常见定时任务&quot; class=&quot;headerlink&quot; title=&quot;一、常见定时任务&quot;&gt;&lt;/a&gt;一、常见定时任务&lt;/h2&gt;&lt;h3 id=&quot;1、创建方式&quot;&gt;&lt;a href=&quot;#1、创建方式&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;一、常见定时任务&quot;&gt;&lt;a href=&quot;#一、常见定时任务&quot; class=&quot;headerlink&quot; title=&quot;一、常见定时任务&quot;&gt;&lt;/a&gt;一、常见定时任务&lt;/h2&gt;&lt;p&gt;&lt;a</summary>
         
       
     
@@ -110,69 +265,6 @@
   </entry>
   
   <entry>
-    <title></title>
-    <link href="https://ljh130168.github.io/2021/07/23/you-guan-zhi-fu-gong-neng-de-shi-xian/"/>
-    <id>https://ljh130168.github.io/2021/07/23/you-guan-zhi-fu-gong-neng-de-shi-xian/</id>
-    <published>2021-07-23T12:26:58.588Z</published>
-    <updated>2021-02-17T13:28:55.651Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;支付宝在线支付接入&quot;&gt;&lt;a href=&quot;#支付宝在线支付接入&quot; class=&quot;headerlink&quot; title=&quot;支付宝在线支付接入&quot;&gt;&lt;/a&gt;支付宝在线支付接入&lt;/h1&gt;&lt;h5 id=&quot;一、支付宝在线支付简介&quot;&gt;&lt;a href=&quot;#一、支付宝在线支付简介&quot;</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://ljh130168.github.io/2021/07/23/jian-quan-de-shi-xian/"/>
-    <id>https://ljh130168.github.io/2021/07/23/jian-quan-de-shi-xian/</id>
-    <published>2021-07-23T12:26:58.519Z</published>
-    <updated>2021-01-26T17:16:35.812Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;鉴权的实现方式有哪些？&quot;&gt;&lt;a href=&quot;#鉴权的实现方式有哪些？&quot; class=&quot;headerlink&quot; title=&quot;鉴权的实现方式有哪些？&quot;&gt;&lt;/a&gt;鉴权的实现方式有哪些？&lt;/h1&gt;&lt;h5 id=&quot;方式一：&quot;&gt;&lt;a href=&quot;#方式一：&quot;</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://ljh130168.github.io/2021/07/23/zuo-deng-lu-yong-shi-me-zhu-yi-shi-me/"/>
-    <id>https://ljh130168.github.io/2021/07/23/zuo-deng-lu-yong-shi-me-zhu-yi-shi-me/</id>
-    <published>2021-07-23T12:26:58.511Z</published>
-    <updated>2021-01-28T07:53:32.789Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;实现登录验证有哪些方式？&quot;&gt;&lt;a href=&quot;#实现登录验证有哪些方式？&quot; class=&quot;headerlink&quot; title=&quot;实现登录验证有哪些方式？&quot;&gt;&lt;/a&gt;实现登录验证有哪些方式？&lt;/h1&gt;&lt;h5</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>redis之基础</title>
     <link href="https://ljh130168.github.io/2021/07/05/redis-zhi-ji-chu/"/>
     <id>https://ljh130168.github.io/2021/07/05/redis-zhi-ji-chu/</id>
@@ -200,75 +292,6 @@
         
         
     <summary type="html">&lt;h2 id=&quot;过滤器、拦截器、监听器&quot;&gt;&lt;a href=&quot;#过滤器、拦截器、监听器&quot; class=&quot;headerlink&quot; title=&quot;过滤器、拦截器、监听器&quot;&gt;&lt;/a&gt;过滤器、拦截器、监听器&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>如何生成二维码？</title>
-    <link href="https://ljh130168.github.io/2021/06/21/ru-he-sheng-cheng-er-wei-ma/"/>
-    <id>https://ljh130168.github.io/2021/06/21/ru-he-sheng-cheng-er-wei-ma/</id>
-    <published>2021-06-20T18:14:10.845Z</published>
-    <updated>2021-06-22T16:00:45.962Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;hr&gt;
-&lt;h5 id=&quot;一、关于扫一扫二维码登录？关于支付端的二维码？关于扫二维码添加好友？&quot;&gt;&lt;a href=&quot;#一、关于扫一扫二维码登录？关于支付端的二维码？关于扫二维码添加好友？&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    
-    <category term="工具" scheme="https://ljh130168.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用Hexo搭建一个属于自己的博客</title>
-    <link href="https://ljh130168.github.io/2021/06/21/shi-yong-hexo-da-jian-yi-ge-shu-yu-zi-ji-de-bo-ke-ji-yu-windows/"/>
-    <id>https://ljh130168.github.io/2021/06/21/shi-yong-hexo-da-jian-yi-ge-shu-yu-zi-ji-de-bo-ke-ji-yu-windows/</id>
-    <published>2021-06-20T18:14:10.320Z</published>
-    <updated>2021-06-22T16:01:08.148Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;hr&gt;
-&lt;h5 id=&quot;一、博客的创建&quot;&gt;&lt;a href=&quot;#一、博客的创建&quot; class=&quot;headerlink&quot; title=&quot;一、博客的创建&quot;&gt;&lt;/a&gt;一、博客的创建&lt;/h5&gt;&lt;pre class=&quot;line-numbers language-text&quot;</summary>
-        
-      
-    
-    
-    
-    
-    <category term="hexo" scheme="https://ljh130168.github.io/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://ljh130168.github.io/2021/06/20/hello-world/"/>
-    <id>https://ljh130168.github.io/2021/06/20/hello-world/</id>
-    <published>2021-06-20T15:30:41.921Z</published>
-    <updated>2021-01-27T09:45:39.485Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
         
       
     
@@ -435,29 +458,6 @@
     
     
     <category term="git" scheme="https://ljh130168.github.io/tags/git/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>es进阶</title>
-    <link href="https://ljh130168.github.io/2021/03/21/es-jin-jie/"/>
-    <id>https://ljh130168.github.io/2021/03/21/es-jin-jie/</id>
-    <published>2021-03-21T10:17:19.000Z</published>
-    <updated>2021-06-22T16:02:40.752Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;es进阶&quot;&gt;&lt;a href=&quot;#es进阶&quot; class=&quot;headerlink&quot; title=&quot;es进阶&quot;&gt;&lt;/a&gt;es&lt;a</summary>
-        
-      
-    
-    
-    
-    
-    <category term="es" scheme="https://ljh130168.github.io/tags/es/"/>
     
   </entry>
   
