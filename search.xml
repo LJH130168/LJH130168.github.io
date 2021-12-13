@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>log</title>
+      <link href="/2021/12/14/log/"/>
+      <url>/2021/12/14/log/</url>
+      
+        <content type="html"><![CDATA[<h2 id="JAVA日志框架"><a href="#JAVA日志框架" class="headerlink" title="JAVA日志框架"></a>JAVA日志框架</h2><img src="/2021/12/14/log/java_populor_jar.png" alt="java_populor_jar" style="zoom:80%;"><h3 id="一、扩展"><a href="#一、扩展" class="headerlink" title="一、扩展"></a>一、扩展</h3><blockquote><p><a href="https://www.cnblogs.com/chenhongliang/p/5312517.html">参考</a></p><pre class="line-numbers language-http" data-language="http"><code class="language-http">https://www.cnblogs.com/chenhongliang/p/5312517.html<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></blockquote><h4 id="Java日志概述"><a href="#Java日志概述" class="headerlink" title="Java日志概述"></a>Java日志概述</h4><blockquote><p>对于一个应用程序来说日志记录是必不可少的一部分。线上问题追踪，基于日志的业务逻辑统计分析等都离不日志。java领域存在多种日志框架，目前常用的日志框架包括Log4j 1，Log4j 2，Commons Logging，Slf4j，Logback，Jul。</p></blockquote><h4 id="Java常用日志框架类别"><a href="#Java常用日志框架类别" class="headerlink" title="Java常用日志框架类别"></a>Java常用日志框架类别</h4><ul><li><strong>Log4j</strong> Apache Log4j是一个基于Java的日志记录工具。它是由Ceki Gülcü首创的，现在则是Apache软件基金会的一个项目。 Log4j是几种Java日志框架之一。</li><li><strong>Log4j 2</strong> Apache Log4j 2是apache开发的一款Log4j的升级产品。</li><li><strong>Commons Logging</strong> Apache基金会所属的项目，是一套Java日志接口，之前叫Jakarta Commons Logging，后更名为Commons Logging。</li><li><strong>Slf4j</strong> 类似于Commons Logging，是一套简易Java日志门面，本身并无日志的实现。（Simple Logging Facade for Java，缩写Slf4j）。</li><li><strong>Logback</strong> 一套日志组件的实现(Slf4j阵营)。</li><li><strong>Jul</strong> (Java Util Logging),自Java1.4以来的官方日志实现。</li></ul><h4 id="Java常用日志框架历史"><a href="#Java常用日志框架历史" class="headerlink" title="Java常用日志框架历史"></a>Java常用日志框架历史</h4><ul><li>1996年早期，欧洲安全电子市场项目组决定编写它自己的程序跟踪API(Tracing API)。经过不断的完善，这个API终于成为一个十分受欢迎的Java日志软件包，即Log4j。后来Log4j成为Apache基金会项目中的一员。</li><li>期间Log4j近乎成了Java社区的日志标准。据说Apache基金会还曾经建议Sun引入Log4j到java的标准库中，但Sun拒绝了。</li><li>2002年Java1.4发布，Sun推出了自己的日志库JUL(Java Util Logging),其实现基本模仿了Log4j的实现。在JUL出来以前，Log4j就已经成为一项成熟的技术，使得Log4j在选择上占据了一定的优势。</li><li>接着，Apache推出了Jakarta Commons Logging，JCL只是定义了一套日志接口(其内部也提供一个Simple Log的简单实现)，支持运行时动态加载日志组件的实现，也就是说，在你应用代码里，只需调用Commons Logging的接口，底层实现可以是Log4j，也可以是Java Util Logging。</li><li>后来(2006年)，Ceki Gülcü不适应Apache的工作方式，离开了Apache。然后先后创建了Slf4j(日志门面接口，类似于Commons Logging)和Logback(Slf4j的实现)两个项目，并回瑞典创建了QOS公司，QOS官网上是这样描述Logback的：The Generic，Reliable Fast&amp;Flexible Logging Framework(一个通用，可靠，快速且灵活的日志框架)。</li><li>现今，Java日志领域被划分为两大阵营：Commons Logging阵营和Slf4j阵营。<br>Commons Logging在Apache大树的笼罩下，有很大的用户基数。但有证据表明，形式正在发生变化。2013年底有人分析了GitHub上30000个项目，统计出了最流行的100个Libraries，可以看出Slf4j的发展趋势更好：</li></ul>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> log </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title></title>
       <link href="/2021/12/14/jian-quan-de-shi-xian/"/>
       <url>/2021/12/14/jian-quan-de-shi-xian/</url>
@@ -98,7 +117,7 @@
       <link href="/2021/10/31/neo4j/"/>
       <url>/2021/10/31/neo4j/</url>
       
-        <content type="html"><![CDATA[<h2 id="一、入门neo4j"><a href="#一、入门neo4j" class="headerlink" title="一、入门neo4j"></a>一、入门neo4j</h2><p><img src="/2021/10/31/neo4j/1483429067638969.png" alt="Neo4j教程"></p><p><a href="https://we-yun.com/index.php/blog/release-56.html">下载地址</a></p><pre class="line-numbers language-http" data-language="http"><code class="language-http">#下载简体中文版https://we-yun.com/index.php/blog/release-56.html<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p><a href="https://we-yun.com/doc/neo4j-chs-doc/">官方开发文档</a></p><pre class="line-numbers language-http" data-language="http"><code class="language-http">https://we-yun.com/doc/neo4j-chs-doc/http://neo4j.com.cn/public/docs/index.html<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h3 id="1、关于neo4j"><a href="#1、关于neo4j" class="headerlink" title="1、关于neo4j"></a>1、关于neo4j</h3><blockquote><p><a href="https://baike.baidu.com/item/Neo4j">Neo4j</a>是一个高性能的,NOSQL图形数据库，它将结构化数据存储在网络上而不是表中。它是一个<a href="https://baike.baidu.com/item/%E5%B5%8C%E5%85%A5%E5%BC%8F/575465">嵌入式</a>的、基于<a href="https://baike.baidu.com/item/%E7%A3%81%E7%9B%98/2842227">磁盘</a>的、具备完全的事务特性的Java持久化引擎，但是它将结构化数据存储在网络(从数学角度叫做图)上而不是表中。Neo4j也可以被看作是一个高性能的图引擎，该引擎具有成熟数据库的所有特性。程序员工作在一个面向对象的、灵活的网络结构下而不是严格、静态的表中——但是他们可以享受到具备完全的事务特性、企业级的数据库的所有好处。</p><p>Neo4j因其嵌入式、高性能、轻量级等优势，越来越受到关注</p></blockquote>]]></content>
+        <content type="html"><![CDATA[<h2 id="一、入门neo4j"><a href="#一、入门neo4j" class="headerlink" title="一、入门neo4j"></a>一、入门neo4j</h2><img src="/2021/10/31/neo4j/1483429067638969.png" alt="Neo4j教程" style="zoom:80%;"><p><a href="https://we-yun.com/index.php/blog/release-56.html">下载地址</a></p><pre class="line-numbers language-http" data-language="http"><code class="language-http">#下载简体中文版https://we-yun.com/index.php/blog/release-56.html<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p><a href="https://we-yun.com/doc/neo4j-chs-doc/">官方开发文档</a></p><pre class="line-numbers language-http" data-language="http"><code class="language-http">https://we-yun.com/doc/neo4j-chs-doc/http://neo4j.com.cn/public/docs/index.html<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h3 id="1、关于neo4j"><a href="#1、关于neo4j" class="headerlink" title="1、关于neo4j"></a>1、关于neo4j</h3><blockquote><p><a href="https://baike.baidu.com/item/Neo4j">Neo4j</a>是一个高性能的,NOSQL图形数据库，它将结构化数据存储在网络上而不是表中。它是一个<a href="https://baike.baidu.com/item/%E5%B5%8C%E5%85%A5%E5%BC%8F/575465">嵌入式</a>的、基于<a href="https://baike.baidu.com/item/%E7%A3%81%E7%9B%98/2842227">磁盘</a>的、具备完全的事务特性的Java持久化引擎，但是它将结构化数据存储在网络(从数学角度叫做图)上而不是表中。Neo4j也可以被看作是一个高性能的图引擎，该引擎具有成熟数据库的所有特性。程序员工作在一个面向对象的、灵活的网络结构下而不是严格、静态的表中——但是他们可以享受到具备完全的事务特性、企业级的数据库的所有好处。</p><p>Neo4j因其嵌入式、高性能、轻量级等优势，越来越受到关注</p></blockquote>]]></content>
       
       
       

@@ -6,7 +6,7 @@
   <link href="https://ljh130168.github.io/atom.xml" rel="self"/>
   
   <link href="https://ljh130168.github.io/"/>
-  <updated>2021-01-26T17:16:35.812Z</updated>
+  <updated>2021-12-13T17:30:41.713Z</updated>
   <id>https://ljh130168.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>log</title>
+    <link href="https://ljh130168.github.io/2021/12/14/log/"/>
+    <id>https://ljh130168.github.io/2021/12/14/log/</id>
+    <published>2021-12-13T17:21:45.000Z</published>
+    <updated>2021-12-13T17:30:41.713Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;JAVA日志框架&quot;&gt;&lt;a href=&quot;#JAVA日志框架&quot; class=&quot;headerlink&quot; title=&quot;JAVA日志框架&quot;&gt;&lt;/a&gt;JAVA日志框架&lt;/h2&gt;&lt;img src=&quot;/2021/12/14/log/java_populor_jar.png&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="log" scheme="https://ljh130168.github.io/tags/log/"/>
+    
+  </entry>
   
   <entry>
     <title></title>
@@ -153,14 +176,14 @@
     <link href="https://ljh130168.github.io/2021/10/31/neo4j/"/>
     <id>https://ljh130168.github.io/2021/10/31/neo4j/</id>
     <published>2021-10-31T11:26:43.000Z</published>
-    <updated>2021-12-13T17:15:02.474Z</updated>
+    <updated>2021-12-13T17:19:43.359Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;一、入门neo4j&quot;&gt;&lt;a href=&quot;#一、入门neo4j&quot; class=&quot;headerlink&quot; title=&quot;一、入门neo4j&quot;&gt;&lt;/a&gt;一、入门neo4j&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
+    <summary type="html">&lt;h2 id=&quot;一、入门neo4j&quot;&gt;&lt;a href=&quot;#一、入门neo4j&quot; class=&quot;headerlink&quot; title=&quot;一、入门neo4j&quot;&gt;&lt;/a&gt;一、入门neo4j&lt;/h2&gt;&lt;img</summary>
         
       
     
@@ -435,29 +458,6 @@
     
     
     <category term="mycat" scheme="https://ljh130168.github.io/tags/mycat/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>git</title>
-    <link href="https://ljh130168.github.io/2021/03/21/git-jiao-cheng/"/>
-    <id>https://ljh130168.github.io/2021/03/21/git-jiao-cheng/</id>
-    <published>2021-03-21T10:17:19.000Z</published>
-    <updated>2021-06-22T16:03:13.362Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;GIT教程&quot;&gt;&lt;a href=&quot;#GIT教程&quot; class=&quot;headerlink&quot; title=&quot;GIT教程&quot;&gt;&lt;/a&gt;GIT教程&lt;/h1&gt;&lt;h3 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    
-    <category term="git" scheme="https://ljh130168.github.io/tags/git/"/>
     
   </entry>
   
