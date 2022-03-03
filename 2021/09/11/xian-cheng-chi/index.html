@@ -457,21 +457,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-09-14
+                    2022-01-12
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.1k
+                    2.3k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    4 分
+                    9 分
                 </div>
                 
 
@@ -550,8 +550,312 @@ private static final int TERMINATED =  3 &lt;&lt; COUNT_BITS;<span aria-hidden="
 </ol>
 </blockquote>
 <hr>
-<h2 id="二、原理分析"><a href="#二、原理分析" class="headerlink" title="二、原理分析"></a>二、原理分析</h2><p>好文章</p>
+<h2 id="二、原理分析"><a href="#二、原理分析" class="headerlink" title="二、原理分析"></a>二、原理分析</h2><p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/throwable/p/13574306.html">好文章</a></p>
 <pre class="line-numbers language-http" data-language="http"><code class="language-http">https://mp.weixin.qq.com/s/pwxDLs8TXMEMSVYWq73Ttw<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<pre class="line-numbers language-http" data-language="http"><code class="language-http">https://www.cnblogs.com/throwable/p/13574306.html<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<pre class="line-numbers language-http" data-language="http"><code class="language-http">https://xie.infoq.cn/article/d0120c6e1518cec1da65cd31f<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h2 id="三、Executor使用"><a href="#三、Executor使用" class="headerlink" title="三、Executor使用"></a>三、Executor使用</h2><pre class="line-numbers language-java" data-language="java"><code class="language-java">package com.ljh.listen.thread;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
+import java.util.stream.IntStream;
+
+/**
+ * uncaughtExceptionHandler 处理非正常的线程中止
+ */
+public class MyExecutors {
+
+    /**
+     * 线程捕捉异常
+     */
+    public static void thread(Runnable r){
+        Thread thread = new Thread(r);
+        thread.setUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
+            @Override
+            public void uncaughtException(Thread t, Throwable e) {
+                System.err.printf("线程名：%s，异常：%s",t,e);
+            }
+        });
+        thread.start();
+    }
+
+    /**
+     * 线程池捕捉异常
+     * 创建一个定长线程池，可控制线程最大并发数，超出的线程会在队列中等待
+     * (t,e)-&gt;表示重写了：new Thread.UncaughtExceptionHandler() {}的方法uncaughtException
+     */
+    public static ExecutorService fixedThreadPool(){
+        return Executors.newFixedThreadPool(1,r-&gt;{
+            Thread th = new Thread(r);
+            th.setUncaughtExceptionHandler((t,e)-&gt;System.err.printf("线程名：%s，异常：%s",t,e));
+            return th;
+        });
+    }
+
+    /**
+     * 线程池捕捉异常
+     * l创建一个可缓存线程池，如果线程池长度超过处理需要，可灵活回收空闲线程，若无可回收，则新建线程
+     */
+    public static ExecutorService cachedThreadPool(){
+        return Executors.newCachedThreadPool(r-&gt;{
+            Thread th = new Thread(r);
+            th.setUncaughtExceptionHandler((t,e)-&gt;System.err.printf("线程名：%s，异常：%s",t,e));
+            return th;
+        });
+    }
+
+    /**
+     * 线程池捕捉异常
+     * 创建一个单线程化的线程池，它只会用唯一的工作线程来执行任务，保证所有任务按照指定顺序(FIFO, LIFO, 优先级)执行
+     */
+    public static ExecutorService singleThreadExecutor(){
+        return Executors.newSingleThreadExecutor(r-&gt;{
+            Thread th = new Thread(r);
+            th.setUncaughtExceptionHandler((t,e)-&gt;System.err.printf("线程名：%s，异常：%s",t,e));
+            return th;
+        });
+    }
+
+    /**
+     * 线程池捕捉异常
+     * 创建一个定长线程池，支持定时及周期性任务执行
+     */
+    public static ScheduledExecutorService scheduledThreadPool(){
+        return Executors.newScheduledThreadPool(1,r-&gt;{
+            Thread th = new Thread(r);
+            th.setUncaughtExceptionHandler((t,e)-&gt;System.err.printf("线程名：%s，异常：%s",t,e));
+            return th;
+        });
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<hr>
+<h2 id="四、创建一个线程池"><a href="#四、创建一个线程池" class="headerlink" title="四、创建一个线程池"></a>四、创建一个线程池</h2><blockquote>
+<p>自定义线程工厂</p>
+</blockquote>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">import java.util.concurrent.ThreadFactory;
+
+/**
+ * 自定义线程工厂
+ * uncaughtExceptionHandler 捕获运行中出现的异常
+ */
+public class MyThreadFactory implements ThreadFactory {
+    @Override
+    public Thread newThread(Runnable r) {
+        Thread thread = new Thread(r);
+        thread.setUncaughtExceptionHandler((t, e) -&gt; {
+            throw new RuntimeException(String.format("线程：%s 发生异常",t.getName()),e);
+        });
+        return thread;
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<blockquote>
+<p>实现RejectedExecutionHandler 接口重写线程池饱和的4种拒绝策略</p>
+</blockquote>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">import java.util.concurrent.RejectedExecutionException;
+import java.util.concurrent.RejectedExecutionHandler;
+import java.util.concurrent.ThreadPoolExecutor;
+
+/**
+ * 自定义线程池饱和拒绝策略（4种）
+ */
+public class ThreadRejectedExecutionHandler implements RejectedExecutionHandler {
+    @Override
+    public void rejectedExecution(Runnable r, ThreadPoolExecutor executor) {
+
+    }
+
+    /**
+     * 1、调用者线程执行策略，即调用者执行被拒绝的run方法
+     */
+    public static class CallerRunsPolocy extends ThreadRejectedExecutionHandler{
+        @Override
+        public void rejectedExecution(Runnable r, ThreadPoolExecutor executor) {
+            //如果线程池关闭，则直接丢弃任务
+            if(!executor.isShutdown())r.run();
+        }
+    }
+
+    /**
+     * 2、终止策略，直接拒绝，抛出拒绝执行异常
+     */
+    public static class AbortPolocy extends ThreadRejectedExecutionHandler{
+        @Override
+        public void rejectedExecution(Runnable r, ThreadPoolExecutor executor) {
+            throw new RejectedExecutionException("请求任务："+r.toString()+" ,线程池负载过高执行饱和终止策略！");
+        }
+    }
+
+    /**
+     * 3、丢弃策略，直接拒绝，什么都不做
+     */
+    public static class DiscardPolicy extends ThreadRejectedExecutionHandler{
+        @Override
+        public void rejectedExecution(Runnable r, ThreadPoolExecutor executor) {
+        }
+    }
+
+    /**
+     * 4、弃老策略，丢弃最早放入阻塞队列中的线程，并尝试将决绝任务加入阻塞队列
+     */
+    public static class DiscardOldestPolicy extends ThreadRejectedExecutionHandler{
+        @Override
+        public void rejectedExecution(Runnable r, ThreadPoolExecutor executor) {
+            //如果线程池关闭，则直接丢弃任务
+            if(!executor.isShutdown()){
+                executor.getQueue().poll();
+                executor.execute(r);
+            }
+        }
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<blockquote>
+<p>一个单列的线程池工具类</p>
+</blockquote>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">import java.util.Arrays;
+import java.util.List;
+import java.util.concurrent.*;
+
+/**
+ * @Desc 单例的线程池工具类
+ */
+public class ThreadPoolUtils {
+
+    /**
+     * 系统可用计算资源
+     */
+    private static final int CPU_COUNT = Runtime.getRuntime().availableProcessors();
+
+    /**
+     * 核心线程数
+     */
+    private static final int CORE_POOL_SIZE = Math.max(2, Math.min(CPU_COUNT - 1, 4));
+
+    /**
+     * 最大线程数
+     */
+    private static final int MAXIMUM_POOL_SIZE = CPU_COUNT * 2 + 1;
+
+    /**
+     * 空闲线程存活时间
+     */
+    private static final int KEEP_ALIVE_SECONDS = 30;
+
+    /**
+     * 工作队列
+     */
+    private static final BlockingQueue&lt;Runnable&gt; POOL_WORK_QUEUE = new LinkedBlockingQueue&lt;&gt;(128);
+
+    /**
+     * 工厂模式
+     */
+    private static final MyThreadFactory MY_THREAD_FACTORY = new MyThreadFactory();
+
+    /**
+     * 饱和策略
+     */
+    private static final ThreadRejectedExecutionHandler THREAD_REJECTED_EXECUTION_HANDLER = new ThreadRejectedExecutionHandler.CallerRunsPolocy();
+
+    /**
+     * 线程池对象
+     */
+    private static final ThreadPoolExecutor THREAD_POOL_EXECUTOR;
+
+    /**
+     * 声明式定义线程池工具类对象静态变量，在所有线程中同步
+     */
+    private static volatile ThreadPoolUtils threadPoolUtils = null;
+
+
+    /**
+     * 初始化线程池静态代码块
+     */
+    static {
+        THREAD_POOL_EXECUTOR = new ThreadPoolExecutor(
+                //核心线程数
+                CORE_POOL_SIZE,
+                //最大线程数
+                MAXIMUM_POOL_SIZE,
+                //空闲线程执行时间
+                KEEP_ALIVE_SECONDS,
+                //空闲线程执行时间单位
+                TimeUnit.SECONDS,
+                //工作队列（或阻塞队列）
+                POOL_WORK_QUEUE,
+                //工厂模式
+                MY_THREAD_FACTORY,
+                //饱和策略
+                THREAD_REJECTED_EXECUTION_HANDLER
+                );
+//        Arrays.stream(new int[]{THREAD_POOL_EXECUTOR.getCorePoolSize(),THREAD_POOL_EXECUTOR.getMaximumPoolSize(),CPU_COUNT}).forEach(System.err::println);
+    }
+
+    /**
+     * 线程池工具类空参构造方法
+     */
+    private ThreadPoolUtils() {}
+
+    /**
+     * 获取线程池工具类实例
+     * @return
+     */
+    public static ThreadPoolUtils getNewInstance(){
+        if (threadPoolUtils == null) {
+            synchronized (ThreadPoolUtils.class) {
+                if (threadPoolUtils == null) {
+                    threadPoolUtils = new ThreadPoolUtils();
+                }
+            }
+        }
+        return threadPoolUtils;
+    }
+
+    /**
+     * 执行线程任务
+     * @param runnable 任务线程
+     */
+    public void executor(Runnable runnable) {
+        THREAD_POOL_EXECUTOR.execute(runnable);
+    }
+
+    /**
+     * 获取线程池状态
+     * @return 返回线程池状态
+     */
+    public boolean isShutDown(){
+        return THREAD_POOL_EXECUTOR.isShutdown();
+    }
+
+    /**
+     * 停止正在执行的线程任务
+     * @return 返回等待执行的任务列表
+     */
+    public List&lt;Runnable&gt; shutDownNow(){
+        return THREAD_POOL_EXECUTOR.shutdownNow();
+    }
+
+    /**
+     * 关闭线程池
+     */
+    public void showDown(){
+        THREAD_POOL_EXECUTOR.shutdown();
+    }
+
+    /**
+     * 关闭线程池后判断所有任务是否都已完成
+     * @return
+     */
+    public boolean isTerminated(){
+        return THREAD_POOL_EXECUTOR.isTerminated();
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
                 
@@ -1066,7 +1370,7 @@ private static final int TERMINATED =  3 &lt;&lt; COUNT_BITS;<span aria-hidden="
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2021</span>
+                <span id="year">2021-2022</span>
             
             <span id="year">2021</span>
             <a href="/about" target="_blank">LJH</a>
@@ -1075,7 +1379,7 @@ private static final int TERMINATED =  3 &lt;&lt; COUNT_BITS;<span aria-hidden="
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">75.9k</span>
+                        class="white-color">97.2k</span>
             
             
             

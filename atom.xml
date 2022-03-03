@@ -6,7 +6,7 @@
   <link href="https://ljh130168.github.io/atom.xml" rel="self"/>
   
   <link href="https://ljh130168.github.io/"/>
-  <updated>2021-12-22T16:24:01.811Z</updated>
+  <updated>2022-02-11T16:44:07.397Z</updated>
   <id>https://ljh130168.github.io/</id>
   
   <author>
@@ -15,6 +15,123 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>zip</title>
+    <link href="https://ljh130168.github.io/2022/02/12/zip/"/>
+    <id>https://ljh130168.github.io/2022/02/12/zip/</id>
+    <published>2022-02-11T16:37:07.000Z</published>
+    <updated>2022-02-11T16:44:07.397Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、基于java原生api实现生成zip和解压zip&quot;&gt;&lt;a href=&quot;#一、基于java原生api实现生成zip和解压zip&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="上传和下载" scheme="https://ljh130168.github.io/tags/%E4%B8%8A%E4%BC%A0%E5%92%8C%E4%B8%8B%E8%BD%BD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>索引</title>
+    <link href="https://ljh130168.github.io/2022/01/20/suo-yin/"/>
+    <id>https://ljh130168.github.io/2022/01/20/suo-yin/</id>
+    <published>2022-01-20T10:47:31.000Z</published>
+    <updated>2022-01-20T10:52:35.393Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;索引&quot;&gt;&lt;a href=&quot;#索引&quot; class=&quot;headerlink&quot; title=&quot;索引&quot;&gt;&lt;/a&gt;索引&lt;/h2&gt;&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="mysql" scheme="https://ljh130168.github.io/tags/mysql/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>锁</title>
+    <link href="https://ljh130168.github.io/2022/01/12/suo/"/>
+    <id>https://ljh130168.github.io/2022/01/12/suo/</id>
+    <published>2022-01-12T11:45:50.000Z</published>
+    <updated>2022-01-13T11:52:56.251Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;本章学习内容：Synchronized、Lock、Volatile&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;锁的出现就是为了保护共享资源的独占性，避免多个线程同时操作一个共享资源&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>springMvc</title>
+    <link href="https://ljh130168.github.io/2022/01/05/springmvc/"/>
+    <id>https://ljh130168.github.io/2022/01/05/springmvc/</id>
+    <published>2022-01-05T10:54:01.000Z</published>
+    <updated>2022-01-06T15:53:56.398Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;SpringMVC&quot;&gt;&lt;a href=&quot;#SpringMVC&quot; class=&quot;headerlink&quot; title=&quot;SpringMVC&quot;&gt;&lt;/a&gt;SpringMVC&lt;/h2&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    
+    <category term="spring" scheme="https://ljh130168.github.io/tags/spring/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>spring</title>
+    <link href="https://ljh130168.github.io/2021/12/27/spring/"/>
+    <id>https://ljh130168.github.io/2021/12/27/spring/</id>
+    <published>2021-12-27T13:12:11.000Z</published>
+    <updated>2022-01-04T16:04:25.091Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;spring&quot;&gt;&lt;a href=&quot;#spring&quot; class=&quot;headerlink&quot; title=&quot;spring&quot;&gt;&lt;/a&gt;spring&lt;/h2&gt;&lt;h3 id=&quot;1、IOC容器&quot;&gt;&lt;a href=&quot;#1、IOC容器&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="spring" scheme="https://ljh130168.github.io/tags/spring/"/>
+    
+  </entry>
   
   <entry>
     <title>log</title>
@@ -222,7 +339,7 @@
     <link href="https://ljh130168.github.io/2021/09/11/xian-cheng-chi/"/>
     <id>https://ljh130168.github.io/2021/09/11/xian-cheng-chi/</id>
     <published>2021-09-11T13:22:09.000Z</published>
-    <updated>2021-09-14T13:30:05.541Z</updated>
+    <updated>2022-01-11T16:17:19.444Z</updated>
     
     
       
@@ -343,121 +460,6 @@
     
     
     <category term="JAVA8新特性" scheme="https://ljh130168.github.io/tags/JAVA8%E6%96%B0%E7%89%B9%E6%80%A7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>stream</title>
-    <link href="https://ljh130168.github.io/2021/05/31/stream/"/>
-    <id>https://ljh130168.github.io/2021/05/31/stream/</id>
-    <published>2021-05-31T15:04:49.000Z</published>
-    <updated>2021-06-02T14:06:37.562Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;JAVA8新特性之Stream&quot;&gt;&lt;a href=&quot;#JAVA8新特性之Stream&quot; class=&quot;headerlink&quot; title=&quot;JAVA8新特性之Stream&quot;&gt;&lt;/a&gt;JAVA8新特性之&lt;a</summary>
-        
-      
-    
-    
-    
-    
-    <category term="JAVA8新特性" scheme="https://ljh130168.github.io/tags/JAVA8%E6%96%B0%E7%89%B9%E6%80%A7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>optional</title>
-    <link href="https://ljh130168.github.io/2021/05/30/optional/"/>
-    <id>https://ljh130168.github.io/2021/05/30/optional/</id>
-    <published>2021-05-30T09:38:22.000Z</published>
-    <updated>2021-05-30T13:53:08.579Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;JAVA8新特性之Optional&quot;&gt;&lt;a href=&quot;#JAVA8新特性之Optional&quot; class=&quot;headerlink&quot; title=&quot;JAVA8新特性之Optional&quot;&gt;&lt;/a&gt;JAVA8新特性之&lt;a</summary>
-        
-      
-    
-    
-    
-    
-    <category term="JAVA8新特性" scheme="https://ljh130168.github.io/tags/JAVA8%E6%96%B0%E7%89%B9%E6%80%A7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>uploadAndDown</title>
-    <link href="https://ljh130168.github.io/2021/04/25/uploadanddown/"/>
-    <id>https://ljh130168.github.io/2021/04/25/uploadanddown/</id>
-    <published>2021-04-25T14:46:35.000Z</published>
-    <updated>2021-06-22T16:04:47.406Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;来学习一下文件上传和下载&quot;&gt;&lt;a href=&quot;#来学习一下文件上传和下载&quot; class=&quot;headerlink&quot; title=&quot;来学习一下文件上传和下载&quot;&gt;&lt;/a&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    
-    <category term="工具" scheme="https://ljh130168.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>layui</title>
-    <link href="https://ljh130168.github.io/2021/04/20/layui/"/>
-    <id>https://ljh130168.github.io/2021/04/20/layui/</id>
-    <published>2021-04-20T13:21:13.000Z</published>
-    <updated>2021-06-22T16:03:42.589Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;SpringBoot-Layui&quot;&gt;&lt;a href=&quot;#SpringBoot-Layui&quot; class=&quot;headerlink&quot; title=&quot;SpringBoot+Layui&quot;&gt;&lt;/a&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    
-    <category term="layui" scheme="https://ljh130168.github.io/tags/layui/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Mycat之读写分离与分库分表</title>
-    <link href="https://ljh130168.github.io/2021/03/23/mycat-zhi-du-xie-fen-chi-yu-fen-ku-fen-biao/"/>
-    <id>https://ljh130168.github.io/2021/03/23/mycat-zhi-du-xie-fen-chi-yu-fen-ku-fen-biao/</id>
-    <published>2021-03-23T12:27:11.000Z</published>
-    <updated>2021-06-22T16:03:55.715Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;MyCat会玩吗？&quot;&gt;&lt;a href=&quot;#MyCat会玩吗？&quot; class=&quot;headerlink&quot; title=&quot;MyCat会玩吗？&quot;&gt;&lt;/a&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    
-    <category term="mycat" scheme="https://ljh130168.github.io/tags/mycat/"/>
     
   </entry>
   
