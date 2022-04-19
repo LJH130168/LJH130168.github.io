@@ -6,7 +6,7 @@
   <link href="https://ljh130168.github.io/atom.xml" rel="self"/>
   
   <link href="https://ljh130168.github.io/"/>
-  <updated>2022-02-11T16:44:07.397Z</updated>
+  <updated>2022-04-19T15:50:53.278Z</updated>
   <id>https://ljh130168.github.io/</id>
   
   <author>
@@ -15,6 +15,191 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Sharding-Jdbc</title>
+    <link href="https://ljh130168.github.io/2022/04/19/sharding-jdbc/"/>
+    <id>https://ljh130168.github.io/2022/04/19/sharding-jdbc/</id>
+    <published>2022-04-19T15:04:15.000Z</published>
+    <updated>2022-04-19T15:50:53.278Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一-分库分表的方案设计与对比&quot;&gt;&lt;a href=&quot;#一-分库分表的方案设计与对比&quot; class=&quot;headerlink&quot; title=&quot;一.分库分表的方案设计与对比&quot;&gt;&lt;/a&gt;&lt;strong&gt;一.分库分表的方案设计与对比&lt;/strong&gt;&lt;/h2&gt;&lt;pre</summary>
+        
+      
+    
+    
+    
+    
+    <category term="jdbc" scheme="https://ljh130168.github.io/tags/jdbc/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>搞懂秒杀系统</title>
+    <link href="https://ljh130168.github.io/2022/04/17/gao-dong-miao-sha-xi-tong/"/>
+    <id>https://ljh130168.github.io/2022/04/17/gao-dong-miao-sha-xi-tong/</id>
+    <published>2022-04-17T12:00:52.000Z</published>
+    <updated>2022-04-17T13:26:05.328Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;优选博客&quot;&gt;&lt;a href=&quot;#优选博客&quot; class=&quot;headerlink&quot; title=&quot;优选博客&quot;&gt;&lt;/a&gt;优选博客&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="秒杀系统" scheme="https://ljh130168.github.io/tags/%E7%A7%92%E6%9D%80%E7%B3%BB%E7%BB%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Stream实现递归查询树形结构</title>
+    <link href="https://ljh130168.github.io/2022/04/11/stream-shi-xian-di-gui-cha-xun-shu-xing-jie-gou/"/>
+    <id>https://ljh130168.github.io/2022/04/11/stream-shi-xian-di-gui-cha-xun-shu-xing-jie-gou/</id>
+    <published>2022-04-11T13:45:20.000Z</published>
+    <updated>2022-04-11T14:23:50.465Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Stream实现递归查询树形结构&quot;&gt;&lt;a href=&quot;#Stream实现递归查询树形结构&quot; class=&quot;headerlink&quot; title=&quot;Stream实现递归查询树形结构&quot;&gt;&lt;/a&gt;Stream实现递归查询树形结构&lt;/h1&gt;&lt;h3</summary>
+        
+      
+    
+    
+    
+    
+    <category term="扩展" scheme="https://ljh130168.github.io/tags/%E6%89%A9%E5%B1%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>win10下docker安装和使用</title>
+    <link href="https://ljh130168.github.io/2022/03/21/win10-xia-docker-an-zhuang-he-shi-yong/"/>
+    <id>https://ljh130168.github.io/2022/03/21/win10-xia-docker-an-zhuang-he-shi-yong/</id>
+    <published>2022-03-20T22:11:04.000Z</published>
+    <updated>2022-03-20T22:14:02.842Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;win10下docker安装&quot;&gt;&lt;a href=&quot;#win10下docker安装&quot; class=&quot;headerlink&quot; title=&quot;win10下docker安装&quot;&gt;&lt;/a&gt;win10下docker安装&lt;/h2&gt;&lt;pre class=&quot;line-numbers</summary>
+        
+      
+    
+    
+    
+    
+    <category term="docler" scheme="https://ljh130168.github.io/tags/docler/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>win10下使用内置Linux</title>
+    <link href="https://ljh130168.github.io/2022/03/21/win10-xia-shi-yong-nei-zhi-linux/"/>
+    <id>https://ljh130168.github.io/2022/03/21/win10-xia-shi-yong-nei-zhi-linux/</id>
+    <published>2022-03-20T22:10:14.000Z</published>
+    <updated>2022-04-07T20:02:42.147Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Win10安装Ubuntu子系统&quot;&gt;&lt;a href=&quot;#Win10安装Ubuntu子系统&quot; class=&quot;headerlink&quot; title=&quot;Win10安装Ubuntu子系统&quot;&gt;&lt;/a&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="linux" scheme="https://ljh130168.github.io/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MongoDB</title>
+    <link href="https://ljh130168.github.io/2022/03/20/mongodb/"/>
+    <id>https://ljh130168.github.io/2022/03/20/mongodb/</id>
+    <published>2022-03-19T16:26:29.000Z</published>
+    <updated>2022-04-19T15:56:49.984Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;MongoDB&quot;&gt;&lt;a href=&quot;#MongoDB&quot; class=&quot;headerlink&quot; title=&quot;MongoDB&quot;&gt;&lt;/a&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="mongodb" scheme="https://ljh130168.github.io/tags/mongodb/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>面试sum-2022</title>
+    <link href="https://ljh130168.github.io/2022/03/18/mian-shi-sum-2022/"/>
+    <id>https://ljh130168.github.io/2022/03/18/mian-shi-sum-2022/</id>
+    <published>2022-03-18T07:39:53.000Z</published>
+    <updated>2022-03-18T07:46:01.687Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-Java基础扎实，具有良好的编码习惯；&quot;&gt;&lt;a href=&quot;#1-Java基础扎实，具有良好的编码习惯；&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="面试" scheme="https://ljh130168.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>maven</title>
+    <link href="https://ljh130168.github.io/2022/03/05/maven/"/>
+    <id>https://ljh130168.github.io/2022/03/05/maven/</id>
+    <published>2022-03-05T07:40:35.000Z</published>
+    <updated>2022-03-05T07:48:38.310Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;MAVEN&quot;&gt;&lt;a href=&quot;#MAVEN&quot; class=&quot;headerlink&quot; title=&quot;MAVEN&quot;&gt;&lt;/a&gt;MAVEN&lt;/h2&gt;&lt;h3 id=&quot;一、mvn命令&quot;&gt;&lt;a href=&quot;#一、mvn命令&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="maven" scheme="https://ljh130168.github.io/tags/maven/"/>
+    
+  </entry>
   
   <entry>
     <title>zip</title>
@@ -285,181 +470,6 @@
     
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>neo4j</title>
-    <link href="https://ljh130168.github.io/2021/10/31/neo4j/"/>
-    <id>https://ljh130168.github.io/2021/10/31/neo4j/</id>
-    <published>2021-10-31T11:26:43.000Z</published>
-    <updated>2021-12-13T17:19:43.359Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;一、入门neo4j&quot;&gt;&lt;a href=&quot;#一、入门neo4j&quot; class=&quot;headerlink&quot; title=&quot;一、入门neo4j&quot;&gt;&lt;/a&gt;一、入门neo4j&lt;/h2&gt;&lt;img</summary>
-        
-      
-    
-    
-    
-    
-    <category term="nosql" scheme="https://ljh130168.github.io/tags/nosql/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>timer task</title>
-    <link href="https://ljh130168.github.io/2021/10/10/timer-task/"/>
-    <id>https://ljh130168.github.io/2021/10/10/timer-task/</id>
-    <published>2021-10-10T08:07:18.000Z</published>
-    <updated>2021-10-12T13:34:05.465Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;一、常见定时任务&quot;&gt;&lt;a href=&quot;#一、常见定时任务&quot; class=&quot;headerlink&quot; title=&quot;一、常见定时任务&quot;&gt;&lt;/a&gt;一、常见定时任务&lt;/h2&gt;&lt;p&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    
-    <category term="timerTask" scheme="https://ljh130168.github.io/tags/timerTask/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>线程池</title>
-    <link href="https://ljh130168.github.io/2021/09/11/xian-cheng-chi/"/>
-    <id>https://ljh130168.github.io/2021/09/11/xian-cheng-chi/</id>
-    <published>2021-09-11T13:22:09.000Z</published>
-    <updated>2022-01-11T16:17:19.444Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;​   </summary>
-        
-      
-    
-    
-    
-    
-    <category term="Thread" scheme="https://ljh130168.github.io/tags/Thread/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>threadLocal</title>
-    <link href="https://ljh130168.github.io/2021/09/08/threadlocal/"/>
-    <id>https://ljh130168.github.io/2021/09/08/threadlocal/</id>
-    <published>2021-09-08T12:15:46.000Z</published>
-    <updated>2021-09-11T15:19:00.194Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;一、初识ThreadLocal&quot;&gt;&lt;a href=&quot;#一、初识ThreadLocal&quot; class=&quot;headerlink&quot; title=&quot;一、初识ThreadLocal&quot;&gt;&lt;/a&gt;一、初识ThreadLocal&lt;/h2&gt;&lt;h3</summary>
-        
-      
-    
-    
-    
-    
-    <category term="Thread" scheme="https://ljh130168.github.io/tags/Thread/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>jvm</title>
-    <link href="https://ljh130168.github.io/2021/08/18/jvm/"/>
-    <id>https://ljh130168.github.io/2021/08/18/jvm/</id>
-    <published>2021-08-18T11:44:16.000Z</published>
-    <updated>2021-08-18T15:55:50.563Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;JVM&quot;&gt;&lt;a href=&quot;#JVM&quot; class=&quot;headerlink&quot; title=&quot;JVM&quot;&gt;&lt;/a&gt;JVM&lt;/h2&gt;&lt;hr&gt;
-&lt;h3 id=&quot;一、理论&quot;&gt;&lt;a href=&quot;#一、理论&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    
-    <category term="jvm" scheme="https://ljh130168.github.io/tags/jvm/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>redis之基础</title>
-    <link href="https://ljh130168.github.io/2021/07/05/redis-zhi-ji-chu/"/>
-    <id>https://ljh130168.github.io/2021/07/05/redis-zhi-ji-chu/</id>
-    <published>2021-07-05T12:18:24.000Z</published>
-    <updated>2021-07-05T12:29:48.135Z</updated>
-    
-    
-    
-    
-    
-    <category term="redis" scheme="https://ljh130168.github.io/tags/redis/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>拦截器、过滤器、监听器</title>
-    <link href="https://ljh130168.github.io/2021/06/22/lan-jie-qi-guo-lu-qi-jian-ting-qi/"/>
-    <id>https://ljh130168.github.io/2021/06/22/lan-jie-qi-guo-lu-qi-jian-ting-qi/</id>
-    <published>2021-06-22T13:41:03.000Z</published>
-    <updated>2021-07-28T14:51:17.358Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;过滤器、拦截器、监听器&quot;&gt;&lt;a href=&quot;#过滤器、拦截器、监听器&quot; class=&quot;headerlink&quot; title=&quot;过滤器、拦截器、监听器&quot;&gt;&lt;/a&gt;过滤器、拦截器、监听器&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>lambda</title>
-    <link href="https://ljh130168.github.io/2021/06/15/lambda/"/>
-    <id>https://ljh130168.github.io/2021/06/15/lambda/</id>
-    <published>2021-06-15T13:31:26.000Z</published>
-    <updated>2021-06-15T14:19:36.764Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;JAVA8新特性之Lambda&quot;&gt;&lt;a href=&quot;#JAVA8新特性之Lambda&quot; class=&quot;headerlink&quot; title=&quot;JAVA8新特性之Lambda&quot;&gt;&lt;/a&gt;JAVA8新特性之&lt;a</summary>
-        
-      
-    
-    
-    
-    
-    <category term="JAVA8新特性" scheme="https://ljh130168.github.io/tags/JAVA8%E6%96%B0%E7%89%B9%E6%80%A7/"/>
     
   </entry>
   

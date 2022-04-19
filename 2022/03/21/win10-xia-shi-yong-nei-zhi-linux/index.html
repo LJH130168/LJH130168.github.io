@@ -1,0 +1,1536 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="win10下使用内置Linux, forever code">
+    <meta name="description" content="I wish to gain all the expectations,and all the losses will be harmiess">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>win10下使用内置Linux | IQ小王子</title>
+    <link rel="icon" type="image/jpeg" href="/favicon.jpg">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.4.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="IQ小王子" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/favicon.jpg" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">IQ小王子</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/favicon.jpg" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">IQ小王子</div>
+        <div class="logo-desc">
+            
+            I wish to gain all the expectations,and all the losses will be harmiess
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">win10下使用内置Linux</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/linux/">
+                                <span class="chip bg-color">linux</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2022-03-21
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2022-04-08
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    2.7k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    11 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="Win10安装Ubuntu子系统"><a href="#Win10安装Ubuntu子系统" class="headerlink" title="Win10安装Ubuntu子系统"></a><a target="_blank" rel="noopener" href="https://edu.csdn.net/skill/gml/gml-214229ddcc6a496ba175a0a4cd24d486?category=875">Win10安装Ubuntu子系统</a></h2><pre class="line-numbers language-http" data-language="http"><code class="language-http">#推荐博客
+https://www.cnblogs.com/xiaoliangge/p/9124089.html
+#推荐视频
+https://www.bilibili.com/video/BV184411i7As?spm_id_from=333.337.search-card.all.click
+#Ubuntu18.04安装教程
+https://edu.csdn.net/skill/gml/gml-214229ddcc6a496ba175a0a4cd24d486?category=875
+#学习ubuntu基础
+https://blog.csdn.net/weixin_42949808/article/details/110038095
+#Ubuntu详解
+https://blog.csdn.net/xxdw1992/article/details/114920741<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="1、开启适用于Linux的Windows子系统"><a href="#1、开启适用于Linux的Windows子系统" class="headerlink" title="1、开启适用于Linux的Windows子系统"></a>1、开启适用于Linux的Windows子系统</h3><pre class="line-numbers language-sh" data-language="sh"><code class="language-sh">&gt;控制面板-&gt;程序-&gt;启用或关闭Windows功能-&gt;适用于Linux的Windows子系统<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<img src="/2022/03/21/win10-xia-shi-yong-nei-zhi-linux/image-20220407224905658.png" alt="image-20220407224905658" style="zoom:80%;">
+
+<h3 id="2、在Microsoft-Store上下载Ubuntu-18-04-LTS"><a href="#2、在Microsoft-Store上下载Ubuntu-18-04-LTS" class="headerlink" title="2、在Microsoft Store上下载Ubuntu 18.04 LTS"></a>2、在Microsoft Store上下载Ubuntu 18.04 LTS</h3><p><strong>注意：</strong>在下载之前先检查windows update是否开启，如果没有开启Microsoft Store页面一直在转圈；如果windows update无法正确启动，可以下载下面这个工具来启动。</p>
+<pre class="line-numbers language-tex" data-language="tex"><code class="language-tex">链接：https://pan.baidu.com/s/1pmae_bbviaGe1maQCc5trw?pwd=luji 
+提取码：luji<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<img src="/2022/03/21/win10-xia-shi-yong-nei-zhi-linux/image-20220407225458205.png" alt="image-20220407225458205" style="zoom:80%;">
+
+<h3 id="3、启动Ubuntu设置用户名和密码"><a href="#3、启动Ubuntu设置用户名和密码" class="headerlink" title="3、启动Ubuntu设置用户名和密码"></a>3、启动Ubuntu设置用户名和密码</h3><ol>
+<li>方式一：启动ubuntu客户端窗口</li>
+<li>方式二：window下cmd命令输入bash进入Linux系统</li>
+</ol>
+<h3 id="4、把sources-list更换为国内镜像"><a href="#4、把sources-list更换为国内镜像" class="headerlink" title="4、把sources.list更换为国内镜像"></a>4、把sources.list更换为国内镜像</h3><blockquote>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_41762173/article/details/79480832">参考磁盘博客</a></p>
+<pre class="line-numbers language-http" data-language="http"><code class="language-http">https://blog.csdn.net/weixin_41762173/article/details/79480832<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</blockquote>
+<p><a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/">清华大学TUNA镜像源：https://mirrors.tuna.tsinghua.edu.cn/</a></p>
+<p>Ubuntu版本：18.04TLS</p>
+<pre class="line-numbers language-http" data-language="http"><code class="language-http">#阿里云镜像源
+deb-src http://archive.ubuntu.com/ubuntu xenial main restricted
+deb http://mirrors.aliyun.com/ubuntu/ xenial main restricted
+deb-src http://mirrors.aliyun.com/ubuntu/ xenial main restricted multiverse universe
+deb http://mirrors.aliyun.com/ubuntu/ xenial-updates main restricted
+deb-src http://mirrors.aliyun.com/ubuntu/ xenial-updates main restricted multiverse universe
+deb http://mirrors.aliyun.com/ubuntu/ xenial universe
+deb http://mirrors.aliyun.com/ubuntu/ xenial-updates universe
+deb http://mirrors.aliyun.com/ubuntu/ xenial multiverse
+deb http://mirrors.aliyun.com/ubuntu/ xenial-updates multiverse
+deb http://mirrors.aliyun.com/ubuntu/ xenial-backports main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ xenial-backports main restricted universe multiverse
+deb http://archive.canonical.com/ubuntu xenial partner
+deb-src http://archive.canonical.com/ubuntu xenial partner
+deb http://mirrors.aliyun.com/ubuntu/ xenial-security main restricted
+deb-src http://mirrors.aliyun.com/ubuntu/ xenial-security main restricted multiverse universe
+deb http://mirrors.aliyun.com/ubuntu/ xenial-security universe
+deb http://mirrors.aliyun.com/ubuntu/ xenial-security multiverse
+
+#清华大学镜像源
+# 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
+
+# 预发布软件源，不建议启用
+# deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>操作步骤：</strong></p>
+<ol>
+<li><p>输入下面命令，编辑sources.list</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">&gt;sudo apt-get install nano #安装nano编辑器，同样可以使用vim
+&gt;sudo nano /etc/apt/sources.list<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li>
+<li><p>复制上面的镜像源到该文件</p>
+<img src="/2022/03/21/win10-xia-shi-yong-nei-zhi-linux/image-20220408003911795.png" alt="image-20220408003911795" style="zoom:80%;"></li>
+<li><p>保存和退出编辑器</p>
+<pre class="line-numbers language-sh" data-language="sh"><code class="language-sh">&gt;ctr+o：保存
+&gt;ctr+x：退出编辑器<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li>
+<li><p>更新源列表</p>
+<pre class="line-numbers language-sh" data-language="sh"><code class="language-sh">&gt;sudo apt-get update<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+</ol>
+<h3 id="5、安装中文字体及设置"><a href="#5、安装中文字体及设置" class="headerlink" title="5、安装中文字体及设置"></a>5、安装中文字体及设置</h3><ol>
+<li><p>查看系统类型</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">&gt;cat /proc/version
+#说明：
+Linux version 4.4.0-19041-Microsoft (Microsoft@Microsoft.com)  #Linux版本号
+(gcc version 5.4.0 (GCC) ) #gcc编译
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<img src="/2022/03/21/win10-xia-shi-yong-nei-zhi-linux/image-20220408013104034.png" alt="image-20220408013104034" style="zoom:80%;">
+
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">&gt;uname -a
+#说明：
+显示linux 的内核版本和系统是多少位的：X86_64代表系统是64位的<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<img src="/2022/03/21/win10-xia-shi-yong-nei-zhi-linux/image-20220408013358389.png" alt="image-20220408013358389" style="zoom:80%;">
+
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">&gt;lsb_release  -a
+#说明：
+Distributor ID: Ubuntu                   #类别是  Ubuntu
+Description:    Ubuntu 18.04.5 LTS       #18年4月发布的稳定版本， LTS 是  Long  Term Support：长时间支持版本，支持周期长达三年至五年
+Release:        18.04                    #发行日期或者发行版本号
+Codename:       bionic                   #ubuntu的代号名称<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<img src="/2022/03/21/win10-xia-shi-yong-nei-zhi-linux/image-20220408013520875.png" alt="image-20220408013520875" style="zoom:80%;"></li>
+<li><p>查看中文字体</p>
+<pre class="line-numbers language-sh" data-language="sh"><code class="language-sh">&gt;fc-list :lang=zh-cn #没有中文语言包，先执行下面命令安装
+&gt;sudo apt install -y --force-yes --no-install-recommends fonts-wqy-microhei
+&gt;sudo apt install -y --force-yes --no-install-recommends ttf-wqy-zenhei<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<img src="/2022/03/21/win10-xia-shi-yong-nei-zhi-linux/image-20220408021346779.png" alt="image-20220408021346779" style="zoom:80%;"></li>
+<li><p>编辑.profile</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">&gt;nano .profile
+&gt;export LANG = "zh_CN.UTF-8" #添加到文件下
+&gt;export LC_ALL="zh_CN.UTF-8" #添加到文件下<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li>
+<li><p>设置系统默认语言为中文</p>
+<pre class="line-numbers language-sh" data-language="sh"><code class="language-sh">&gt;sudo dpkg-reconfigure locales
+&gt;按键盘pagedown选择zh_CN.UTF-8 UTF-8后，按tab键到&lt;ok&gt;回车（先在zh_CN.UTF-8 UTF-8、zh_CN.GBK和zh_CN GB2312上面按空格用*标记好）
+&gt;再选择zh_CN.UTF-8,按tab键到&lt;ok&gt;回车<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li>
+<li><p>查看语言是否为中文</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">&gt;locale<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+<li><p>重启Ubuntu系统</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">&gt;启动管理员powershell，输入：
+&gt;net stop LxssManager   #关闭系统
+&gt;net start LxssManager  #开启系统<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li>
+</ol>
+<h3 id="6、安装Ubuntn图形界面"><a href="#6、安装Ubuntn图形界面" class="headerlink" title="6、安装Ubuntn图形界面"></a>6、安装Ubuntn图形界面</h3><h4 id="1、方式一"><a href="#1、方式一" class="headerlink" title="1、方式一"></a>1、方式一</h4><p>安装tasksel</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">&gt;sudo apt-get install tasksel -y
+&gt;sudo tasksel<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<img src="/2022/03/21/win10-xia-shi-yong-nei-zhi-linux/image-20220408022302338.png" alt="image-20220408022302338" style="zoom: 50%;">
+
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">&gt;sudo apt-get install xfce4
+&gt;重启Ubuntu系统<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h4 id="2、方式二-lt-xfce桌面，个性化定制高，bug少-gt"><a href="#2、方式二-lt-xfce桌面，个性化定制高，bug少-gt" class="headerlink" title="2、方式二<xfce桌面，个性化定制高，bug少>"></a>2、方式二&lt;xfce桌面，个性化定制高，bug少&gt;</h4><p>安装xubuntn-desktop</p>
+<pre class="line-numbers language-sh" data-language="sh"><code class="language-sh">&gt;sudo apt update
+&gt;sudo apt-get upgrade
+&gt;sudo apt install xubuntu-desktop #上面命令无法安装，采用下面：
+&gt;sudo apt-get install aptitude
+&gt;sudo aptitude install xubuntu-desktop 
+#说明：
+输入：sudo apt-get install xubuntu-desktop之后会自动安装桌面。
+(gnome.桌面、xfce4桌面、Unity桌面、kde桌面等可自行选择，只需命令sudo install xxx就可安装了)
+如果界面管理器出错就安装（没有就不用管这句）：sudo apt install lightdm安装完成后重启系统就好了。
+(桌面管理器切换命令：sudo dpkg-reconfigure lightdm)
+(如果桌面安装出错，卸载命令：sudo apt remove gnome*-purge)
+如果需要root登录的话，那么配置root登陆权限：
+1、默认情况是不允许用root帐号直接登录图形界面的。这可以通过修改sudo nano
+/usr/share/lightdm/lightdm.d/50-ubuntu.conf文件来允许root直接登录，增加
+greeter-show-manual-login=true allow-guest=false.
+2、登录之后会每次弹一个小错误，然后
+,/root/.profile文件中将mesg n||true修改为tty-s&amp;&amp;mesg n ||true<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h2><h3 id="1、Ubuntu软件操作的相关命令"><a href="#1、Ubuntu软件操作的相关命令" class="headerlink" title="1、Ubuntu软件操作的相关命令"></a>1、Ubuntu软件操作的相关命令</h3><pre class="line-numbers language-sh" data-language="sh"><code class="language-sh">sudo apt-get update  更新源
+ 
+sudo apt-get install package 安装包
+ 
+sudo apt-get remove package 删除包
+ 
+sudo apt-cache search package 搜索软件包
+ 
+sudo apt-cache show package  获取包的相关信息，如说明、大小、版本等
+ 
+sudo apt-get install package --reinstall   重新安装包
+ 
+sudo apt-get -f install   修复安装
+ 
+sudo apt-get remove package --purge 删除包，包括配置文件等
+ 
+sudo apt-get build-dep package 安装相关的编译环境
+ 
+sudo apt-get upgrade 更新已安装的包
+ 
+sudo apt-get dist-upgrade 升级系统
+ 
+sudo apt-cache depends package 了解使用该包依赖那些包
+ 
+sudo apt-cache rdepends package 查看该包被哪些包依赖
+ 
+sudo apt-get source package  下载该包的源代码
+ 
+sudo apt-get clean &amp;&amp; sudo apt-get autoclean 清理无用的包
+ 
+sudo apt-get check 检查是否有损坏的依赖<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="2、vim中的保存和退出"><a href="#2、vim中的保存和退出" class="headerlink" title="2、vim中的保存和退出"></a>2、vim中的保存和退出</h3><p><strong>在 Linux 中使用 <a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=vim&amp;spm=1001.2101.3001.7020">vim</a> 时，输入 <code>vim xxx.file</code> 输入好文件内容之后，怎么保存呢？</strong></p>
+<p><em>按 ESC，左下角就可以进行输入命令：</em></p>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>:w</code></td>
+<td>保存但不退出</td>
+</tr>
+<tr>
+<td><code>:wq</code></td>
+<td>保存并退出</td>
+</tr>
+<tr>
+<td><code>:q</code></td>
+<td>退出</td>
+</tr>
+<tr>
+<td><code>:q!</code></td>
+<td>强制退出，不保存</td>
+</tr>
+<tr>
+<td><code>:e!</code></td>
+<td>放弃所有修改，从上次保存文件开始再编辑命令历史</td>
+</tr>
+</tbody></table>
+<h3 id="3、aptitude和apt-get"><a href="#3、aptitude和apt-get" class="headerlink" title="3、aptitude和apt-get"></a>3、aptitude和apt-get</h3><pre class="line-numbers language-sh" data-language="sh"><code class="language-sh">#安装aptitude
+&gt;sudo apt-get install aptitide<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<blockquote>
+<p>aptitude 与 apt-get 一样，是 <a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=Debian&amp;spm=1001.2101.3001.7020">Debian</a> 及其衍生系统中功能极其强大的包管理工具基于大名鼎鼎的APT机制, 整合了 dselect 和 apt-get 的所有功能, 并提供的更多特性,特别是在依赖关系处理上。。与 apt-get 不同的是，aptitude在处理依赖问题上更佳一些。举例来说，aptitude在删除一个包时，会同时删除本身所依赖的包。这样，系统中不会残留无用的包，整个系统更为干净。</p>
+</blockquote>
+<p>推荐使用aptitude命令来代替apt-get，下载或者删除依赖包的时候aptitude要比apt-get更好。不过aptitude和apt-get不能混用，要不然互相都不知道对方做了什么</p>
+<h4 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h4><pre class="line-numbers language-sh" data-language="sh"><code class="language-sh">aptitude 选项 参数<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h4 id="选项"><a href="#选项" class="headerlink" title="选项"></a>选项</h4><pre class="line-numbers language-sh" data-language="sh"><code class="language-sh">-h：显示帮助信息
+-d：仅下载软件包，不执行安装操作
+-P：每一步操作都要求确认
+-y：所有问题都回答“yes”
+-v：显示附加信息； 
+-u：启动时下载新的软件包列表<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h4><p>aptitude常用命令</p>
+<pre class="line-numbers language-sh" data-language="sh"><code class="language-sh">aptitude update            更新可用的包列表 
+
+aptitude safe-upgrade      执行一次安全的升级 
+
+aptitude full-upgrade      将系统升级到新的发行版 
+
+aptitude install pkgname   安装包 
+
+aptitude remove pkgname    删除包 
+
+aptitude purge pkgname     删除包及其配置文件 
+
+aptitude search string     搜索包 
+
+aptitude show pkgname      显示包的详细信息 
+
+aptitude clean             删除下载的包文件 
+
+aptitude autoclean         仅删除过期的包文件 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="3、apt-get和yum的区别"><a href="#3、apt-get和yum的区别" class="headerlink" title="3、apt-get和yum的区别"></a>3、apt-get和yum的区别</h3><h4 id="1、linux系统分类"><a href="#1、linux系统分类" class="headerlink" title="1、linux系统分类"></a>1、linux系统分类</h4><p><strong>一般来说linux系统基本上分两大类：</strong></p>
+<p><a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=RedHat&amp;spm=1001.2101.3001.7020">RedHat</a>系列：Redhat、Centos、Fedora等<br><a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=Debian&amp;spm=1001.2101.3001.7020">Debian</a>系列：Debian、Ubuntu等</p>
+<p><strong>RedHat 系列</strong></p>
+<ul>
+<li>常见的安装包格式 rpm包,安装rpm包的命令是“rpm -参数”</li>
+<li>包管理工具 yum</li>
+<li>支持tar包</li>
+</ul>
+<p><strong>Debian系列</strong></p>
+<ul>
+<li>常见的安装包格式 deb包,安装deb包的命令是“dpkg -参数”</li>
+<li>包管理工具 apt-get</li>
+<li>支持tar包</li>
+</ul>
+<p><em>tar 只是一种压缩文件格式，它只是把文件压缩打包而已。 rpm 相当于windows中的安装文件，它会自动处理软件包之间的依赖关系。<br>优缺点来说，rpm一般都是预先编译好的文件，它可能已经绑定到某种CPU或者发行版上面了。<br>tar一般包括编译脚本，你可以在你的环境下编译，所以具有通用性。<br>如果你的包不想开放源代码，你可以制作成rpm，如果开源，用tar更方便了。<br>tar一般都是源码打包的软件，需要自己解包，然后进行安装三部曲，./configure, make, make install. 来安装软件。<br>安装rpm包的命令是“rpm -参数”，安装deb包的命令是“dpkg -参数”。而linux系统很方便和人性化的一点就是很多软件或服务根本就不用我们去下载，直接使用相应的命令就可以管理了，可能这就是传说中的 “云”的概念。</em></p>
+<h4 id="2、yum"><a href="#2、yum" class="headerlink" title="2、yum"></a>2、<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=yum&amp;spm=1001.2101.3001.7020">yum</a></h4><p><strong>yum是RedHat系列的高级软件包管理工具</strong></p>
+<ul>
+<li>主要功能是更方便的添加/删除/更新RPM包。</li>
+<li>它能自动解决包的依赖性问题。</li>
+<li>它能便于管理大量系统的更新问题。</li>
+</ul>
+<p><strong>yum的特点</strong></p>
+<ul>
+<li>可以同时配置多个资源库(Repository)</li>
+<li>简洁的配置文件(/etc/yum.conf)</li>
+<li>自动解决增加或删除rpm包时遇到的倚赖性问题</li>
+<li>保持与RPM数据库的一致性</li>
+</ul>
+<p><strong>yum可以用于运作rpm包，例如在CentOS/RedHat系统上对某个软件的管理</strong></p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">  安装：yum install &lt;package_name&gt;
+  卸载：yum remove &lt;package_name&gt;
+  更新：yum update &lt;package_name&gt;
+123<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="3、apt-get"><a href="#3、apt-get" class="headerlink" title="3、apt-get"></a>3、apt-get</h4><p><strong>apt-get是Debian系列的高级软件包管理工具</strong></p>
+<ul>
+<li>配置文件/etc/apt/sources.list</li>
+<li>sudo apt-get install xxx</li>
+</ul>
+<p><strong>apt-get可以用于运作deb包，例如在Ubuntu上对某个软件的管理：</strong></p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">安装：apt-get install &lt;package_name&gt;
+卸载：apt-get remove &lt;package_name&gt;
+更新：apt-get update &lt;package_name&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">LJH</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://ljh130168.github.io/2022/03/21/win10-xia-shi-yong-nei-zhi-linux/">https://ljh130168.github.io/2022/03/21/win10-xia-shi-yong-nei-zhi-linux/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">LJH</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/linux/">
+                                    <span class="chip bg-color">linux</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2022/03/21/win10-xia-docker-an-zhuang-he-shi-yong/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="win10下docker安装和使用">
+                        
+                        <span class="card-title">win10下docker安装和使用</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-03-21
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            LJH
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/docler/">
+                        <span class="chip bg-color">docler</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/03/20/mongodb/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="MongoDB">
+                        
+                        <span class="card-title">MongoDB</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-20
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            LJH
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/mongodb/">
+                        <span class="chip bg-color">mongodb</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="350909"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2021-2022</span>
+            
+            <span id="year">2021</span>
+            <a href="/about" target="_blank">LJH</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                        class="white-color">113.4k</span>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/LJH130168" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:2275435906@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2275435906" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2275435906" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>

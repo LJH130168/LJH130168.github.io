@@ -457,21 +457,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-03-03
+                    2022-03-04
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.5k
+                    1.7k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    6 分
+                    7 分
                 </div>
                 
 
@@ -517,17 +517,40 @@ https://blog.csdn.net/leigelg/article/details/103310079<span aria-hidden="true" 
 <h4 id="4、百度网盘下载"><a href="#4、百度网盘下载" class="headerlink" title="4、百度网盘下载"></a>4、<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1izwLO34xryXby4d9UX3gSg?pwd=cssq">百度网盘下载</a></h4><pre class="line-numbers language-http" data-language="http"><code class="language-http">https://pan.baidu.com/s/1izwLO34xryXby4d9UX3gSg?pwd=cssq
 提取码：cssq<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<h4 id="5、Oracle安装"><a href="#5、Oracle安装" class="headerlink" title="5、Oracle安装"></a>5、Oracle安装</h4><ul>
+<h4 id="5、Oracle其它版本下载"><a href="#5、Oracle其它版本下载" class="headerlink" title="5、Oracle其它版本下载"></a>5、Oracle<a target="_blank" rel="noopener" href="https://edelivery.oracle.com/osdc/faces/Home.jspx">其它版本下载</a></h4><blockquote>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/zd520pyx1314/p/8643442.html">参考文章</a></p>
+</blockquote>
+<h4 id="7、Oracle安装"><a href="#7、Oracle安装" class="headerlink" title="7、Oracle安装"></a>7、Oracle安装</h4><ul>
 <li><p>解压压缩包，双击setup.exe程序，按照此篇<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_40709965/article/details/107351065">博客</a>安装</p>
 </li>
 <li><p>你的口令是：<strong>Ljh130168</strong></p>
 <img src="/2021/05/30/oracle-an-zhuang-bu-zou-he-xiang-guan-cao-zuo/1646279097315.png" alt="1646279097315" style="zoom:80%;"></li>
 </ul>
-<h4 id="6、PLsql安装"><a href="#6、PLsql安装" class="headerlink" title="6、PLsql安装"></a>6、PLsql安装</h4><ul>
+<h4 id="8、PLsql安装"><a href="#8、PLsql安装" class="headerlink" title="8、PLsql安装"></a>8、PLsql安装</h4><blockquote>
+<p>PLSQL是一款操作Oracle的可视化数据库管理软件，用PLSQL可以实现对Oracle的连接，和数据的导入导出以及增删改查等各种操作</p>
+</blockquote>
+<ul>
 <li><a target="_blank" rel="noopener" href="https://www.allroundautomations.com/registered-plsqldev/">下载地址</a></li>
 <li><a target="_blank" rel="noopener" href="https://blog.csdn.net/Pasto/article/details/108673818?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522164628632516780357256809%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&amp;request_id=164628632516780357256809&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-108673818.first_rank_v2_pc_rank_v29&amp;utm_term=PLSQL&amp;spm=1018.2226.3001.4187">安装配置</a></li>
 <li>连接Oracle<a target="_blank" rel="noopener" href="https://blog.csdn.net/ly7472712/article/details/111610194">配置</a></li>
 <li>PLsql导出dmp<a target="_blank" rel="noopener" href="https://www.cnblogs.com/luoning/p/11170763.html">说明</a></li>
+</ul>
+<h4 id="9、Hibernate连接Oracle"><a href="#9、Hibernate连接Oracle" class="headerlink" title="9、Hibernate连接Oracle"></a>9、Hibernate连接Oracle</h4><ul>
+<li><p>有版本差异，项目JDK使用不同，Oracle版本连接使用不同的ojdbc.jar包；</p>
+</li>
+<li><p>本文下载的是Oracle 19c，项目JDK版本是7，那么ojdbc.jar包使用ojdbc7-12.1.0.2.jar；</p>
+</li>
+<li><p>本文对应的连接Oracle数据库配置是：</p>
+<pre class="line-numbers language-properties" data-language="properties"><code class="language-properties">jdbc.driverClassName=oracle.jdbc.driver.OracleDriver
+jdbc.url=jdbc:oracle:thin:@127.0.01:1521:orcl
+jdbc.username=datacount2
+jdbc.password=datacount2
+jdbc.database.dialect=org.hibernate.dialect.Oracle10gDialect<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq445829096/article/details/119912164">参考文章</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://pan.baidu.com/s/15Jmo_tXXe9cCyfF6vlEqiQ?pwd=b178">ojdbc包百度网盘下载</a></p>
+<pre class="line-numbers language-http" data-language="http"><code class="language-http">链接：https://pan.baidu.com/s/15Jmo_tXXe9cCyfF6vlEqiQ?pwd=b178 
+提取码：b178<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li>
 </ul>
 <hr>
 <h3 id="二、相关操作"><a href="#二、相关操作" class="headerlink" title="二、相关操作"></a>二、相关操作</h3><h4 id="一、Oracle数据库操作"><a href="#一、Oracle数据库操作" class="headerlink" title="一、Oracle数据库操作"></a><strong>一、Oracle数据库操作</strong></h4><p>1、基本操作</p>
@@ -1250,7 +1273,7 @@ exp demo/demo@orcl buffer=1024 file=d：\back.dmp full=y<span aria-hidden="true"
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">97.2k</span>
+                        class="white-color">113.4k</span>
             
             
             
