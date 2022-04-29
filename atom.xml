@@ -6,7 +6,7 @@
   <link href="https://ljh130168.github.io/atom.xml" rel="self"/>
   
   <link href="https://ljh130168.github.io/"/>
-  <updated>2022-04-19T15:50:53.278Z</updated>
+  <updated>2022-04-29T16:29:08.627Z</updated>
   <id>https://ljh130168.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>工厂模式</title>
+    <link href="https://ljh130168.github.io/2022/04/28/gong-han-mo-shi/"/>
+    <id>https://ljh130168.github.io/2022/04/28/gong-han-mo-shi/</id>
+    <published>2022-04-28T08:35:49.000Z</published>
+    <updated>2022-04-29T16:29:08.627Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、使用场景&quot;&gt;&lt;a href=&quot;#一、使用场景&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="设计模式" scheme="https://ljh130168.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>Sharding-Jdbc</title>
@@ -449,27 +472,6 @@
     
     
     <category term="hexo" scheme="https://ljh130168.github.io/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://ljh130168.github.io/2021/12/14/hello-world/"/>
-    <id>https://ljh130168.github.io/2021/12/14/hello-world/</id>
-    <published>2021-12-13T16:53:43.969Z</published>
-    <updated>2021-01-27T09:45:39.485Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
-        
-      
-    
-    
-    
     
   </entry>
   
