@@ -6,7 +6,7 @@
   <link href="https://ljh130168.github.io/atom.xml" rel="self"/>
   
   <link href="https://ljh130168.github.io/"/>
-  <updated>2022-04-29T16:29:08.627Z</updated>
+  <updated>2022-05-04T10:33:40.112Z</updated>
   <id>https://ljh130168.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>xshell 连接 Ubuntu</title>
+    <link href="https://ljh130168.github.io/2022/05/04/xshell-lian-jie-ubuntu/"/>
+    <id>https://ljh130168.github.io/2022/05/04/xshell-lian-jie-ubuntu/</id>
+    <published>2022-05-04T06:04:16.000Z</published>
+    <updated>2022-05-04T10:33:40.112Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;xshell作用&quot;&gt;&lt;a href=&quot;#xshell作用&quot; class=&quot;headerlink&quot; title=&quot;xshell作用&quot;&gt;&lt;/a&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="linux" scheme="https://ljh130168.github.io/tags/linux/"/>
+    
+  </entry>
   
   <entry>
     <title>工厂模式</title>
@@ -137,7 +160,7 @@
     <link href="https://ljh130168.github.io/2022/03/21/win10-xia-shi-yong-nei-zhi-linux/"/>
     <id>https://ljh130168.github.io/2022/03/21/win10-xia-shi-yong-nei-zhi-linux/</id>
     <published>2022-03-20T22:10:14.000Z</published>
-    <updated>2022-04-07T20:02:42.147Z</updated>
+    <updated>2022-05-04T08:04:21.937Z</updated>
     
     
       
@@ -448,30 +471,6 @@
     
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>使用Hexo搭建一个属于自己的博客</title>
-    <link href="https://ljh130168.github.io/2021/12/14/shi-yong-hexo-da-jian-yi-ge-shu-yu-zi-ji-de-bo-ke-ji-yu-windows/"/>
-    <id>https://ljh130168.github.io/2021/12/14/shi-yong-hexo-da-jian-yi-ge-shu-yu-zi-ji-de-bo-ke-ji-yu-windows/</id>
-    <published>2021-12-13T16:53:44.288Z</published>
-    <updated>2021-12-13T12:54:53.659Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;hr&gt;
-&lt;h5 id=&quot;一、博客的创建&quot;&gt;&lt;a href=&quot;#一、博客的创建&quot; class=&quot;headerlink&quot; title=&quot;一、博客的创建&quot;&gt;&lt;/a&gt;一、博客的创建&lt;/h5&gt;&lt;pre class=&quot;line-numbers language-text&quot;</summary>
-        
-      
-    
-    
-    
-    
-    <category term="hexo" scheme="https://ljh130168.github.io/tags/hexo/"/>
     
   </entry>
   

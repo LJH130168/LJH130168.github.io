@@ -457,7 +457,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-04-08
+                    2022-05-04
                 </div>
                 
 
@@ -471,7 +471,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    11 分
+                    12 分
                 </div>
                 
 
@@ -505,6 +505,11 @@ https://blog.csdn.net/weixin_42949808/article/details/110038095
 #Ubuntu详解
 https://blog.csdn.net/xxdw1992/article/details/114920741<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
+<blockquote>
+<p>你的用户名和密码</p>
+<pre class="line-numbers language-tex" data-language="tex"><code class="language-tex">username：lujiahong
+password：lujiahong<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+</blockquote>
 <h3 id="1、开启适用于Linux的Windows子系统"><a href="#1、开启适用于Linux的Windows子系统" class="headerlink" title="1、开启适用于Linux的Windows子系统"></a>1、开启适用于Linux的Windows子系统</h3><pre class="line-numbers language-sh" data-language="sh"><code class="language-sh">&gt;控制面板-&gt;程序-&gt;启用或关闭Windows功能-&gt;适用于Linux的Windows子系统<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <img src="/2022/03/21/win10-xia-shi-yong-nei-zhi-linux/image-20220407224905658.png" alt="image-20220407224905658" style="zoom:80%;">
@@ -617,7 +622,7 @@ Codename:       bionic                   #ubuntu的代号名称<span aria-hidden
 &gt;net stop LxssManager   #关闭系统
 &gt;net start LxssManager  #开启系统<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li>
 </ol>
-<h3 id="6、安装Ubuntn图形界面"><a href="#6、安装Ubuntn图形界面" class="headerlink" title="6、安装Ubuntn图形界面"></a>6、安装Ubuntn图形界面</h3><h4 id="1、方式一"><a href="#1、方式一" class="headerlink" title="1、方式一"></a>1、方式一</h4><p>安装tasksel</p>
+<h3 id="6、安装Ubuntn图形界面"><a href="#6、安装Ubuntn图形界面" class="headerlink" title="6、安装Ubuntn图形界面 "></a>6、<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_44487263/article/details/122321879">安装Ubuntn图形界面 </a></h3><h4 id="1、方式一"><a href="#1、方式一" class="headerlink" title="1、方式一"></a>1、方式一</h4><p>安装tasksel</p>
 <pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">&gt;sudo apt-get install tasksel -y
 &gt;sudo tasksel<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
@@ -744,7 +749,12 @@ aptitude clean             删除下载的包文件
 
 aptitude autoclean         仅删除过期的包文件 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h3 id="3、apt-get和yum的区别"><a href="#3、apt-get和yum的区别" class="headerlink" title="3、apt-get和yum的区别"></a>3、apt-get和yum的区别</h3><h4 id="1、linux系统分类"><a href="#1、linux系统分类" class="headerlink" title="1、linux系统分类"></a>1、linux系统分类</h4><p><strong>一般来说linux系统基本上分两大类：</strong></p>
+<h3 id="4、ubuntn和centos区别"><a href="#4、ubuntn和centos区别" class="headerlink" title="4、ubuntn和centos区别"></a>4、<a target="_blank" rel="noopener" href="https://www.php.cn/centos/488475.html">ubuntn和centos区别</a></h3><ul>
+<li>1、centos基于EHEL开发，而ubuntu基于Debian开发；</li>
+<li>2、centos使用rpm和flatpak软件包，而ubuntu使用deb和snap的软件包；</li>
+<li>3、centos使用yum来更新，而ubuntu使用apt来更新。</li>
+</ul>
+<h3 id="4、apt-get和yum的区别"><a href="#4、apt-get和yum的区别" class="headerlink" title="4、apt-get和yum的区别"></a>4、apt-get和yum的区别</h3><h4 id="1、linux系统分类"><a href="#1、linux系统分类" class="headerlink" title="1、linux系统分类"></a>1、linux系统分类</h4><p><strong>一般来说linux系统基本上分两大类：</strong></p>
 <p><a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=RedHat&amp;spm=1001.2101.3001.7020">RedHat</a>系列：Redhat、Centos、Fedora等<br><a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=Debian&amp;spm=1001.2101.3001.7020">Debian</a>系列：Debian、Ubuntu等</p>
 <p><strong>RedHat 系列</strong></p>
 <ul>
@@ -773,10 +783,9 @@ aptitude autoclean         仅删除过期的包文件 <span aria-hidden="true" 
 <li>保持与RPM数据库的一致性</li>
 </ul>
 <p><strong>yum可以用于运作rpm包，例如在CentOS/RedHat系统上对某个软件的管理</strong></p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">  安装：yum install &lt;package_name&gt;
-  卸载：yum remove &lt;package_name&gt;
-  更新：yum update &lt;package_name&gt;
-123<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">安装：yum install &lt;package_name&gt;
+卸载：yum remove &lt;package_name&gt;
+更新：yum update &lt;package_name&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
 <h4 id="3、apt-get"><a href="#3、apt-get" class="headerlink" title="3、apt-get"></a>3、apt-get</h4><p><strong>apt-get是Debian系列的高级软件包管理工具</strong></p>
 <ul>
@@ -1308,7 +1317,7 @@ aptitude autoclean         仅删除过期的包文件 <span aria-hidden="true" 
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">116.1k</span>
+                        class="white-color">118.6k</span>
             
             
             
